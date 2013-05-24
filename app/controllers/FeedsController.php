@@ -76,24 +76,4 @@ class FeedsController extends BaseController {
         //
     }
 
-	public function import($campaignId)
-	{
-		$client = new \Zend\Soap\Client('http://ws.tradetracker.com/soap/affiliate?wsdl');
-		$client->authenticate(Config::get('services.tradetracker_id'), Config::get('services.tradetracker_key'));
-
-		$products = $client->getFeedProducts(48216, array(
-			'campaignID' => $campaignId,
-			'limit' => 3,
-		));
-
-		foreach($products as $product) {
-
-			Job::add(URL::route('products.import'), 'POST', array(
-				'product' 		=> $product,
-				'campaign_id' 	=> $campaignId,
-			));
-
-		}
-	}
-
 }

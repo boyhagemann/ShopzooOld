@@ -17,13 +17,15 @@ Route::get('jobs/run', array(
 	'uses' 	=> 'JobsController@run',
 	'as' 	=> 'jobs.run',
 ));
-Route::get('feeds/import/{campaignId}', array(
-	'uses' 	=> 'FeedsController@import',
-	'as' 	=> 'feeds.import',
+
+
+Route::get('import/tradetracker/feed/{campaignId}', array(
+	'uses' 	=> 'Import\TradeTrackerController@feed',
+	'as' 	=> 'import.tradetracker.feed',
 ));
-Route::post('products/import', array(
-	'uses' 	=> 'ProductsController@import',
-	'as' 	=> 'products.import',
+Route::post('import/tradetracker/product', array(
+	'uses' 	=> 'Import\TradeTrackerController@product',
+	'as' 	=> 'import.tradetracker.product',
 ));
 
 

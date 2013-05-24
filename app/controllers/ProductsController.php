@@ -76,34 +76,4 @@ class ProductsController extends BaseController {
         //
     }
 
-	public function import()
-	{
-		$data 		= Input::get('product');
-		$campaignId = Input::get('campaign_id');
-		$additional = array();
-
-		if(isset($data->additional)) {
-			foreach($data->additional as $info) {
-				$additional[$info->name] = $info->value;
-			}
-		}
-
-		$product = Product::where('foreign_id', '=', $data->identifier)
-						  ->where('campaign_id', '=', $campaignId)
-						  ->first();
-
-		if(!$product) {
-			$product = new Product();
-		}
-
-		$product->campaign_id 	= $campaignId;
-		$product->foreign_id	= $data->identifier;
-		$product->title			= $data->name;
-		$product->price			= $data->price;
-		$product->image 		= $data->imageURL;
-		$product->description 	= isset($additional['description']) ? $additional['description'] : 'no description available';
-
-		$product->save();
-	}
-
 }

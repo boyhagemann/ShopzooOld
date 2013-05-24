@@ -9,7 +9,7 @@ class JobsTableSeeder extends Seeder {
 
         // Uncomment the below to run the seeder
          DB::table('jobs')->insert(array(
-			'url' => URL::route('feeds.import', 2626),  // Afvalemmershop.nl
+			'url' => URL::route('import.tradetracker.feed', 2626),  // Afvalemmershop.nl
 			'method' => 'GET',
 			'params' => serialize(array()),
 		 ));
