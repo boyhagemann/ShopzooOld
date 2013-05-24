@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost/shopzoo/public',
+	'url' => 'http://localhost/shopzoo_dev/public',
 
 	/*
 	|--------------------------------------------------------------------------

@@ -15,9 +15,10 @@ class HomeController extends BaseController {
 	|
 	*/
 
-	public function showWelcome()
+	public function index()
 	{
-		return View::make('hello');
+		$products = Product::all();
+		return View::make('home', compact('products'));
 	}
 
 }

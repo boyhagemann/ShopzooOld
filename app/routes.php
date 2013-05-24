@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function()
-{
-
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('jobs/run', array(
 	'uses' 	=> 'JobsController@run',
