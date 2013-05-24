@@ -89,7 +89,8 @@ class FeedsController extends BaseController {
 		foreach($products as $product) {
 
 			Job::add(URL::route('products.import'), 'POST', array(
-				'product' => $product,
+				'product' 		=> $product,
+				'campaign_id' 	=> $campaignId,
 			));
 
 		}

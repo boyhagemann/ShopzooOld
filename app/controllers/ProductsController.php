@@ -78,8 +78,8 @@ class ProductsController extends BaseController {
 
 	public function import()
 	{
-		$data = Input::get('product');
-
+		$data 		= Input::get('product');
+		$campaignId = Input::get('campaign_id');
 		$additional = array();
 
 		if(isset($data->additional)) {
@@ -88,12 +88,18 @@ class ProductsController extends BaseController {
 			}
 		}
 
-		$product = Product::create(array(
-			'title' 		=> $data->name,
-			'price' 		=> $data->price,
-			'image' 		=> $data->imageURL,
-			'description' 	=> isset($additional['description']) ? $additional['description'] : 'no description available',
-		));
+		$product = Product::where('foreign_id', '=', $campaignId)->first();
+
+		if(!$product) {
+			$product = new Product();
+		}
+
+		$product->campaign_id 	= $campaignId;
+		$product->foreign_id	= $data->identifier;
+		$product->title			= $data->name;
+		$product->price			= $data->price;
+		$product->image 		= $data->imageURL;
+		$product->description 	= isset($additional['description']) ? $additional['description'] : 'no description available';
 
 		$product->save();
 	}
