@@ -88,7 +88,9 @@ class ProductsController extends BaseController {
 			}
 		}
 
-		$product = Product::where('foreign_id', '=', $campaignId)->first();
+		$product = Product::where('foreign_id', '=', $data->identifier)
+						  ->where('campaign_id', '=', $campaignId)
+						  ->first();
 
 		if(!$product) {
 			$product = new Product();
