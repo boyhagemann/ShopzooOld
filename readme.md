@@ -1,13 +1,9 @@
-## Laravel 4.x
+## Shopzoo website
 
-### A Framework For Web Artisans
+### Roadmap
 
-[Official Documentation](http://four.laravel.com) (Under Active Development)
-
-### Contributing To Laravel
-
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+* User can search for products and use the product links
+* User can register 
+* System can generate unique trackable links wrapping the original affiliate link
+* System can track a link
+* System can relate an affiliate sale to a user
