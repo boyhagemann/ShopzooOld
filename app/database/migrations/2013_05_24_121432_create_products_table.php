@@ -3,7 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateProductsTable extends Migration {
+class CreateProductsTable extends Migration
+{
 
     /**
      * Run the migrations.
@@ -14,15 +15,18 @@ class CreateProductsTable extends Migration {
     {
         Schema::create('products', function(Blueprint $table) {
             $table->increments('id');
-			$table->integer('foreign_id');
-			$table->integer('campaign_id');
+            $table->integer('foreign_id');
+            $table->integer('campaign_id');
             $table->string('title');
-			$table->text('description');
-			$table->text('image');
-			$table->float('price');
+            $table->text('description')->nullable();
+            $table->text('image');
+            $table->string('url');
+            $table->float('price');
             $table->timestamps();
 
-			$table->unique(array('campaign_id', 'foreign_id'));
+            $table->index('price');
+            $table->unique('url');
+            $table->unique(array('campaign_id', 'foreign_id'));
         });
     }
 
