@@ -8,7 +8,8 @@
 	"require": {
 		"laravel/framework": "4.0.*",
 		"way/generators": "dev-master",
-		"zendframework/zend-soap": "2.*"
+		"zendframework/zend-soap": "2.*",    
+                "vespakoen/menu": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

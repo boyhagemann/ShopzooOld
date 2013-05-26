@@ -28,12 +28,20 @@ Route::post('import/tradetracker/product', array(
 	'as' 	=> 'import.tradetracker.product',
 ));
 
+Route::get('products/{slug?}', array(
+	'uses' 	=> 'ProductsController@index',
+	'as' 	=> 'products',
+));
+Route::post('products', array(
+	'uses' 	=> 'ProductsController@search',
+	'as' 	=> 'products.search',
+));
 
 
 Route::resource('campaigns', 'CampaignsController');
 
 Route::resource('jobs', 'JobsController');
 
-Route::resource('products', 'ProductsController');
+Route::resource('admin.products', 'Admin\ProductsController');
 
 Route::resource('feeds', 'FeedsController');

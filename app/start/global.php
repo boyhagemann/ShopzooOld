@@ -81,3 +81,11 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+
+
+
+
+$menu = Menu::handler('main', array('class' => 'nav'));
+$menu->add('', 'Homepage');
+$menu->add('products', 'Products');
