@@ -4,11 +4,7 @@
 		<!-- Basic Page Needs
 		================================================== -->
 		<meta charset="utf-8" />
-		<title>
-			@section('title')
-			Default layout
-			@show
-		</title>
+		<title>@yield('title')</title>
 		<meta name="keywords" content="your, awesome, keywords, here" />
 		<meta name="author" content="Jon Doe" />
 		<meta name="description" content="Lorem ipsum dolor sit amet, nihil fabulas et sea, nam posse menandri scripserit no, mei." />
@@ -46,20 +42,14 @@
 					</a>
 
 					<div class="nav-collapse collapse">
-						{{ Menu::handler('main', array('class' => 'nav')) }}
+						{{ Menu::handler('main') }}
 
 
-						<ul class="nav pull-right">
-							@if (Auth::check())
-							<li class="navbar-text">Logged in as {{{ Auth::user()->fullName() }}}</li>
-							<li class="divider-vertical"></li>
-							<li {{{ (Request::is('account') ? 'class="active"' : '') }}}><a href="{{{ URL::to('account') }}}">Account</a></li>
-							<li><a href="{{{ URL::to('account/logout') }}}">Logout</a></li>
-							@else
-							<li {{{ (Request::is('account/login') ? 'class="active"' : '') }}}><a href="{{{ URL::to('account/login') }}}">Login</a></li>
-							<li {{{ (Request::is('account/register') ? 'class="active"' : '') }}}><a href="{{{ URL::to('account/register') }}}">Register</a></li>
-							@endif
-						</ul>
+                                                @if (Auth::check())
+                                                    <li>Logged in</li>
+                                                @else
+                                                    {{ Menu::handler('user') }}
+                                                @endif
 					</div>
 					<!-- ./ nav-collapse -->
 				</div>
@@ -74,7 +64,7 @@
 			<!-- ./ notifications -->
 
 			<!-- Content -->
-			{{ $content }}
+			@yield('content')
 			<!-- ./ content -->
 		</div>
 		<!-- ./ container -->

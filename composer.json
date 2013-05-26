@@ -9,7 +9,8 @@
 		"laravel/framework": "4.0.*",
 		"way/generators": "dev-master",
 		"zendframework/zend-soap": "2.*",    
-                "vespakoen/menu": "dev-master"
+                "vespakoen/menu": "dev-master",
+                "cartalyst/sentry": "2.*"
 	},
 	"autoload": {
 		"classmap": [

@@ -3,7 +3,6 @@
 	<button type="button" class="close" data-dismiss="alert">&times;</button>
 	<h4>Error</h4>
 	Please check the form bellow for errors
-    {{ var_dump($errors->all()) }}
 </div>
 @endif
 

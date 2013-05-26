@@ -1,9 +1,7 @@
 <?php
 
-class ProductsController extends BaseController {
-
-    protected $layout = 'layouts.default';
-    
+class ProductsController extends BaseController 
+{    
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +12,7 @@ class ProductsController extends BaseController {
         $terms = ucfirst(str_replace('-', ' ', $slug));
         $products = Product::where('title', 'LIKE', "%{$terms}%")->paginate(10);
         
-        $this->layout->content = View::make('products.index', compact('terms', 'products'));
+        return View::make('products.index', compact('terms', 'products'));
     }
     
     public function search()

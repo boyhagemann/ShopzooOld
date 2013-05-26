@@ -116,6 +116,7 @@ return array(
 
 		'Way\Generators\GeneratorsServiceProvider',
                 'Menu\MenuServiceProvider',
+                'Cartalyst\Sentry\SentryServiceProvider',
 
 	),
 
@@ -183,6 +184,7 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
                 'Menu'            => 'Menu\Menu',
+                'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 	),
 
 );

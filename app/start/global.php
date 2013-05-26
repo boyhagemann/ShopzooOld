@@ -89,3 +89,62 @@ require app_path().'/filters.php';
 $menu = Menu::handler('main', array('class' => 'nav'));
 $menu->add('', 'Homepage');
 $menu->add('products', 'Products');
+
+$menuUser = Menu::handler('user', array('class' => 'nav pull-right'));
+$menuUser->add('users/login', 'Login');
+$menuUser->add('users/register', 'Register');
+
+
+
+
+
+
+Form::macro('twText', function($label, $name, $default = null, $attributes = array()) {
+   
+    $mask = '<div class="control-group">
+        <div class="controls">
+                %s
+                %s
+            </div>
+    </div>
+    ';
+    
+    $label = Form::label($label, $name);
+    $input = Form::text($name, $default, $attributes);
+    $html = sprintf($mask, $label, $input);
+    
+    return $html;
+});
+
+
+Form::macro('twPassword', function($label, $name, $attributes = array()) {
+   
+    $mask = '<div class="control-group">
+        <div class="controls">
+                %s
+                %s
+            </div>
+    </div>
+    ';
+    
+    $label = Form::label($label, $name);
+    $input = Form::password($name, $attributes);
+    $html = sprintf($mask, $label, $input);
+    
+    return $html;
+});
+
+Form::macro('twBtnGroup', function($elements) {
+   
+    $mask = '
+    <div class="btn-group">
+        %s
+    </div>
+    ';
+    
+    $input = implode(PHP_EOL, (array) $elements);
+    
+    $html = sprintf($mask, $input);
+    
+    return $html;
+});

@@ -1,3 +1,11 @@
+@extends('layouts.default')
+
+{{-- Web site Title --}}
+@section('title')
+Products
+@stop
+
+@section('content')
 
 <h1>Search a product</h1>
 
@@ -23,3 +31,6 @@
 <h2>No search results for "{{ $terms }}"</h2>
 
 @endif
+
+
+@stop
