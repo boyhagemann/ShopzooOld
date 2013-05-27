@@ -20,76 +20,16 @@ class UserController extends BaseController {
 		$throttleProvider->enable();
 	}
 
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function getIndex()
+	public function dashboard()
 	{
-		// Index - show the user details.
-
-		try
-		{
-		   	// Find the current user
-		    if ( Sentry::check())
-			{
-			    // Find the user using the user id
-			    $data['user'] = Sentry::getUser();
-
-			    if ($data['user']->hasAccess('admin')) {
-			    	$data['allUsers'] = Sentry::getUserProvider()->findAll();
-
-			    	//Assemble an array of each user's status
-			    	$data['userStatus'] = array();
-			    	foreach ($data['allUsers'] as $user) {
-			    		if ($user->isActivated()) 
-			    		{
-			    			$data['userStatus'][$user->id] = "Active";
-			    		} 
-			    		else 
-			    		{
-			    			$data['userStatus'][$user->id] = "Not Active";
-			    		}
-
-			    		//Pull Suspension & Ban info for this user
-			    		$throttle = Sentry::getThrottleProvider()->findByUserId($user->id);
-
-			    		//Check for suspension
-			    		if($throttle->isSuspended())
-					    {
-					        // User is Suspended
-					        $data['userStatus'][$user->id] = "Suspended";
-					    }
-
-			    		//Check for ban
-					    if($throttle->isBanned())
-					    {
-					        // User is Banned
-					        $data['userStatus'][$user->id] = "Banned";
-					    }
-
-			    	}
-			    } 
-
-			    return View::make('users.index')->with($data);
-			} else {
-				Session::flash('error', 'You are not logged in.');
-				return Redirect::to('/');
-			}
-		}
-		catch (Cartalyst\Sentry\UserNotFoundException $e)
-		{
-		    Session::flash('error', 'There was a problem accessing your account.');
-			return Redirect::to('/');
-		}
+		return View::make('users.dashboard');
 	}
 
 	/**
 	 *  Display this user's details.
 	 */
 	
-	public function getShow($id)
+	public function show($id)
 	{
 		try
 		{
@@ -124,13 +64,13 @@ class UserController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function getRegister()
+	public function register()
 	{
 		// Show the register form
 		return View::make('users.register');
 	}
 
-	public function postRegister() 
+	public function store()
 	{
 	
 		// Gather Sanitized Input
@@ -195,7 +135,7 @@ class UserController extends BaseController {
 	/**
 	 * Activate a new User
 	 */
-	public function getActivate($userId = null, $activationCode = null) {
+	public function activate($userId = null, $activationCode = null) {
 		try 
 		{
 		    // Find the user
@@ -239,13 +179,13 @@ class UserController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function getLogin()
+	public function login()
 	{
 		// Show the register form
 		return View::make('users.login');
 	}
 
-	public function postLogin() 
+	public function auth()
 	{
 		// Gather Sanitized Input
 		$input = array(
@@ -266,7 +206,7 @@ class UserController extends BaseController {
 		if ($v->fails())
 		{
 			// Validation has failed
-			return Redirect::to('users/login')->withErrors($v)->withInput();
+			return Redirect::route('user.login')->withErrors($v)->withInput();
 		}
 		else 
 		{
@@ -294,13 +234,13 @@ class UserController extends BaseController {
 			    // by those credentials. Check the error message returned
 			    // for more information.
 			    Session::flash('error', 'Invalid username or password.' );
-				return Redirect::to('users/login')->withErrors($v)->withInput();
+				return Redirect::route('user.login')->withErrors($v)->withInput();
 			}
 			catch (Cartalyst\Sentry\Users\UserNotActivatedException $e)
 			{
 			    echo 'User not activated.';
 			    Session::flash('error', 'You have not yet activated this account.');
-				return Redirect::to('users/login')->withErrors($v)->withInput();
+				return Redirect::route('user.login')->withErrors($v)->withInput();
 			}
 
 			// The following is only required if throttle is enabled
@@ -308,16 +248,16 @@ class UserController extends BaseController {
 			{
 			    $time = $throttle->getSuspensionTime();
 			    Session::flash('error', "Your account has been suspended for $time minutes.");
-				return Redirect::to('users/login')->withErrors($v)->withInput();
+				return Redirect::route('user.login')->withErrors($v)->withInput();
 			}
 			catch (Cartalyst\Sentry\Throttling\UserBannedException $e)
 			{
 			    Session::flash('error', 'You have been banned.');
-				return Redirect::to('users/login')->withErrors($v)->withInput();
+				return Redirect::route('user.login')->withErrors($v)->withInput();
 			}
 
 			//Login was succesful.  
-			return Redirect::to('/');
+			return Redirect::route('user.dashboard');
 		}
 	}
 
@@ -325,7 +265,7 @@ class UserController extends BaseController {
 	 * Logout
 	 */
 	
-	public function getLogout() 
+	public function logout()
 	{
 		Sentry::logout();
 		return Redirect::to('/');
@@ -455,7 +395,7 @@ class UserController extends BaseController {
 	 *  Edit / Update User Profile
 	 */
 	
-	public function getEdit($id) 
+	public function edit($id)
 	{
 		try
 		{
@@ -491,7 +431,7 @@ class UserController extends BaseController {
 	}
 
 
-	public function postEdit($id) {
+	public function update($id) {
 		// Gather Sanitized Input
 		$input = array(
 			'firstName' => Input::get('firstName'),
@@ -568,7 +508,7 @@ class UserController extends BaseController {
 	 * @param  [type] $id [description]
 	 * @return [type]     [description]
 	 */
-	public function postChangepassword($id) 
+	public function changepassword($id)
 	{
 		// Gather Sanitized Input
 		$input = array(
@@ -648,182 +588,6 @@ class UserController extends BaseController {
 			    Session::flash('error', 'User was not found.');
 				return Redirect::to('users/edit/' . $id);
 			}
-		}
-	}
-
-	/**
-	 * Process changes to user's group memberships
-	 * @param  int 		$id The affected user's id
-	 * @return [type]     [description]
-	 */
-	public function postUpdatememberships($id)
-	{
-		try 
-		{
-			//Get the current user's id.
-			Sentry::check();
-			$currentUser = Sentry::getUser();
-
-		   	//Do they have admin access?
-			if ( $currentUser->hasAccess('admin'))
-			{
-				$user = Sentry::getUserProvider()->findById($id);
-				$allGroups = Sentry::getGroupProvider()->findAll();
-				$permissions = Input::get('permissions');
-				
-				$statusMessage = '';
-				foreach ($allGroups as $group) {
-					
-					if (isset($permissions[$group->id])) 
-					{
-						//The user should be added to this group
-						if ($user->addGroup($group))
-					    {
-					        $statusMessage .= "Added to " . $group->name . "<br />";
-					    }
-					    else
-					    {
-					        $statusMessage .= "Could not be added to " . $group->name . "<br />";
-					    }
-					} else {
-						// The user should be removed from this group
-						if ($user->removeGroup($group))
-					    {
-					        $statusMessage .= "Removed from " . $group->name . "<br />";
-					    }
-					    else
-					    {
-					        $statusMessage .= "Could not be removed from " . $group->name . "<br />";
-					    }
-					}
-
-				}
-				Session::flash('info', $statusMessage);
-				return Redirect::to('users/show/'. $id);
-			} 
-			else 
-			{
-				Session::flash('error', 'You don\'t have access to that user.');
-				return Redirect::to('/');
-			}
-	
-		}
-		catch (Cartalyst\Sentry\Users\UserNotFoundException $e)
-		{
-		    Session::flash('error', 'User was not found.');
-			return Redirect::to('users/edit/' . $id);
-		}
-		catch (Cartalyst\Sentry\Groups\GroupNotFoundException $e)
-		{
-		    Session::flash('error', 'Trying to access unidentified Groups.');
-			return Redirect::to('users/edit/' . $id);
-		}
-	}
-
-
-	/**
-	 * Prepare the "Ban User" form
-	 * @param  int $id The user id
-	 * @return View     The "Ban Form" view
-	 */
-	public function getSuspend($id)
-	{
-		try
-		{
-		    //Get the current user's id.
-			Sentry::check();
-			$currentUser = Sentry::getUser();
-
-		   	//Do they have admin access?
-			if ( $currentUser->hasAccess('admin'))
-			{
-				$data['user'] = Sentry::getUserProvider()->findById($id);
-				return View::make('users.suspend')->with($data);
-			} else {
-				Session::flash('error', 'You are not allowed to do that.');
-				return Redirect::to('/');
-			}
-
-		}
-		catch (Cartalyst\Sentry\UserNotFoundException $e)
-		{
-		    Session::flash('error', 'There was a problem accessing that user\s account.');
-			return Redirect::to('/users');
-		}
-	}
-
-	public function postSuspend($id)
-	{
-		// Gather Sanitized Input
-		$input = array(
-			'suspendTime' => Input::get('suspendTime')
-			);
-
-		// Set Validation Rules
-		$rules = array (
-			'suspendTime' => 'required|numeric'
-			);
-
-		//Run input validation
-		$v = Validator::make($input, $rules);
-
-		if ($v->fails())
-		{
-			// Validation has failed
-			return Redirect::to('users/suspend/' . $id)->withErrors($v)->withInput();
-		}
-		else 
-		{
-			try
-			{
-				//Prep for suspension
-				$throttle = Sentry::getThrottleProvider()->findByUserId($id);
-
-				//Set suspension time
-				$throttle->setSuspensionTime($input['suspendTime']);
-
-				// Suspend the user
-    			$throttle->suspend();
-
-    			//Done.  Return to users page.
-    			Session::flash('success', "User has been suspended for " . $input['suspendTime'] . " minutes.");
-				return Redirect::to('users');
-
-			}
-			catch (Cartalyst\Sentry\UserNotFoundException $e)
-			{
-			    Session::flash('error', 'There was a problem accessing that user\s account.');
-				return Redirect::to('/users');
-			}
-		}
-	}
-
-
-	public function postDelete($id)
-	{
-		try
-		{
-		    // Find the user using the user id
-		    $user = Sentry::getUserProvider()->findById($id);
-
-		    // Delete the user
-		    if ($user->delete())
-		    {
-		        // User was successfully deleted
-		        Session::flash('success', 'That user has been deleted.');
-				return Redirect::to('/users');
-		    }
-		    else
-		    {
-		        // There was a problem deleting the user
-		        Session::flash('error', 'There was a problem deleting that user.');
-				return Redirect::to('/users');
-		    }
-		}
-		catch (Cartalyst\Sentry\Users\UserNotFoundException $e)
-		{
-		    Session::flash('error', 'There was a problem accessing that user\s account.');
-			return Redirect::to('/users');
 		}
 	}
 

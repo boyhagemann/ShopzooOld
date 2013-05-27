@@ -45,10 +45,10 @@
 						{{ Menu::handler('main') }}
 
 
-                                                @if (Auth::check())
-                                                    <li>Logged in</li>
+                                                @if (Sentry::check())
+													{{ Menu::handler('user') }}
                                                 @else
-                                                    {{ Menu::handler('user') }}
+                                                    {{ Menu::handler('login') }}
                                                 @endif
 					</div>
 					<!-- ./ nav-collapse -->

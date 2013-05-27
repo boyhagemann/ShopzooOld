@@ -68,6 +68,49 @@ Route::filter('admin_auth', function()
 });
 
 
+Route::get('user/dashboard', array(
+	'uses' 	=> 'UserController@dashboard',
+	'as'	=> 'user.dashboard'
+));
+Route::get('user/login', array(
+	'uses' 	=> 'UserController@login',
+	'as'	=> 'user.login'
+));
+Route::post('user/auth', array(
+	'uses' 	=> 'UserController@auth',
+	'as'	=> 'user.auth'
+));
+Route::get('user/register', array(
+	'uses' 	=> 'UserController@register',
+	'as'	=> 'user.register'
+));
+Route::post('user/store', array(
+	'uses' 	=> 'UserController@store',
+	'as'	=> 'user.store'
+));
+Route::get('user/logout', array(
+	'uses' 	=> 'UserController@logout',
+	'as'	=> 'user.logout'
+));
+
+
+
+
+
+
+
+
+$menu = Menu::handler('main', array('class' => 'nav'));
+$menu->add('', 'Homepage');
+$menu->add('products', 'Products');
+
+$menuLogin = Menu::handler('login', array('class' => 'nav pull-right'));
+$menuLogin->add(URL::route('user.login'), 'Login');
+$menuLogin->add(URL::route('user.register'), 'Register');
+
+$menuUser = Menu::handler('user', array('class' => 'nav pull-right'));
+$menuUser->add(URL::route('user.logout'), 'Log out');
+
 
 
 

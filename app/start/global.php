@@ -85,20 +85,6 @@ require app_path().'/filters.php';
 
 
 
-
-$menu = Menu::handler('main', array('class' => 'nav'));
-$menu->add('', 'Homepage');
-$menu->add('products', 'Products');
-
-$menuUser = Menu::handler('user', array('class' => 'nav pull-right'));
-$menuUser->add('users/login', 'Login');
-$menuUser->add('users/register', 'Register');
-
-
-
-
-
-
 Form::macro('twText', function($label, $name, $default = null, $attributes = array()) {
    
     $mask = '<div class="control-group">

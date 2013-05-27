@@ -9,7 +9,7 @@ Log In
 @section('content')
 <h1>Login</h1>
 
-	<form class="form-horizontal" action="{{ Request::fullUrl() }}" method="post">   
+	<form class="form-horizontal" action="{{ URL::route('user.auth') }}" method="post">
         <input type="hidden" name="_token" value="{{ Session::getToken() }}">
 
         <div class="control-group {{ ($errors->has('email')) ? 'error' : '' }}" for="email">
