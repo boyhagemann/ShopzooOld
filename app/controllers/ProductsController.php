@@ -21,9 +21,16 @@ class ProductsController extends BaseController
         return Redirect::route('products', $slug);
     }
 
-	public function link(Product $product)
+	public function show(Product $product)
 	{
-		$code = Link::shorten($product, Sentry::getUser());
-		var_dump($code); exit;
+		$link = Link::findOrCreate($product, Sentry::getUser());
+
+		return View::make('products.show', compact('link', 'product'));
+	}
+
+	public function redirect($code)
+	{
+		$link = Link::whereCode($code)->first();
+		return Redirect::to($link->product->url);
 	}
 }

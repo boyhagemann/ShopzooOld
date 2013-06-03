@@ -41,11 +41,14 @@ Route::post('products', array(
 	'as' 	=> 'products.search',
 ));
 
-Route::get('products/link/{product}', array(
-	'uses' 	=> 'ProductsController@link',
-	'as'	=> 'products.link',
+Route::get('products/show/{product}', array(
+	'uses' 	=> 'ProductsController@show',
+	'as'	=> 'products.show',
 ));
-
+Route::get('products/redirect/{code}', array(
+	'uses' 	=> 'ProductsController@redirect',
+	'as'	=> 'products.redirect',
+));
 
 
 

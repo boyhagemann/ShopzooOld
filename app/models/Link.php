@@ -7,9 +7,34 @@ class Link extends Eloquent {
     protected $guarded = array();
 
     public static $rules = array(
-		'url' => 'required|url',
-		'user_id' => 'required|integer',
+		'product_id' 	=> 'required|integer',
+		'user_id' 		=> 'required|integer',
 	);
+
+	public function product()
+	{
+		return $this->belongsTo('Product');
+	}
+
+	public function user()
+	{
+		return $this->belongsTo('Cartalyst\Sentry\Users\Eloquent\User');
+	}
+
+	/**
+	 * @param Product $product
+	 * @param User    $user
+	 * @return string
+	 */
+	static public function findOrCreate(Product $product, User $user)
+	{
+		$link = static::whereProductId($product->id)->whereUserId($user->id)->first();
+		if($link) {
+			return $link;
+		}
+
+		return static::shorten($product, $user);
+	}
 
 	/**
 	 * @param Product $product
@@ -19,18 +44,14 @@ class Link extends Eloquent {
 	static public function shorten(Product $product, User $user)
 	{
 		$code = base_convert(rand(0, 999999), 20, 36);
-		if(Link::whereCode($code)->first()) {
-			return self::shorten($product, $user);
+		if(static::whereCode($code)->first()) {
+			return static::shorten($product, $user);
 		}
 
-		var_dump($product->url); exit;
-
-		Link::create(array(
-			'user_id' => $user->id,
-			'url' => $product->url,
-			'code' => $code,
+		return static::create(array(
+			'user_id' 		=> $user->id,
+			'product_id' 	=> $product->id,
+			'code' 			=> $code,
 		));
-
-		return $code;
 	}
 }
