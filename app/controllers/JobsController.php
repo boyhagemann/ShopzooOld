@@ -80,7 +80,7 @@ class JobsController extends BaseController {
 	{
 		foreach(Job::all() as $job) {
 
-			$url = str_replace(Config::get('app.url'), '', $job->url);
+			$url = str_replace(Request::root(), '', $job->url);
 			$params = (array) unserialize($job->params);
 			$request = Request::create($url, $job->method, $params);
 

@@ -19,7 +19,7 @@ Products
 
 @foreach($products as $product)
 <div class="row">
-    <h3><a href="{{ $product->url }}">{{ $product->title }}</a></h3>
+    <h3><a href="{{ URL::route('products.link', $product->id) }}">{{ $product->title }}</a></h3>
     <p>{{ $product->price }}</p>
 </div>
 @endforeach

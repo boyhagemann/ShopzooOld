@@ -28,6 +28,10 @@ Route::post('import/tradetracker/product', array(
 	'as' 	=> 'import.tradetracker.product',
 ));
 
+
+
+
+Route::model('product', 'Product');
 Route::get('products/{slug?}', array(
 	'uses' 	=> 'ProductsController@index',
 	'as' 	=> 'products',
@@ -37,10 +41,11 @@ Route::post('products', array(
 	'as' 	=> 'products.search',
 ));
 
-Route::controller('users', 'UserController');
+Route::get('products/link/{product}', array(
+	'uses' 	=> 'ProductsController@link',
+	'as'	=> 'products.link',
+));
 
-
-Route::resource('groups', 'GroupController');
 
 
 
@@ -67,6 +72,8 @@ Route::filter('admin_auth', function()
 	}
 });
 
+
+Route::controller('users', 'UserController');
 
 Route::get('user/dashboard', array(
 	'uses' 	=> 'UserController@dashboard',
@@ -99,7 +106,6 @@ Route::get('user/logout', array(
 
 
 
-
 $menu = Menu::handler('main', array('class' => 'nav'));
 $menu->add('', 'Homepage');
 $menu->add('products', 'Products');
@@ -113,6 +119,8 @@ $menuUser->add(URL::route('user.logout'), 'Log out');
 
 
 
+
+Route::resource('groups', 'GroupController');
 
 Route::resource('campaigns', 'CampaignsController');
 

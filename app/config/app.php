@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost/boyhagemann/shopzoo/public',
+	'url' => 'http://localhost',
 
 	/*
 	|--------------------------------------------------------------------------
