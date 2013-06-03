@@ -14,13 +14,20 @@ class ProductsController extends BaseController
         
         return View::make('products.index', compact('terms', 'products'));
     }
-    
-    public function search()
+
+	/**
+	 * @return mixed
+	 */
+	public function search()
     {
         $slug = Str::slug(Input::get('terms'));
         return Redirect::route('products', $slug);
     }
 
+	/**
+	 * @param Product $product
+	 * @return mixed
+	 */
 	public function show(Product $product)
 	{
 		$link = Link::findOrCreate($product, Sentry::getUser());
@@ -28,9 +35,14 @@ class ProductsController extends BaseController
 		return View::make('products.show', compact('link', 'product'));
 	}
 
+	/**
+	 * @param $code
+	 * @return mixed
+	 */
 	public function redirect($code)
 	{
 		$link = Link::whereCode($code)->first();
-		return Redirect::to($link->product->url);
+		$url = $link->product->url . '&r=' . $code;
+		return Redirect::to($url);
 	}
 }

@@ -6,7 +6,10 @@ use Config,
     URL,
     Job,
     Input,
-    Product;
+    Product,
+	Campaign,
+	Transaction,
+	Link;
 
 class TradeTrackerController extends \BaseController
 {
@@ -60,5 +63,30 @@ class TradeTrackerController extends \BaseController
 
         $product->save();
     }
+
+	public function conversions()
+	{
+		$client = new \Zend\Soap\Client('http://ws.tradetracker.com/soap/affiliate?wsdl');
+		$client->authenticate(Config::get('services.tradetracker_id'), Config::get('services.tradetracker_key'));
+
+		$transactions = $client->getClickTransactions(48216);
+
+		foreach($transactions as $data) {
+
+			$link = Link::whereCode($data->reference)->first();
+			if(!$link) {
+				continue;
+			}
+
+			Transaction::create(array(
+				'foreign_id' 	=> $data->ID,
+				'link_id' 		=> $link->id,
+				'commission' 	=> $data->commission,
+			));
+
+		}
+
+		var_dump($transactions); exit;
+	}
 
 }

@@ -27,7 +27,10 @@ Route::post('import/tradetracker/product', array(
 	'uses' 	=> 'Import\TradeTrackerController@product',
 	'as' 	=> 'import.tradetracker.product',
 ));
-
+Route::get('import/tradetracker/conversions', array(
+	'uses' 	=> 'Import\TradeTrackerController@conversions',
+	'as' 	=> 'import.tradetracker.conversions',
+));
 
 
 
@@ -51,6 +54,11 @@ Route::get('products/redirect/{code}', array(
 ));
 
 
+Route::model('transaction', 'Transaction');
+Route::get('transactions', array(
+	'uses' 	=> 'TransactionsController@index',
+	'as' 	=> 'transactions',
+));
 
 
 Route::filter('auth', function()
@@ -112,6 +120,7 @@ Route::get('user/logout', array(
 $menu = Menu::handler('main', array('class' => 'nav'));
 $menu->add('', 'Homepage');
 $menu->add('products', 'Products');
+$menu->add('transactions', 'Transactions');
 
 $menuLogin = Menu::handler('login', array('class' => 'nav pull-right'));
 $menuLogin->add(URL::route('user.login'), 'Login');
