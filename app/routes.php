@@ -21,6 +21,8 @@ Route::get('/', 'HomeController@index');
 Route::model('product', 'Product');
 Route::model('transaction', 'Transaction');
 Route::model('advices', 'Advice');
+Route::model('link', 'Link');
+Route::model('user', 'User');
 
 
 
@@ -154,6 +156,22 @@ Route::group(array('before' => 'auth'), function()
 	Route::post('advices/add-link', array(
 		'uses' => 'AdvicesController@addLink',
 		'as' => 'advices.link.add',
+	));
+	Route::get('advices/remove-link/{Link}', array(
+		'uses' => 'AdvicesController@removeLink',
+		'as' => 'advices.link.remove',
+	));
+	Route::get('advices/add-recipient/{advices}', array(
+		'uses' => 'AdvicesController@addRecipient',
+		'as' => 'advices.recipient.add',
+	));
+	Route::post('advices/add-recipient/{advices}', array(
+		'uses' => 'AdvicesController@storeRecipient',
+		'as' => 'advices.recipient.store',
+	));
+	Route::get('advices/remove-recipient/{user}', array(
+		'uses' => 'AdvicesController@removeRecipient',
+		'as' => 'advices.recipient.remove',
 	));
 
 });

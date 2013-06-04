@@ -40,6 +40,54 @@ class AdvicesController extends BaseController
 		var_dump('update'); exit;
 	}
 
+	public function addRecipient(Advice $advice)
+	{
+		return View::make('advices.recipient', compact('advice'));
+	}
+
+	public function storeRecipient(Advice $advice)
+	{
+		try {
+
+			$validator = Validator::make(Input::all(), array(
+				'email' => 'required|email',
+			));
+
+			if($validator->fails()) {
+				return Redirect::route('advices.recipient.add', $advice->id)->withErrors($validator->errors());
+			}
+
+			$user = User::whereEmail(Input::get('email'))->first();
+			if(!$user) {
+				$user = new User();
+				$user->email = Input::get('email');
+				$user->save();
+			}
+
+			$adviceUser = new AdviceUser();
+			$adviceUser->user_id = $user->id;
+			$adviceUser->advice_id = $advice->id;
+			$adviceUser->save();
+		}
+		catch(Exception $e) {
+		}
+
+		return Redirect::route('advices.show', $advice->id)->with('success', 'Friend added to advice');
+	}
+
+	public function removeRecipient(User $user)
+	{
+		$adviceUser = AdviceUser::whereUserId($user->id)->first();
+		if(!$adviceUser) {
+			return Redirect::route('advices.index')->with('error', 'User does nog belong to any advice');
+		}
+
+		$advice = $adviceUser->advice;
+		$adviceUser->delete();
+
+		return Redirect::route('advices.show', $advice->id)->with('success', 'Recipient removed');
+	}
+
 	public function addLink()
 	{
 		if(!Input::get('advice')) {
@@ -47,7 +95,6 @@ class AdvicesController extends BaseController
 		}
 
 		try {
-			$error = null;
 			$adviceLink = new AdviceLink();
 			$adviceLink->link_id = Input::get('link');
 			$adviceLink->advice_id = Input::get('advice');
@@ -59,8 +106,16 @@ class AdvicesController extends BaseController
 		return Redirect::route('advices.show', Input::get('advice'))->with('success', 'Link added to advice');
 	}
 
-	public function removeLink()
+	public function removeLink(Link $link)
 	{
+		$adviceLink = AdviceLink::whereLinkId($link->id)->first();
+		if(!$adviceLink) {
+			return Redirect::route('advices.index')->with('error', 'Link does nog belong to any advice');
+		}
 
+		$advice = $adviceLink->advice;
+		$adviceLink->delete();
+
+		return Redirect::route('advices.show', $advice->id)->with('success', 'Link removed');
 	}
 }
