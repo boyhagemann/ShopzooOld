@@ -49,8 +49,18 @@ My advice
 
 <hr>
 
+@if($advice->links->count() AND $advice->to->count())
+
+<h3>You are ready</h3>
+<p>
+    This is your moment. 
+    The whole world depends on this one little push of a button.
+    Enlighten your friends with your recommended product.
+    You will feel much better if you pressed it, honestly.
+</p>
 <div class="btn-group clearfix">
-	<a href="{{ URL::route('advices.send', $advice->id) }}" class="btn btn-primary">Send the advice to your friends</a>
+    <a href="{{ URL::route('advices.send', $advice->id) }}" class="btn btn-primary btn-large">Send it</a>
 </div>
+@endif
 
 @stop

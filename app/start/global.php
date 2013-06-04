@@ -221,6 +221,11 @@ Form::macro('multiOptionsFromModel', function($model, Array $options = array()) 
 	}
 
 	$multiOptions = array();
+                
+	if(isset($options['emptyValue'])) {
+		$multiOptions[''] = $options['emptyValue'];
+	}
+        
 	foreach($q->get() as $record) {
 		$multiOptions[$record->{$options['keyField']}] = $record->{$options['valueField']};
 	}

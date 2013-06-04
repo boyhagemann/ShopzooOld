@@ -15,7 +15,7 @@ Edit advice
 	{{ Form::twTextArea('Body', 'body') }}
 
 	{{ Form::twBtnGroup(array(
-		Form::submit('Save')
+		Form::submit('Save', array('class' => 'btn btn-primary'))
 	)) }}
 
 {{ Form::close() }}

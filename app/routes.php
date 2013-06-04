@@ -152,8 +152,12 @@ Route::group(array('before' => 'auth'), function()
 	/**
 	 * Advices
 	 */
-	Route::resource('advices', 'AdvicesController');
-	Route::post('advices/add-link', array(
+	Route::resource('advices', 'AdvicesController', array('only' => array('store', 'show', 'edit', 'index')));
+	Route::get('advices/create/{link?}', array(
+		'uses' => 'AdvicesController@create',
+		'as' => 'advices.create',
+	));
+	Route::post('advices/add-link/{link}', array(
 		'uses' => 'AdvicesController@addLink',
 		'as' => 'advices.link.add',
 	));
