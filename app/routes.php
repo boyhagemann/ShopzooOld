@@ -13,12 +13,27 @@
 
 Route::get('/', 'HomeController@index');
 
+
+
+/**
+ * Models
+ */
+Route::model('product', 'Product');
+Route::model('transaction', 'Transaction');
+
+
+
+/**
+ * Jobs
+ */
 Route::get('jobs/run', array(
 	'uses' 	=> 'JobsController@run',
 	'as' 	=> 'jobs.run',
 ));
 
-
+/**
+ * Imports
+ */
 Route::get('import/tradetracker/feed/{campaignId}', array(
 	'uses' 	=> 'Import\TradeTrackerController@feed',
 	'as' 	=> 'import.tradetracker.feed',
@@ -33,8 +48,9 @@ Route::get('import/tradetracker/conversions', array(
 ));
 
 
-
-Route::model('product', 'Product');
+/**
+ * Products
+ */
 Route::get('products/{slug?}', array(
 	'uses' 	=> 'ProductsController@index',
 	'as' 	=> 'products',
@@ -43,53 +59,15 @@ Route::post('products', array(
 	'uses' 	=> 'ProductsController@search',
 	'as' 	=> 'products.search',
 ));
-
-Route::get('products/show/{product}', array(
-	'uses' 	=> 'ProductsController@show',
-	'as'	=> 'products.show',
-));
 Route::get('products/redirect/{code}', array(
 	'uses' 	=> 'ProductsController@redirect',
 	'as'	=> 'products.redirect',
 ));
 
 
-Route::model('transaction', 'Transaction');
-Route::get('transactions', array(
-	'uses' 	=> 'TransactionsController@index',
-	'as' 	=> 'transactions',
-));
-
-
-Route::filter('auth', function()
-{
-	if (!Sentry::check()) return Redirect::to('users/login');
-});
-
-
-Route::filter('admin_auth', function()
-{
-	if (!Sentry::check())
-	{
-		// if not logged in, redirect to login
-		return Redirect::to('users/login');
-	}
-
-
-	if (!Sentry::getUser()->hasAccess('admin'))
-	{
-		// has no access
-		return Response::make('Access Forbidden', '403');
-	}
-});
-
-
-Route::controller('users', 'UserController');
-
-Route::get('user/dashboard', array(
-	'uses' 	=> 'UserController@dashboard',
-	'as'	=> 'user.dashboard'
-));
+/**
+ * Users
+ */
 Route::get('user/login', array(
 	'uses' 	=> 'UserController@login',
 	'as'	=> 'user.login'
@@ -106,38 +84,109 @@ Route::post('user/store', array(
 	'uses' 	=> 'UserController@store',
 	'as'	=> 'user.store'
 ));
-Route::get('user/logout', array(
-	'uses' 	=> 'UserController@logout',
-	'as'	=> 'user.logout'
-));
+
+
+
+
+/**
+ * Filters
+ */
+Route::filter('auth', function()
+{
+	if (!Sentry::check())
+	{
+		// if not logged in, redirect to login
+		return Redirect::route('user.login');
+	}
+});
+Route::filter('admin_auth', function()
+{
+	if (!Sentry::check())
+	{
+		// if not logged in, redirect to login
+		return Redirect::route('user.login');
+	}
+
+	if (!Sentry::getUser()->hasAccess('admin'))
+	{
+		// has no access
+		return Response::make('Access Forbidden', '403');
+	}
+});
 
 
 
 
 
+Route::group(array('before' => 'auth'), function()
+{
+	/**
+	 * Users
+	 */
+	Route::get('user/dashboard', array(
+		'uses' 	=> 'UserController@dashboard',
+		'as'	=> 'user.dashboard'
+	));
+	Route::get('user/logout', array(
+		'uses' 	=> 'UserController@logout',
+		'as'	=> 'user.logout'
+	));
+
+	/**
+	 * Products
+	 */
+	Route::get('products/show/{product}', array(
+		'uses' 	=> 'ProductsController@show',
+		'as'	=> 'products.show',
+	));
+
+	/**
+	 * Transactions
+	 */
+	Route::get('transactions', array(
+		'uses' 	=> 'TransactionsController@index',
+		'as' 	=> 'transactions',
+	));
+
+	/**
+	 * Advices
+	 */
+	Route::get('advices', array(
+		'uses' 	=> 'AdvicesController@index',
+		'as' 	=> 'advices',
+	));
+
+});
 
 
+/**
+ * Menu
+ */
 $menu = Menu::handler('main', array('class' => 'nav'));
 $menu->add('', 'Homepage');
 $menu->add('products', 'Products');
-$menu->add('transactions', 'Transactions');
 
-$menuLogin = Menu::handler('login', array('class' => 'nav pull-right'));
-$menuLogin->add(URL::route('user.login'), 'Login');
-$menuLogin->add(URL::route('user.register'), 'Register');
+if(Sentry::check()) {
 
-$menuUser = Menu::handler('user', array('class' => 'nav pull-right'));
-$menuUser->add(URL::route('user.logout'), 'Log out');
+	$menu->add('transactions', 'Transactions');
+	$menu->add('advices', 'Advices');
+
+	$menuUser = Menu::handler('user', array('class' => 'nav pull-right'));
+	$menuUser->add(URL::route('user.logout'), 'Log out');
+}
+else {
+
+	$menuUser = Menu::handler('user', array('class' => 'nav pull-right'));
+	$menuUser->add(URL::route('user.login'), 'Login');
+	$menuUser->add(URL::route('user.register'), 'Register');
+}
 
 
-
-
+/**
+ * Resources
+ */
 Route::resource('groups', 'GroupController');
-
 Route::resource('campaigns', 'CampaignsController');
-
 Route::resource('jobs', 'JobsController');
-
 Route::resource('admin.products', 'Admin\ProductsController');
-
 Route::resource('feeds', 'FeedsController');

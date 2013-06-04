@@ -43,13 +43,7 @@
 
 					<div class="nav-collapse collapse">
 						{{ Menu::handler('main') }}
-
-
-                                                @if (Sentry::check())
-													{{ Menu::handler('user') }}
-                                                @else
-                                                    {{ Menu::handler('login') }}
-                                                @endif
+						{{ Menu::handler('user') }}
 					</div>
 					<!-- ./ nav-collapse -->
 				</div>

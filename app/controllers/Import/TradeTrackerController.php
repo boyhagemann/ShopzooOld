@@ -85,8 +85,6 @@ class TradeTrackerController extends \BaseController
 			));
 
 		}
-
-		var_dump($transactions); exit;
 	}
 
 }
