@@ -42,13 +42,13 @@ class AdvicesController extends BaseController
 		}
 
 		try {
+			$error = null;
 			$adviceLink = new AdviceLink();
 			$adviceLink->link_id = Input::get('link');
 			$adviceLink->advice_id = Input::get('advice');
 			$adviceLink->save();
 		}
 		catch(Exception $e) {
-
 		}
 
 		return Redirect::route('advices.edit', Input::get('advice'))->with('success', 'Link added to advice');

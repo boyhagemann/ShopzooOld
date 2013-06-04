@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\wamp\www\shopzoo\app\database\migrations\2013_05_24_121648_create_advice_links_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2013_05_24_121648_create_advice_link_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Advice.php" afterPath="$PROJECT_DIR$/app/models/Advice.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/AdviceLink.php" afterPath="$PROJECT_DIR$/app/models/AdviceLink.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/AdvicesController.php" afterPath="$PROJECT_DIR$/app/controllers/AdvicesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ProductsController.php" afterPath="$PROJECT_DIR$/app/controllers/ProductsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/start/global.php" afterPath="$PROJECT_DIR$/app/start/global.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/advices/index.blade.php" afterPath="$PROJECT_DIR$/app/views/advices/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/show.blade.php" afterPath="$PROJECT_DIR$/app/views/products/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopzoo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,7 +46,7 @@
     <file path="/2013_05_24_121648_create_advice_links_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370336493927" ignored="false" />
     <file path="/Advice.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370336866417" ignored="false" />
     <file path="/2013_05_24_121648_create_advice_recipients_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370336932890" ignored="false" />
-    <file path="/AdvicesController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370340362451" ignored="false" />
+    <file path="/AdvicesController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370341219270" ignored="false" />
     <file path="/AdvicesTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370338891590" ignored="false" />
     <file path="/AdviceLink.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370339820367" ignored="false" />
     <file path="/edit.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370340777774" ignored="false" />
@@ -86,19 +78,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductsController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
+      <file leaf-file-name="AdviceLink.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/AdviceLink.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="15" selection-start="548" selection-end="548" vertical-scroll-proportion="-12.384615">
+            <state line="6" column="35" selection-start="146" selection-end="146" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Redirector.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php">
+      <file leaf-file-name="AdvicesController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/AdvicesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="7" selection-start="3881" selection-end="3881" vertical-scroll-proportion="-51.666668">
+            <state line="53" column="109" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.7597173">
               <folding />
             </state>
           </provider>
@@ -113,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2013_05_24_121648_create_advice_link_table.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="2013_05_24_121648_create_advice_link_table.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_05_24_121648_create_advice_link_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="19" selection-start="206" selection-end="206" vertical-scroll-proportion="0.18021202">
+            <state line="14" column="25" selection-start="271" selection-end="271" vertical-scroll-proportion="-8.5">
               <folding />
             </state>
           </provider>
@@ -166,14 +158,14 @@
         <option value="$PROJECT_DIR$/app/database/seeds/AdvicesTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/views/advices/index.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/ProductsController.php" />
-        <option value="$PROJECT_DIR$/app/models/AdviceLink.php" />
         <option value="$PROJECT_DIR$/app/views/products/show.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/controllers/AdvicesController.php" />
         <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/app/views/advices/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/models/Advice.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2013_05_24_121648_create_advice_links_table.php" />
+        <option value="$PROJECT_DIR$/app/models/AdviceLink.php" />
+        <option value="$PROJECT_DIR$/app/controllers/AdvicesController.php" />
       </list>
     </option>
   </component>
@@ -243,6 +235,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopzoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopzoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -261,69 +267,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="advices" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,14 +349,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30522946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30522946" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -496,13 +440,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="568" column="22" selection-start="13913" selection-end="13919" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-9.551237">
@@ -524,37 +461,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="15" selection-start="548" selection-end="548" vertical-scroll-proportion="-12.384615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/AdviceLink.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="37" selection-start="241" selection-end="241" vertical-scroll-proportion="0.24637681">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../boyhagemann/cmsdev/workbench/boyhagemann/pages/src/views/blocks/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="28" selection-start="0" selection-end="858" vertical-scroll-proportion="0.22584541">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AdvicesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="61" selection-start="521" selection-end="521" vertical-scroll-proportion="0.2591284">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="7" selection-start="3881" selection-end="3881" vertical-scroll-proportion="-51.666668">
           <folding />
         </state>
       </provider>
@@ -595,6 +504,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="7" selection-start="3881" selection-end="3881" vertical-scroll-proportion="3.1978154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Job.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_05_24_121648_create_advice_link_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="271" selection-end="271" vertical-scroll-proportion="-8.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="15" selection-start="548" selection-end="548" vertical-scroll-proportion="0.37926972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="21" selection-start="557" selection-end="557" vertical-scroll-proportion="-8.5">
@@ -609,9 +546,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_05_24_121648_create_advice_link_table.php">
+    <entry file="file://$PROJECT_DIR$/app/models/AdviceLink.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="206" selection-end="206" vertical-scroll-proportion="0.18021202">
+        <state line="6" column="35" selection-start="146" selection-end="146" vertical-scroll-proportion="-3.9230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AdvicesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="109" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.7597173">
           <folding />
         </state>
       </provider>
