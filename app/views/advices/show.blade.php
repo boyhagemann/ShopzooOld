@@ -15,6 +15,9 @@ My advice
 
 <h1>{{ $advice->subject }}</h1>
 <p>{{ $advice->body }}</p>
+<p><a href="{{ URL::route('advices.edit', $advice->id) }}" class="btn">Edit the message</a></p>
+
+<hr>
 
 <h3>Recipients</h3>
 @if($advice->to->count())
@@ -28,6 +31,8 @@ My advice
 <p>No friends added yet</p>
 <p><a href="{{ URL::route('advices.recipient.add', $advice->id) }}" class="btn">Add one or more friends</a></p>
 @endif
+
+<hr>
 
 <h3>Links</h3>
 @if($advice->links->count())

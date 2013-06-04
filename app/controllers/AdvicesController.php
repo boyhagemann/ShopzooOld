@@ -16,13 +16,23 @@ class AdvicesController extends BaseController
 
 	public function create()
 	{
-		var_dump('create'); exit;
-
+		return View::make('advices.create');
 	}
 
 	public function store()
 	{
-		var_dump('store'); exit;
+		$validator = Validator::make(Input::all(), Advice::$rules);
+
+		if($validator->fails()) {
+			return Redirect::route('advices.recipient.add')->withErrors($validator->errors());
+		}
+
+		$advice = new Advice();
+		$advice->subject 	= Input::get('subject');
+		$advice->body 		= Input::get('body');
+		$advice->save();
+
+		return Redirect::route('advices.show', $advice->id)->with('success', 'Advice created');
 	}
 
 	public function show(Advice $advice)
@@ -37,7 +47,17 @@ class AdvicesController extends BaseController
 
 	public function update(Advice $advice)
 	{
-		var_dump('update'); exit;
+		$validator = Validator::make(Input::all(), Advice::$rules);
+
+		if($validator->fails()) {
+			return Redirect::route('advices.recipient.edit', $advice->id)->withErrors($validator->errors());
+		}
+
+		$advice->subject = Input::get('subject');
+		$advice->body = Input::get('body');
+		$advice->save();
+
+		return Redirect::route('advices.show', $advice->id)->with('succes', 'Advice updated');
 	}
 
 	public function addRecipient(Advice $advice)
@@ -125,7 +145,7 @@ class AdvicesController extends BaseController
 	 */
 	public function send(Advice $advice)
 	{
-		foreach($advice->to() as $user) {
+		foreach($advice->to as $user) {
 			$this->sendOne($advice, $user);
 		}
 

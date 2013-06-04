@@ -2,14 +2,14 @@
 
 {{-- Web site Title --}}
 @section('title')
-Edit advice
+Add advice
 @stop
 
 @section('content')
 
-<h1>Edit advice</h1>
+<h1>Add a new advice</h1>
 
-{{ Form::model($advice, array('method' => 'PATCH', 'route' => array('advices.update', $advice->id))) }}
+{{ Form::open( array('route' => 'advices.store')) }}
 
 	{{ Form::twText('Subject', 'subject') }}
 	{{ Form::twTextArea('Body', 'body') }}

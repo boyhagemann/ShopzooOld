@@ -2,7 +2,10 @@
 
 class Advice extends Eloquent {
     protected $guarded = array();
-    public static $rules = array();
+    public static $rules = array(
+		'subject' 	=> 'required',
+		'body' 		=> 'required',
+	);
 
 	public function from()
 	{
