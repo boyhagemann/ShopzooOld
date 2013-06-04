@@ -11,6 +11,8 @@ Products
 
 @include('products.searchform')
 
+<hr>
+
 @if($products->count())
 
 @if($terms)
@@ -18,9 +20,14 @@ Products
 @endif
 
 @foreach($products as $product)
-<div class="row">
-    <h3><a href="{{ URL::route('products.show', $product->id) }}">{{ $product->title }}</a></h3>
-    <p>{{ $product->price }}</p>
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" data-src="{{ URL::asset('js/holder.js/150x150') }}">
+    </a>
+    <div class="media-body">
+        <h3 class="media-heading"><a href="{{ URL::route('products.show', $product->id) }}">{{ $product->title }}</a></h3>
+        <p>{{ $product->price }}</p>
+    </div>
 </div>
 @endforeach
 

@@ -27,7 +27,9 @@ My advices
 <h2>No advices added yet</h2>
 @endif
 
-<p><a href="{{ URL::route('advices.create') }}" class="btn">Add a new advice</a></p>
+<hr>
+
+<p><a href="{{ URL::route('advices.create') }}" class="btn btn-primary">Add a new advice</a></p>
 
 
 @stop

@@ -26,7 +26,7 @@ Add advice
 	{{ Form::hidden('link', $link ? $link->id : '') }}
 
 	{{ Form::twBtnGroup(array(
-		Form::submit('Save it and add some friends!', array('class' => 'btn btn-primary'))
+		Form::submit('Save it!', array('class' => 'btn btn-primary'))
 	)) }}
 
 {{ Form::close() }}

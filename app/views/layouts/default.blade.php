@@ -67,6 +67,7 @@
 		================================================== -->
 		<script src="{{{ URL::asset('js/jquery.v1.8.3.min.js') }}}"></script>
 		<script src="{{{ URL::asset('js/bootstrap/bootstrap.min.js') }}}"></script>
+		<script src="{{{ URL::asset('js/holder.js') }}}"></script>
 	</body>
 </html>
 

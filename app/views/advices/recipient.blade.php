@@ -14,7 +14,7 @@ Edit advice
 	{{ Form::twText('E-mail', 'email') }}
 
 	{{ Form::twBtnGroup(array(
-		Form::submit('Save')
+		Form::submit('Add your friend', array('class' => 'btn btn-primary'))
 	)) }}
 
 {{ Form::close() }}

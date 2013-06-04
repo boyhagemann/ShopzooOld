@@ -40,7 +40,7 @@ class AdvicesController extends BaseController
             $adviceLink->save();
         }
         
-        return Redirect::route('advices.show', $advice->id)->with('success', 'Advice created');
+        return Redirect::route('advices.recipient.add', $advice->id)->with('success', 'Advice created, now add a friend to send it to!');
     }
 
     public function show(Advice $advice)

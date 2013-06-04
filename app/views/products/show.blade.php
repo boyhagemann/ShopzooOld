@@ -8,10 +8,17 @@
 @section('content')
 
 <h1>{{ $product->title }}</h1>
-<p>{{ $product->description }}</p>
-<p>
-	<a href="{{ URL::route('products.redirect', $link->code) }}" class="btn" target="_blank">Go to the webpage</a>
-</p>
+<div class="media">
+    <a class="pull-left" href="#">
+        <img class="media-object" data-src="{{ URL::asset('js/holder.js/240x240') }}">
+    </a>
+    <div class="media-body">
+        <p>{{ $product->description }}</p>     
+        <p>
+            <a href="{{ URL::route('products.redirect', $link->code) }}" class="btn" target="_blank"><i class="icon-globe"></i> Go to the webpage</a>
+        </p>   
+    </div>
+</div>
 
 <hr>
 
