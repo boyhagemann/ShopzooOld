@@ -20,6 +20,9 @@ Edit advice
 
 {{ Form::close() }}
 
+<h2>Recipients</h2>
+
+
 <h2>Links</h2>
 
 @foreach($advice->links as $link)

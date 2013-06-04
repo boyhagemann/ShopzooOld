@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateAdviceRecipientsTable extends Migration {
+class CreateAdviceUserTable extends Migration {
 
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateAdviceRecipientsTable extends Migration {
      */
     public function up()
     {
-        Schema::create('advice_recipients', function(Blueprint $table) {
+        Schema::create('advice_user', function(Blueprint $table) {
             $table->increments('id');
 			$table->integer('advice_id');
 			$table->integer('user_id');
@@ -29,7 +29,7 @@ class CreateAdviceRecipientsTable extends Migration {
      */
     public function down()
     {
-        Schema::drop('advice_recipients');
+        Schema::drop('advice_user');
     }
 
 }

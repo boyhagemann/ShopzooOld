@@ -25,12 +25,17 @@ class AdvicesController extends BaseController
 		var_dump('store'); exit;
 	}
 
+	public function show(Advice $advice)
+	{
+		return View::make('advices.show', compact('advice'));
+	}
+
 	public function edit(Advice $advice)
 	{
 		return View::make('advices.edit', compact('advice'));
 	}
 
-	public function update($id)
+	public function update(Advice $advice)
 	{
 		var_dump('update'); exit;
 	}
@@ -51,7 +56,7 @@ class AdvicesController extends BaseController
 		catch(Exception $e) {
 		}
 
-		return Redirect::route('advices.edit', Input::get('advice'))->with('success', 'Link added to advice');
+		return Redirect::route('advices.show', Input::get('advice'))->with('success', 'Link added to advice');
 	}
 
 	public function removeLink()

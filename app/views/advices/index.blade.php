@@ -13,7 +13,7 @@ My advices
 
 @foreach($advices as $advice)
 <div class="row">
-    <h4>{{ $advice->subject }}</h4>
+    <h4><a href="{{ URL::route('advices.show', $advice->id) }}">{{ $advice->subject }}</a></h4>
     <p>{{ $advice->body }}</p>
 </div>
 @endforeach
