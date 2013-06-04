@@ -16,6 +16,6 @@ class Advice extends Eloquent {
 
 	public function links()
 	{
-		return $this->hasMany('Link');
+		return $this->belongsToMany('Link');
 	}
 }

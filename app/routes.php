@@ -20,6 +20,7 @@ Route::get('/', 'HomeController@index');
  */
 Route::model('product', 'Product');
 Route::model('transaction', 'Transaction');
+Route::model('advices', 'Advice');
 
 
 
@@ -86,8 +87,6 @@ Route::post('user/store', array(
 ));
 
 
-
-
 /**
  * Filters
  */
@@ -151,9 +150,10 @@ Route::group(array('before' => 'auth'), function()
 	/**
 	 * Advices
 	 */
-	Route::get('advices', array(
-		'uses' 	=> 'AdvicesController@index',
-		'as' 	=> 'advices',
+	Route::resource('advices', 'AdvicesController');
+	Route::post('advices/add-link', array(
+		'uses' => 'AdvicesController@addLink',
+		'as' => 'advices.link.add',
 	));
 
 });

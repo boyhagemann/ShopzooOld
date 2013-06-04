@@ -102,6 +102,23 @@ Form::macro('twText', function($label, $name, $default = null, $attributes = arr
     return $html;
 });
 
+Form::macro('twTextArea', function($label, $name, $default = null, $attributes = array()) {
+
+	$mask = '<div class="control-group">
+        <div class="controls">
+                %s
+                %s
+            </div>
+    </div>
+    ';
+
+	$label = Form::label($label, $name);
+	$input = Form::textarea($name, $default, $attributes);
+	$html = sprintf($mask, $label, $input);
+
+	return $html;
+});
+
 
 Form::macro('twPassword', function($label, $name, $attributes = array()) {
    
@@ -133,4 +150,80 @@ Form::macro('twBtnGroup', function($elements) {
     $html = sprintf($mask, $input);
     
     return $html;
+});
+
+
+
+
+
+
+
+Form::macro('modelSelect', function($name, $model, Array $options = array()) {
+	return Form::select($name, Form::multiOptionsFromModel($model, $options));
+});
+
+Form::macro('modelCheckbox', function($name, $model, Array $options = array()) {
+	return Form::multiCheckbox($name, Form::multiOptionsFromModel($model, $options));
+});
+
+Form::macro('modelRadio', function($name, $model, Array $options = array()) {
+	return Form::multiRadio($name, Form::multiOptionsFromModel($model, $options));
+});
+
+Form::macro('multiCheckbox', function($name, $multiOptions) {
+
+	$inputs = array();
+	foreach($multiOptions as $key => $value) {
+		$inputName = sprintf('%s[%s]', $name, $key);
+		$inputs[] =
+			Form::checkbox($name, $key, null, array(
+				'id' => $inputName,
+			)) .
+			Form::label($inputName, $value);
+	}
+	return implode('<br>', $inputs);
+});
+
+Form::macro('multiRadio', function($name, $multiOptions) {
+
+	$inputs = array();
+	foreach($multiOptions as $key => $value) {
+		$inputName = sprintf('%s_%s', $name, $key);
+		$inputs[] =
+			Form::radio($name, $key, null, array(
+				'id' => $inputName,
+			)) .
+			Form::label($inputName, $value);
+	}
+	return implode('<br>', $inputs);
+});
+
+Form::macro('multiOptionsFromModel', function($model, Array $options = array()) {
+
+	if(is_string($model)) {
+		$model = App::make($model);
+	}
+
+	if(!isset($options['keyField'])) {
+		$options['keyField'] = 'id';
+	}
+
+	if(!isset($options['valueField'])) {
+		$options['valueField'] = 'title';
+	}
+
+	$q = $model->newQuery();
+
+	// Allow for altering the select query by passing a closure in the
+	// options array
+	if(isset($options['query']) && is_callable($options['query'])) {
+		call_user_func($options['query'], $q);
+	}
+
+	$multiOptions = array();
+	foreach($q->get() as $record) {
+		$multiOptions[$record->{$options['keyField']}] = $record->{$options['valueField']};
+	}
+
+	return $multiOptions;
 });

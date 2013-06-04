@@ -13,4 +13,49 @@ class AdvicesController extends BaseController
         
         return View::make('advices.index', compact('advices'));
     }
+
+	public function create()
+	{
+		var_dump('create'); exit;
+
+	}
+
+	public function store()
+	{
+		var_dump('store'); exit;
+	}
+
+	public function edit(Advice $advice)
+	{
+		return View::make('advices.edit', compact('advice'));
+	}
+
+	public function update($id)
+	{
+		var_dump('update'); exit;
+	}
+
+	public function addLink()
+	{
+		if(!Input::get('advice')) {
+			return Redirect::route('advices.create');
+		}
+
+		try {
+			$adviceLink = new AdviceLink();
+			$adviceLink->link_id = Input::get('link');
+			$adviceLink->advice_id = Input::get('advice');
+			$adviceLink->save();
+		}
+		catch(Exception $e) {
+
+		}
+
+		return Redirect::route('advices.edit', Input::get('advice'))->with('success', 'Link added to advice');
+	}
+
+	public function removeLink()
+	{
+
+	}
 }
