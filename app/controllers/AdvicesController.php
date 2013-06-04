@@ -118,4 +118,30 @@ class AdvicesController extends BaseController
 
 		return Redirect::route('advices.show', $advice->id)->with('success', 'Link removed');
 	}
+
+	/**
+	 * @param Advice $advice
+	 * @return Response
+	 */
+	public function send(Advice $advice)
+	{
+		foreach($advice->to() as $user) {
+			$this->sendOne($advice, $user);
+		}
+
+		return Redirect::route('advices.show', $advice->id)->with('success', 'Advice is sent');
+	}
+
+	/**
+	 * @param Advice $advice
+	 * @param User   $user
+	 */
+	public function sendOne(Advice $advice, User $user)
+	{
+		Mail::send('emails.advice', compact('advice', 'user'), function($message) use($user, $advice) {
+
+			$message->to($user->email);
+			$message->subject($advice->subject);
+		});
+	}
 }

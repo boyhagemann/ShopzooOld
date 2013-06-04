@@ -45,7 +45,7 @@ My advice
 <hr>
 
 <div class="btn-group clearfix">
-	<a href="" class="btn btn-primary">Send the advice to your friends</a>
+	<a href="{{ URL::route('advices.send', $advice->id) }}" class="btn btn-primary">Send the advice to your friends</a>
 </div>
 
 @stop

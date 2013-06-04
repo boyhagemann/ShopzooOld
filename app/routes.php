@@ -173,6 +173,10 @@ Route::group(array('before' => 'auth'), function()
 		'uses' => 'AdvicesController@removeRecipient',
 		'as' => 'advices.recipient.remove',
 	));
+	Route::get('advices/{advices}/send', array(
+		'uses' => 'AdvicesController@send',
+		'as' => 'advices.send',
+	));
 
 });
 
