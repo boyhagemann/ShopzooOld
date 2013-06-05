@@ -19,17 +19,22 @@ Products
 <h2>Search results for "{{ $terms }}"</h2>
 @endif
 
-@foreach($products as $product)
-<div class="media">
-    <a class="pull-left" href="#">
-        <img class="media-object" src="{{ URL::route('image.resize', array($product->image, 150, 150)) }}">
-    </a>
-    <div class="media-body">
-        <h3 class="media-heading"><a href="{{ URL::route('products.show', $product->id) }}">{{ $product->title }}</a></h3>
-        <p>{{ $product->price }}</p>
-    </div>
-</div>
-@endforeach
+
+<ul class="thumbnails">
+	@foreach($products as $i => $product)
+	<li class="span3">
+		<div class="thumbnail">
+			<a href="#">
+				<img class="media-object" src="{{ URL::route('image.resize', array($product->image, 260, 200)) }}">
+			</a>
+			<div class="caption">
+				<h3><a href="{{ URL::route('products.show', $product->id) }}">{{ $product->title }}</a></h3>
+				<p>{{ $product->price }}</p>
+			</div>
+		</div>
+	</li>
+	@endforeach
+</ul>
 
 {{ $products->links() }}
 
