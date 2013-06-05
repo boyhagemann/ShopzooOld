@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ImagesController.php" afterPath="$PROJECT_DIR$/app/controllers/ImagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ProductsController.php" afterPath="$PROJECT_DIR$/app/controllers/ProductsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/index.blade.php" afterPath="$PROJECT_DIR$/app/views/products/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopzoo.iws" />
@@ -79,10 +78,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="39" selection-start="306" selection-end="306" vertical-scroll-proportion="-7.8076925">
+            <state line="22" column="6" selection-start="349" selection-end="349" vertical-scroll-proportion="0.44051826">
               <folding />
             </state>
           </provider>
@@ -106,10 +105,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImagesController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ImagesController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="26" selection-start="73" selection-end="79" vertical-scroll-proportion="0.080094226">
+            <state line="4" column="26" selection-start="73" selection-end="79" vertical-scroll-proportion="-2.6153846">
               <folding />
             </state>
           </provider>
@@ -163,10 +162,10 @@
         <option value="$PROJECT_DIR$/app/views/products/show.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/controllers/Import/TradeTrackerController.php" />
-        <option value="$PROJECT_DIR$/app/views/products/index.blade.php" />
         <option value="$PROJECT_DIR$/public/css/screen.css" />
         <option value="$PROJECT_DIR$/app/controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/app/controllers/ImagesController.php" />
+        <option value="$PROJECT_DIR$/app/views/products/index.blade.php" />
       </list>
     </option>
   </component>
@@ -554,13 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="39" selection-start="306" selection-end="306" vertical-scroll-proportion="-7.8076925">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="78" selection-start="331" selection-end="331" vertical-scroll-proportion="-6.769231">
@@ -570,7 +562,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="73" selection-end="79" vertical-scroll-proportion="0.080094226">
+        <state line="4" column="26" selection-start="73" selection-end="79" vertical-scroll-proportion="-2.6153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="6" selection-start="349" selection-end="349" vertical-scroll-proportion="0.44051826">
           <folding />
         </state>
       </provider>

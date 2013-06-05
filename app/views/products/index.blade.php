@@ -7,10 +7,6 @@ Products
 
 @section('content')
 
-<h1>Search a product</h1>
-
-<hr>
-
 @if($products->count())
 
 @if($terms)
