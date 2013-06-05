@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Import/TradeTrackerController.php" afterPath="$PROJECT_DIR$/app/controllers/Import/TradeTrackerController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/index.blade.php" afterPath="$PROJECT_DIR$/app/views/products/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/screen.css" afterPath="$PROJECT_DIR$/public/css/screen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopzoo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +37,7 @@
     <file path="/default.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369658435757" ignored="false" />
     <file path="/2013_05_24_121648_create_links_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370255018439" ignored="false" />
     <file path="/Link.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370256624422" ignored="false" />
-    <file path="/index.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370447826642" ignored="false" />
+    <file path="/index.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370448655912" ignored="false" />
     <file path="/show.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370442394988" ignored="false" />
     <file path="/2013_05_24_121648_create_transactions_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370257863562" ignored="false" />
     <file path="/TransactionsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370258229597" ignored="false" />
@@ -59,7 +59,7 @@
     <file path="/.gitignore" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370430190295" ignored="false" />
     <file path="/Image.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370439959296" ignored="false" />
     <file path="/ImagesController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370443981295" ignored="false" />
-    <file path="/screen.css" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370447670854" ignored="false" />
+    <file path="/screen.css" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370448702202" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,16 +82,16 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="45" selection-start="656" selection-end="656" vertical-scroll-proportion="-18.923077">
+            <state line="19" column="19" selection-start="249" selection-end="249" vertical-scroll-proportion="-6.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="screen.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/screen.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="18" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+            <state line="5" column="20" selection-start="53" selection-end="53" vertical-scroll-proportion="0.09714286">
               <folding />
             </state>
           </provider>
@@ -106,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TradeTrackerController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TradeTrackerController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/Import/TradeTrackerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.24617197">
+            <state line="57" column="56" selection-start="1538" selection-end="1538" vertical-scroll-proportion="-13.269231">
               <folding />
             </state>
           </provider>
@@ -146,9 +146,9 @@
         <option value="$PROJECT_DIR$/app/views/products/show.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/controllers/ImagesController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/Import/TradeTrackerController.php" />
         <option value="$PROJECT_DIR$/app/views/products/index.blade.php" />
         <option value="$PROJECT_DIR$/public/css/screen.css" />
-        <option value="$PROJECT_DIR$/app/controllers/Import/TradeTrackerController.php" />
       </list>
     </option>
   </component>
@@ -492,23 +492,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/Import/TradeTrackerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="56" selection-start="1538" selection-end="1538" vertical-scroll-proportion="-13.269231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="45" selection-start="656" selection-end="656" vertical-scroll-proportion="-18.923077">
+        <state line="19" column="19" selection-start="249" selection-end="249" vertical-scroll-proportion="-6.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Import/TradeTrackerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.24617197">
+        <state line="5" column="20" selection-start="53" selection-end="53" vertical-scroll-proportion="0.09714286">
           <folding />
         </state>
       </provider>

@@ -3,8 +3,12 @@ body {
 }
 
 
+.row.top .pagination {
+	margin-top: 0;
+}
+
 .thumbnails > .span3 .thumbnail {
-	min-height: 350px;
+	height: 300px;
 }
 .thumbnails .thumbnail h3 {
 	font-size: 16px;
