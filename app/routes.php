@@ -161,7 +161,7 @@ Route::group(array('before' => 'auth'), function()
 		'uses' => 'AdvicesController@addLink',
 		'as' => 'advices.link.add',
 	));
-	Route::get('advices/remove-link/{Link}', array(
+	Route::get('advices/remove-link/{link}', array(
 		'uses' => 'AdvicesController@removeLink',
 		'as' => 'advices.link.remove',
 	));
