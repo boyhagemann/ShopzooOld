@@ -189,22 +189,22 @@ Route::group(array('before' => 'auth'), function()
  * Menu
  */
 $menu = Menu::handler('main', array('class' => 'nav'));
-$menu->add('', 'Homepage');
-$menu->add('products', 'Products');
+$menu->add('', '<i class="icon-home"></i> Homepage');
+$menu->add('products', '<i class="icon-globe"></i> Products');
 
 if(Sentry::check()) {
 
-	$menu->add('transactions', 'Transactions');
-	$menu->add('advices', 'Advices');
+	$menu->add('transactions', '<i class="icon-shopping-cart"></i> Transactions');
+	$menu->add('advices', '<i class="icon-envelope"></i> Advices');
 
 	$menuUser = Menu::handler('user', array('class' => 'nav pull-right'));
-	$menuUser->add(URL::route('user.logout'), 'Log out');
+	$menuUser->add(URL::route('user.logout'), '<i class="icon-unlock"></i> Log out');
 }
 else {
 
 	$menuUser = Menu::handler('user', array('class' => 'nav pull-right'));
-	$menuUser->add(URL::route('user.login'), 'Login');
-	$menuUser->add(URL::route('user.register'), 'Register');
+	$menuUser->add(URL::route('user.login'), '<i class="icon-lock"></i> Login');
+	$menuUser->add(URL::route('user.register'), '<i class="icon-user"></i> Register');
 }
 
 
