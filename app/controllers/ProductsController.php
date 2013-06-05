@@ -10,7 +10,7 @@ class ProductsController extends BaseController
     public function index($slug = null)
     {
         $terms = ucfirst(str_replace('-', ' ', $slug));
-        $products = Product::where('title', 'LIKE', "%{$terms}%")->paginate(10);
+        $products = Product::where('title', 'LIKE', "%{$terms}%")->paginate(16);
         
         return View::make('products.index', compact('terms', 'products'));
     }
