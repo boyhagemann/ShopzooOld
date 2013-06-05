@@ -15,7 +15,8 @@
 		"zendframework/zend-soap": "2.*",    
 		"vespakoen/menu": "dev-master",
 		"cartalyst/sentry": "2.*",
-		"joecwallace/artisan": "dev-master"
+		"joecwallace/artisan": "dev-master",
+		"anahkiasen/illuminage": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
@@ -32,7 +33,7 @@
 			"php artisan clear-compiled"
 		],
 		"post-install-cmd": [
-			"php artisan optimize | php artisan app:refresh"
+			"php artisan optimize | php artisan app:install | php artisan app:seed"
 		],
 		"post-update-cmd": [
 			"php artisan optimize"
