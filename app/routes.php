@@ -94,6 +94,15 @@ Route::post('user/store', array(
 
 
 /**
+ * Images
+ */
+Route::get('image/resize/{path}/{width}/{height}', array(
+	'uses' 	=> 'ImagesController@resize',
+	'as'	=> 'image.resize'
+))->where('path', '(.*)');
+
+
+/**
  * Filters
  */
 Route::filter('auth', function()

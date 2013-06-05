@@ -22,7 +22,7 @@ Products
 @foreach($products as $product)
 <div class="media">
     <a class="pull-left" href="#">
-        <img class="media-object" src="{{ Thumb::square($product->image, 300) }}">
+        <img class="media-object" src="{{ URL::route('image.resize', array($product->image, 150, 150)) }}">
     </a>
     <div class="media-body">
         <h3 class="media-heading"><a href="{{ URL::route('products.show', $product->id) }}">{{ $product->title }}</a></h3>

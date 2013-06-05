@@ -16,7 +16,8 @@
 		"vespakoen/menu": "dev-master",
 		"cartalyst/sentry": "2.*",
 		"joecwallace/artisan": "dev-master",
-		"anahkiasen/illuminage": "dev-master"
+		"intervention/imagecache": "dev-master",
+		"intervention/image": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

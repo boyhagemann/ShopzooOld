@@ -118,7 +118,7 @@ return array(
 		'Menu\MenuServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 		'Joecwallace\Artisan\ArtisanWebServiceProvider',
-		'Illuminage\IlluminageServiceProvider',
+		'Intervention\Image\ImageServiceProvider',
 
 	),
 
@@ -187,7 +187,7 @@ return array(
 
 		'Menu'            => 'Menu\Menu',
 		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-		'Thumb'			  => 'Illuminage\Facades\Illuminage',
+		'Image' 		  => 'Intervention\Image\Facades\Image'
 	),
 
 );

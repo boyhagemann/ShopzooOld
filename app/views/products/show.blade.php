@@ -10,7 +10,7 @@
 <h1>{{ $product->title }}</h1>
 <div class="media">
     <a class="pull-left" href="#">
-        <img class="media-object" data-src="{{ URL::asset('js/holder.js/240x240') }}">
+        <img class="media-object" src="{{ URL::route('image.resize', array($product->image, 300, 300)) }}">
     </a>
     <div class="media-body">
         <p>{{ $product->description }}</p>     
