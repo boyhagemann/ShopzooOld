@@ -3,14 +3,19 @@
 		{
 			"type": "composer",
 			"url": "https://packages.zendframework.com/"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/joecwallace/web-artisan"
 		}
 	],
 	"require": {
 		"laravel/framework": "4.0.*",
 		"way/generators": "dev-master",
 		"zendframework/zend-soap": "2.*",    
-                "vespakoen/menu": "dev-master",
-                "cartalyst/sentry": "2.*"
+		"vespakoen/menu": "dev-master",
+		"cartalyst/sentry": "2.*",
+		"joecwallace/artisan": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

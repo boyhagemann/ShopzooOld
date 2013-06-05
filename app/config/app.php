@@ -115,8 +115,9 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		'Way\Generators\GeneratorsServiceProvider',
-                'Menu\MenuServiceProvider',
-                'Cartalyst\Sentry\SentryServiceProvider',
+		'Menu\MenuServiceProvider',
+		'Cartalyst\Sentry\SentryServiceProvider',
+		'Joecwallace\Artisan\ArtisanWebServiceProvider',
 
 	),
 
