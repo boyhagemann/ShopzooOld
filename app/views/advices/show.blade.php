@@ -22,9 +22,9 @@ My advice
 <div class="row">
 
 
-	<div class="span6">
+	<div class="span4">
 
-		<h4><i class="icon-link"></i> Links</h4>
+		<h3><i class="icon-link"></i> Links</h3>
 		<p>
 			Ok, we have our product links.
 			You sure this list is now complete?
@@ -34,11 +34,11 @@ My advice
 		<table class="table table-striped table-condensed">
 			@foreach($advice->links as $link)
 			<tr>
-				<td>
+				<td class="span11">
 					<a href="{{ URL::route('products.show', $link->product->id) }}">{{ $link->product->title }}</a>
 				</td>
-				<td>
-					<a href="{{ URL::route('advices.link.remove', $link->id) }}" class="btn btn-small"><i class="icon-trash"></i> remove</a>
+				<td class="span1">
+					<a href="{{ URL::route('advices.link.remove', $link->id) }}" class="btn btn-small"><i class="icon-trash"></i></a>
 				</td>
 			</tr>
 			@endforeach
@@ -55,9 +55,9 @@ My advice
 
 	</div>
 
-	<div class="span6">
+	<div class="span4">
 
-		<h4><i class="icon-user"></i> Recipients</h4>
+		<h3><i class="icon-user"></i> Recipients</h3>
 		@if($advice->to->count())
 		<p>
 			Excellent, we have someone to mail our product to.
@@ -68,11 +68,11 @@ My advice
 		<table class="table table-striped table-condensed">
 			@foreach($advice->to as $user)
 			<tr>
-				<td>
+				<td class="span11">
 					{{ $user->email }}
 				</td>
-				<td>
-					<a href="{{ URL::route('advices.recipient.remove', $user->id) }}" class="btn btn-small"><i class="icon-trash"></i> remove</a>
+				<td class="span1">
+					<a href="{{ URL::route('advices.recipient.remove', $user->id) }}" class="btn btn-small"><i class="icon-trash"></i></a>
 				</td>
 			</tr>
 			@endforeach
@@ -89,22 +89,27 @@ My advice
 		@endif
 
 	</div>
+
+	<div class="span4">
+
+		@if($advice->links->count() AND $advice->to->count())
+
+		<h3 class="text-success"><i class="icon-thumbs-up"></i> You are ready</h3>
+		<p>
+			This is your moment.
+			The whole world depends on this one little push of a button.
+			Enlighten your friends with your recommended product.
+			You will feel much better if you pressed it, honestly.
+		</p>
+		<div class="btn-group clearfix">
+			<a href="{{ URL::route('advices.send', $advice->id) }}" class="btn btn-primary btn-large"><i class="icon-envelope-alt"></i> &nbsp; Send it</a>
+		</div>
+		@endif
+
+	</div>
 </div>
 
 <hr>
 
-@if($advice->links->count() AND $advice->to->count())
-
-<h3><i class="icon-thumbs-up"></i> You are ready</h3>
-<p>
-    This is your moment. 
-    The whole world depends on this one little push of a button.
-    Enlighten your friends with your recommended product.
-    You will feel much better if you pressed it, honestly.
-</p>
-<div class="btn-group clearfix">
-    <a href="{{ URL::route('advices.send', $advice->id) }}" class="btn btn-primary btn-large"><i class="icon-envelope-alt"></i> &nbsp; Send it</a>
-</div>
-@endif
 
 @stop

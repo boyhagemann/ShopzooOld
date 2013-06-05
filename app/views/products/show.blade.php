@@ -22,7 +22,7 @@
 
 <hr>
 
-<h3>So you want to give your friend some advice right?</h3>
+<h3><i class="icon-envelope"></i> So you want to give your friend some advice right?</h3>
 <p>
     Well, that's what friends are for! 
     Recommend this product and your amigo will be blown away with your kindness.
