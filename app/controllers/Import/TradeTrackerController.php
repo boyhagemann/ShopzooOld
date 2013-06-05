@@ -48,6 +48,11 @@ class TradeTrackerController extends \BaseController
         $campaignId = Input::get('campaign_id');
         $additional = array();
 
+		// No image, no product
+		if(!@fopen($data->imageURL,"r") || !getimagesize($data->imageURL)) {
+			return;
+		}
+
         if (isset($data->additional)) {
             foreach ($data->additional as $info) {
                 $additional[$info->name] = $info->value;

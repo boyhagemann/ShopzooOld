@@ -4,7 +4,7 @@ body {
 
 
 .thumbnails > .span3 .thumbnail {
-	min-height: 400px;
+	min-height: 350px;
 }
 .thumbnails .thumbnail h3 {
 	font-size: 16px;

@@ -29,7 +29,8 @@ Products
 			</a>
 			<div class="caption">
 				<h3><a href="{{ URL::route('products.show', $product->id) }}">{{ $product->title }}</a></h3>
-				<p>{{ $product->price }}</p>
+				<p>{{ $product->decription }}</p>
+				<span class="badge">{{ $product->price }}</span>
 			</div>
 		</div>
 	</li>
