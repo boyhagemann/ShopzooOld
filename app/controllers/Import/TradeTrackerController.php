@@ -13,6 +13,15 @@ use Config,
 
 class TradeTrackerController extends \BaseController
 {
+	public function index()
+	{
+		$client = new \Zend\Soap\Client('http://ws.tradetracker.com/soap/affiliate?wsdl');
+		$client->authenticate(Config::get('services.tradetracker_id'), Config::get('services.tradetracker_key'));
+
+		var_dump($client->getFeeds(48216, array(
+			'assignmentStatus' => 'accepted'
+		))); exit;
+	}
 
     public function feed($campaignId)
     {
@@ -61,7 +70,12 @@ class TradeTrackerController extends \BaseController
         $product->description   = $data->description;
         $product->url           = $data->productURL;
 
-        $product->save();
+		try {
+        	$product->save();
+		}
+		catch(\Exception $e) {
+			print $e->getMessage() . '<br>';
+		}
     }
 
 	public function conversions()

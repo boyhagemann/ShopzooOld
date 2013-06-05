@@ -37,6 +37,10 @@ Route::get('jobs/run', array(
 /**
  * Imports
  */
+Route::get('import/tradetracker', array(
+	'uses' 	=> 'Import\TradeTrackerController@index',
+	'as' 	=> 'import.tradetracker',
+));
 Route::get('import/tradetracker/feed/{campaignId}', array(
 	'uses' 	=> 'Import\TradeTrackerController@feed',
 	'as' 	=> 'import.tradetracker.feed',
