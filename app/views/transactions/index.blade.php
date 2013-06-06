@@ -9,20 +9,30 @@ Transactions
 
 @if($transactions->count())
 
-<h1>Your transactions</h1>
-<p class="quote span3">
-    Yess, you are making real money here!
-    Keep it going and put some more links in the world.
-</p>
-
-@foreach($transactions as $transaction)
 <div class="row">
-    <h4>{{ $transaction->link->product->title }}</h4>
-    <p>{{ $transaction->commission }}</p>
-</div>
-@endforeach
 
-{{ $transactions->links() }}
+	<div class="span8">
+
+		<h1>Your transactions</h1>
+
+		@foreach($transactions as $transaction)
+		<div class="media-object">
+			<h4>{{ $transaction->link->product->title }}</h4>
+			<p>{{ $transaction->commission }}</p>
+		</div>
+		@endforeach
+		{{ $transactions->links() }}
+	</div>
+
+	<div class="span4">
+		<p class="quote">
+			Yess, you are making real money here!
+			Keep it going and put some more links in the world.
+		</p>
+	</div>
+
+</div>
+
 
 @else
 

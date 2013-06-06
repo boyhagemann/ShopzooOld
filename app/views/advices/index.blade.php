@@ -11,16 +11,31 @@ My advices
 
 @if($advices->count())
 
-@foreach($advices as $advice)
-<div class="media">
-	<div class="media-body">
-		<h4><a href="{{ URL::route('advices.show', $advice->id) }}">{{ $advice->subject }}</a></h4>
-		<p>{{ $advice->body }}</p>
-	</div>
-</div>
-@endforeach
+<div class="row">
 
-{{ $advices->links() }}
+	<div class="span8">
+
+		@foreach($advices as $advice)
+		<div class="media">
+			<div class="media-body">
+				<h4><a href="{{ URL::route('advices.show', $advice->id) }}">{{ $advice->subject }}</a></h4>
+				<p>{{ $advice->body }}</p>
+			</div>
+		</div>
+		@endforeach
+		{{ $advices->links() }}
+	</div>
+
+	<div class="span4">
+		<p class="quote">
+			Nice, you have quite the list here!
+			It seems though you're not making any profit yet.
+			Check out these examples on <a href="">how to increase your sales</a>.
+		</p>
+	</div>
+
+</div>
+
 
 @else
 
