@@ -10,7 +10,7 @@ Transactions
 @if($transactions->count())
 
 <h1>Your transactions</h1>
-<p>
+<p class="quote span3">
     Yess, you are making real money here!
     Keep it going and put some more links in the world.
 </p>
