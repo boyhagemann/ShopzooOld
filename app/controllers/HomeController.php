@@ -4,7 +4,8 @@ class HomeController extends BaseController
 {
     public function index()
     {
-        return View::make('home');
+        $questions = Question::all();
+        return View::make('home', compact('questions'));
     }
 
 }

@@ -12,6 +12,10 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('/advisors', function() {
+    return View::make('users/advisors');
+});
+
 
 
 
@@ -23,6 +27,7 @@ Route::model('transaction', 'Transaction');
 Route::model('advices', 'Advice');
 Route::model('link', 'Link');
 Route::model('user', 'User');
+Route::model('questions', 'Question');
 
 
 
@@ -58,14 +63,6 @@ Route::get('import/tradetracker/conversions', array(
 /**
  * Products
  */
-Route::get('products/{slug?}', array(
-	'uses' 	=> 'ProductsController@index',
-	'as' 	=> 'products',
-));
-Route::post('products', array(
-	'uses' 	=> 'ProductsController@search',
-	'as' 	=> 'products.search',
-));
 Route::get('products/redirect/{code}', array(
 	'uses' 	=> 'ProductsController@redirect',
 	'as'	=> 'products.redirect',
@@ -149,6 +146,14 @@ Route::group(array('before' => 'auth'), function()
 	/**
 	 * Products
 	 */
+        Route::get('products/{slug?}', array(
+                'uses' 	=> 'ProductsController@index',
+                'as' 	=> 'products',
+        ));
+        Route::post('products', array(
+                'uses' 	=> 'ProductsController@search',
+                'as' 	=> 'products.search',
+        ));
 	Route::get('products/show/{product}', array(
 		'uses' 	=> 'ProductsController@show',
 		'as'	=> 'products.show',
@@ -203,10 +208,11 @@ Route::group(array('before' => 'auth'), function()
  */
 $menu = Menu::handler('main', array('class' => 'nav'));
 $menu->add('', '<i class="icon-home"></i> Homepage');
-$menu->add('products', '<i class="icon-globe"></i> Products');
+$menu->add('questions', '<i class="icon-globe"></i> Questions');
 
 if(Sentry::check()) {
 
+        $menu->add('products', '<i class="icon-globe"></i> Products');
 	$menu->add('transactions', '<i class="icon-shopping-cart"></i> Transactions');
 	$menu->add('advices', '<i class="icon-envelope"></i> Advices');
 
@@ -229,5 +235,4 @@ Route::resource('campaigns', 'CampaignsController');
 Route::resource('jobs', 'JobsController');
 Route::resource('admin.products', 'Admin\ProductsController');
 Route::resource('feeds', 'FeedsController');
-
 Route::resource('questions', 'QuestionsController');

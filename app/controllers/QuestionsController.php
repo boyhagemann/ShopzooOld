@@ -9,7 +9,8 @@ class QuestionsController extends BaseController {
      */
     public function index()
     {
-        //
+        $questions = Question::all();
+        return View::make('questions.index', compact('questions'));
     }
 
     /**
@@ -19,7 +20,7 @@ class QuestionsController extends BaseController {
      */
     public function create()
     {
-        //
+        return View::make('questions.create');
     }
 
     /**
@@ -29,18 +30,36 @@ class QuestionsController extends BaseController {
      */
     public function store()
     {
-        //
+        if(!Sentry::check() && !Input::get('email')) {
+            return Redirect::route('questions.create')->withErrors(array(
+                'email' => 'E-mail is required',
+            ));
+        }
+        
+        $user = User::findOrCreate(Input::get('email'));
+        
+        $validator = Validator::make(Input::all(), Question::$rules);
+        
+        if($validator->fails()) {
+            return Redirect::route('questions.create')->withErrors($validator->getErrors());
+        }
+        
+        $question = new Question(Input::all());
+        $question->user()->associate($user);
+        $question->save();
+        
+        return Redirect::route('questions.show', $question->id)->with('success', 'Your question is saved!');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  Question $question
      * @return Response
      */
-    public function show($id)
+    public function show(Question $question)
     {
-        //
+        return View::make('questions.show', compact('question'));
     }
 
     /**

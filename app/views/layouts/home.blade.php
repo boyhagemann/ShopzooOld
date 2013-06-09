@@ -58,7 +58,9 @@
 			@yield('hero')                        
                     </div>
 			
-                    @yield('content')
+                    <div class="row">
+                        @yield('content')                        
+                    </div>
                     
 		</div>
 		<!-- ./ container -->
