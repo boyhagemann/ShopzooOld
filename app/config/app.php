@@ -117,8 +117,8 @@ return array(
 		'Way\Generators\GeneratorsServiceProvider',
 		'Menu\MenuServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
-		'Joecwallace\Artisan\ArtisanWebServiceProvider',
-		'Intervention\Image\ImageServiceProvider',
+//		'Joecwallace\Artisan\ArtisanWebServiceProvider',
+//		'Intervention\Image\ImageServiceProvider',
 
 	),
 

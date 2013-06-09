@@ -25,7 +25,7 @@ class AdvicesController extends BaseController
         $validator = Validator::make(Input::all(), Advice::$rules);
 
         if ($validator->fails()) {
-            return Redirect::route('advices.recipient.add')->withErrors($validator->errors());
+            return Redirect::route('advices.create')->withErrors($validator->errors());
         }
         
         $advice = new Advice();

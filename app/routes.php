@@ -229,3 +229,5 @@ Route::resource('campaigns', 'CampaignsController');
 Route::resource('jobs', 'JobsController');
 Route::resource('admin.products', 'Admin\ProductsController');
 Route::resource('feeds', 'FeedsController');
+
+Route::resource('questions', 'QuestionsController');
