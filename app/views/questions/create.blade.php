@@ -7,9 +7,10 @@ Questions
 
 @section('content')
 
-<h1>Ask a question</h1>
-
-@include('questions.form')
+<div class="span6">
+    <h1>Ask a question</h1>
+    @include('questions.form')
+</div>
     
 
 @stop

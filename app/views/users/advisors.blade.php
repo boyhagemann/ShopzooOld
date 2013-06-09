@@ -13,14 +13,20 @@ Home
 @stop
 
 @section('content')
-<h1>The concept is simple</h1>
-<p>
-    We provide you links to webhops. 
-    Normally when you buy a product with that link, we get a share of the transaction.
-    But here's the deal. We pass that share to you! 
-    Well... not the whole share, but 90% of our cut is yours!
-</p>
 
-<h3>It is time to search for some products don't you think?</h3>
-@include('products.searchform')
+<div class="span6">
+    <h1>The concept is simple</h1>
+    <p>
+        We provide you links to webhops. 
+        Normally when you buy a product with that link, we get a share of the transaction.
+        But here's the deal. We pass that share to you! 
+        Well... not the whole share, but 90% of our cut is yours!
+    </p>    
+</div>
+
+<div class="span6">
+    <h2>It is time to search for some products don't you think?</h2>
+    @include('products.searchform')    
+</div>
+
 @stop

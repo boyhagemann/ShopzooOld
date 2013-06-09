@@ -12,9 +12,9 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('/advisors', function() {
+Route::get('/advisors', array('as' => 'user.advisors', function() {
     return View::make('users/advisors');
-});
+}));
 
 
 
