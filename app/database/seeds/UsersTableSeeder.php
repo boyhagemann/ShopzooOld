@@ -18,7 +18,7 @@ class UsersTableSeeder extends Seeder {
 			'email' => 'boy@swis.nl',
 			'password' => Hash::make('testtest'),
 			'activated' => true,
-			'parent' => 1
+			'parent_user_id' => 1
 		));
     }
 

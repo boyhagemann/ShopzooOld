@@ -14,7 +14,7 @@ class ChangeUsersTable extends Migration {
     {
         Schema::table('users', function(Blueprint $table) {
             $table->string('name')->after('email');
-			$table->integer('parent')->after('name');
+			$table->integer('parent_user_id')->after('name');
         });
     }
 
@@ -27,7 +27,7 @@ class ChangeUsersTable extends Migration {
     {
 		Schema::table('users', function(Blueprint $table) {
 			$table->dropColumn('name');
-			$table->dropColumn('parent');
+			$table->dropColumn('parent_user_id');
 		});
     }
 

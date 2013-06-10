@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.php" afterPath="$PROJECT_DIR$/app/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UserController.php" afterPath="$PROJECT_DIR$/app/controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopzoo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370875180253" ignored="false" />
+    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370875908842" ignored="false" />
     <file path="/a.dummy" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370505126814" ignored="false" />
     <file path="/composer.json" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369395506091" ignored="false" />
     <file path="/routes.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370442068118" ignored="false" />
@@ -35,7 +34,7 @@
     <file path="/login.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369657854389" ignored="false" />
     <file path="/dashboard.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369658341878" ignored="false" />
     <file path="/Account.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369656922510" ignored="false" />
-    <file path="/UserController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370875419895" ignored="false" />
+    <file path="/UserController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370876119831" ignored="false" />
     <file path="/default.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370524725917" ignored="false" />
     <file path="/2013_05_24_121648_create_links_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370255018439" ignored="false" />
     <file path="/Link.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370256624422" ignored="false" />
@@ -89,7 +88,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="5" selection-start="853" selection-end="853" vertical-scroll-proportion="0.5795053">
+            <state line="37" column="15" selection-start="847" selection-end="847" vertical-scroll-proportion="0.55948174">
               <folding />
             </state>
           </provider>
@@ -98,7 +97,7 @@
       <file leaf-file-name="Sentry.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/cartalyst/sentry/src/Cartalyst/Sentry/Sentry.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="324" column="49" selection-start="8818" selection-end="8818" vertical-scroll-proportion="-25.5">
+            <state line="324" column="49" selection-start="8818" selection-end="8818" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -107,7 +106,7 @@
       <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="487" selection-end="487" vertical-scroll-proportion="-14.384615">
+            <state line="26" column="40" selection-start="570" selection-end="578" vertical-scroll-proportion="-10.461538">
               <folding />
             </state>
           </provider>
@@ -116,7 +115,7 @@
       <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="48" selection-start="623" selection-end="630" vertical-scroll-proportion="-19.615385">
+            <state line="36" column="54" selection-start="724" selection-end="724" vertical-scroll-proportion="-13.076923">
               <folding />
             </state>
           </provider>
@@ -125,7 +124,16 @@
       <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/packages/cartalyst/sentry/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="20" selection-start="3181" selection-end="3181" vertical-scroll-proportion="-0.65384614">
+            <state line="122" column="20" selection-start="3181" selection-end="3181" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2013_06_09_192607_change_users_table.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="27" selection-start="604" selection-end="635" vertical-scroll-proportion="-17.653847">
               <folding />
             </state>
           </provider>
@@ -162,10 +170,10 @@
         <option value="$PROJECT_DIR$/app/controllers/QuestionsController.php" />
         <option value="$PROJECT_DIR$/app/views/questions/show.blade.php" />
         <option value="$PROJECT_DIR$/app/config/packages/cartalyst/sentry/config.php" />
-        <option value="$PROJECT_DIR$/app/controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php" />
+        <option value="$PROJECT_DIR$/app/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/models/User.php" />
       </list>
     </option>
   </component>
@@ -226,35 +234,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="reference.settings.deploy.options" />
     <property name="JavaScriptLanguageLevel" value="JS_1_5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="JavaScriptPreferStrict" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" createEmptyFolders="true" autoUpload="true">
     <servers>
@@ -327,7 +321,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24172892" sideWeight="0.6714761" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24439701" sideWeight="0.6714761" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -434,23 +428,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/transactions/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="36" selection-start="431" selection-end="439" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="36" selection-start="431" selection-end="439" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/questions/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="44" selection-start="471" selection-end="504" vertical-scroll-proportion="-13.076923">
-          <folding />
-        </state>
+        <state line="20" column="44" selection-start="471" selection-end="504" vertical-scroll-proportion="-13.076923" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/QuestionsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="28" selection-start="853" selection-end="853" vertical-scroll-proportion="0.020023556">
-          <folding />
-        </state>
+        <state line="38" column="28" selection-start="853" selection-end="853" vertical-scroll-proportion="0.020023556" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/screen.css">
@@ -474,51 +462,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+    <entry file="file://$PROJECT_DIR$/app/config/packages/cartalyst/sentry/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="48" selection-start="623" selection-end="630" vertical-scroll-proportion="-19.615385">
+        <state line="122" column="20" selection-start="3181" selection-end="3181" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/cartalyst/sentry/src/Cartalyst/Sentry/Sentry.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="324" column="49" selection-start="8818" selection-end="8818" vertical-scroll-proportion="-25.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="38" selection-start="638" selection-end="638" vertical-scroll-proportion="0.5606596">
+        <state line="324" column="49" selection-start="8818" selection-end="8818" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="1" selection-start="461" selection-end="461" vertical-scroll-proportion="0.48056537">
+        <state line="24" column="1" selection-start="469" selection-end="469" vertical-scroll-proportion="0.48056537">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/cartalyst/sentry/config.php">
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="20" selection-start="3181" selection-end="3181" vertical-scroll-proportion="-0.65384614">
+        <state line="28" column="27" selection-start="604" selection-end="635" vertical-scroll-proportion="-17.653847">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="487" selection-end="487" vertical-scroll-proportion="-14.384615">
+        <state line="26" column="40" selection-start="570" selection-end="578" vertical-scroll-proportion="-10.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="54" selection-start="724" selection-end="724" vertical-scroll-proportion="-13.076923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="5" selection-start="853" selection-end="853" vertical-scroll-proportion="0.5795053">
+        <state line="37" column="15" selection-start="847" selection-end="847" vertical-scroll-proportion="0.55948174">
           <folding />
         </state>
       </provider>

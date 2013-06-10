@@ -29,12 +29,12 @@ class User extends Cartalyst\Sentry\Users\Eloquent\User implements UserInterface
 
 	public function parent()
 	{
-		return $this->belongsTo('User', 'user_id');
+		return $this->belongsTo('User', 'parent_user_id');
 	}
 
 	public function children()
 	{
-		return $this->hasMany('User');
+		return $this->hasMany('User', 'parent_user_id');
 	}
         
 	/**
