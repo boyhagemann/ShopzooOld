@@ -19,6 +19,8 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $hidden = array('password');
 
+	protected $fillable = array('email', 'name');
+
 
 	public function questions()
 	{
@@ -57,18 +59,19 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 
 	/**
 	 * @param string $email
+	 * @param array $data
 	 * @return User
 	 */
-	static public function findOrCreate($email)
+	static public function findOrCreate($email, Array $data = array())
 	{
 		$user = static::whereEmail($email)->first();
 		if($user) {
 			return $user;
 		}
 
-                $user = new static();
-                $user->email = $email;
-                $user->save();
+		$user = new static($data);
+		$user->email = $email;
+		$user->save();
                 
 		return $user;
 	}

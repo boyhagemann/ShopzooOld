@@ -8,7 +8,7 @@
 @section('content')
 
 <h1>{{ $question->subject }}</h1>
-<h4>{{ $question->user->email }}</h4>
+<h4>{{ $question->user->name }}</h4>
 <time>{{ $question->created_at }}</time>
 <p>
     {{ $question->body }}

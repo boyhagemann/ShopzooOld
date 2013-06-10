@@ -36,7 +36,7 @@ class QuestionsController extends BaseController {
             ));
         }
         
-        $user = User::findOrCreate(Input::get('email'));
+        $user = User::findOrCreate(Input::get('email'), Input::all());
         
         $validator = Validator::make(Input::all(), Question::$rules);
         
