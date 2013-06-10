@@ -4,15 +4,22 @@ class UsersTableSeeder extends Seeder {
 
     public function run()
     {
-    	// Uncomment the below to wipe the table clean before populating
     	 DB::table('users')->delete();
 
-        // Uncomment the below to run the seeder
          DB::table('users')->insert(array(
+			'id' => 1,
 			'email' => 'boyhagemann@gmail.com',
 			'password' => Hash::make('testtest'),
 			'activated' => true,
 		 ));
+
+		DB::table('users')->insert(array(
+			'id' => 2,
+			'email' => 'boy@swis.nl',
+			'password' => Hash::make('testtest'),
+			'activated' => true,
+			'parent' => 1
+		));
     }
 
 }

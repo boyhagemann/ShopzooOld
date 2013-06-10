@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/QuestionsController.php" afterPath="$PROJECT_DIR$/app/controllers/QuestionsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/User.php" afterPath="$PROJECT_DIR$/app/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/questions/show.blade.php" afterPath="$PROJECT_DIR$/app/views/questions/show.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UserController.php" afterPath="$PROJECT_DIR$/app/controllers/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopzoo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370861774074" ignored="false" />
+    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370875180253" ignored="false" />
     <file path="/a.dummy" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370505126814" ignored="false" />
     <file path="/composer.json" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369395506091" ignored="false" />
     <file path="/routes.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370442068118" ignored="false" />
@@ -34,7 +35,7 @@
     <file path="/login.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369657854389" ignored="false" />
     <file path="/dashboard.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369658341878" ignored="false" />
     <file path="/Account.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369656922510" ignored="false" />
-    <file path="/UserController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369658236788" ignored="false" />
+    <file path="/UserController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370875419895" ignored="false" />
     <file path="/default.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370524725917" ignored="false" />
     <file path="/2013_05_24_121648_create_links_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370255018439" ignored="false" />
     <file path="/Link.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370256624422" ignored="false" />
@@ -63,9 +64,9 @@
     <file path="/screen.css" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370526785893" ignored="false" />
     <file path="/searchform.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370505136537" ignored="false" />
     <file path="/info.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370506584746" ignored="false" />
-    <file path="/2013_06_09_192607_change_users_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370862273737" ignored="false" />
+    <file path="/2013_06_09_192607_change_users_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370873671789" ignored="false" />
     <file path="/QuestionsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370862368151" ignored="false" />
-    <file path="/User.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370862517461" ignored="false" />
+    <file path="/User.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370875376440" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,28 +86,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="21" selection-start="362" selection-end="372" vertical-scroll-proportion="-0.65384614">
+            <state line="38" column="5" selection-start="853" selection-end="853" vertical-scroll-proportion="0.5795053">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/screen.css">
+      <file leaf-file-name="Sentry.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/cartalyst/sentry/src/Cartalyst/Sentry/Sentry.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="21" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+            <state line="324" column="49" selection-start="8818" selection-end="8818" vertical-scroll-proportion="-25.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionsController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/QuestionsController.php">
+      <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="28" selection-start="853" selection-end="853" vertical-scroll-proportion="-9.153846">
+            <state line="23" column="5" selection-start="487" selection-end="487" vertical-scroll-proportion="-14.384615">
               <folding />
             </state>
           </provider>
@@ -115,34 +116,16 @@
       <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="49" selection-start="445" selection-end="445" vertical-scroll-proportion="-11.115385">
+            <state line="31" column="48" selection-start="623" selection-end="630" vertical-scroll-proportion="-19.615385">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/transactions/index.blade.php">
+      <file leaf-file-name="config.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/packages/cartalyst/sentry/config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="36" selection-start="431" selection-end="439" vertical-scroll-proportion="-0.65384614">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/questions/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="44" selection-start="471" selection-end="504" vertical-scroll-proportion="0.6170599">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.blade.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/default.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="14" selection-start="1762" selection-end="1762" vertical-scroll-proportion="0.0">
+            <state line="122" column="20" selection-start="3181" selection-end="3181" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -167,9 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/controllers/ProductsController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ImagesController.php" />
         <option value="$PROJECT_DIR$/app/views/products/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/products/searchform.blade.php" />
         <option value="$PROJECT_DIR$/public/info.php" />
@@ -179,10 +159,13 @@
         <option value="$PROJECT_DIR$/app/views/transactions/index.blade.php" />
         <option value="$PROJECT_DIR$/app/views/advices/index.blade.php" />
         <option value="$PROJECT_DIR$/public/css/screen.css" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php" />
         <option value="$PROJECT_DIR$/app/controllers/QuestionsController.php" />
-        <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/app/views/questions/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/config/packages/cartalyst/sentry/config.php" />
+        <option value="$PROJECT_DIR$/app/controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/app/models/User.php" />
+        <option value="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php" />
       </list>
     </option>
   </component>
@@ -257,64 +240,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="questions" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -340,144 +265,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\shopzoo\app\config\packages\cartalyst\sentry" />
       <recent name="C:\wamp\www\shopzoo\app\database\migrations" />
       <recent name="C:\wamp\www\shopzoo\public\img" />
       <recent name="C:\wamp\www\shopzoo\public" />
       <recent name="C:\wamp\www\shopzoo\app\controllers" />
-      <recent name="C:\wamp\www\shopzoo\app\views\advices" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp\www\shopzoo_dev\app\controllers\Import" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree">
-    <UpdateInfo date="Moments ago" ActionInfo="_Update">
-      <UpdatedFiles>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated from server" />
-          <option name="myStatusName" value="Changed on server" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CHANGED_ON_SERVER" />
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Updated" />
-            <option name="myStatusName" value="Changed" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/config/app.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/controllers/AdvicesController.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/controllers/HomeController.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/models/User.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/routes.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/home.blade.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/layouts/home.blade.php</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Created" />
-            <option name="myStatusName" value="Created" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="CREATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/controllers/QuestionsController.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_create_questions_table.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/database/seeds/QuestionsTableSeeder.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/models/Question.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/questions/create.blade.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/questions/edit.blade.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/questions/form.blade.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/questions/index.blade.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/questions/show.blade.php</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/users/advisors.blade.php</PATH>
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Deleted" />
-            <option name="myStatusName" value="Deleted" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="true" />
-            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          </FILE-GROUP>
-          <FILE-GROUP>
-            <option name="myUpdateName" value="Restored" />
-            <option name="myStatusName" value="Will be restored" />
-            <option name="mySupportsDeletion" value="false" />
-            <option name="myCanBeAbsent" value="false" />
-            <option name="myId" value="RESTORED" />
-          </FILE-GROUP>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Modified" />
-          <option name="myStatusName" value="Modified" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MODIFIED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Skipped" />
-          <option name="myStatusName" value="Skipped" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SKIPPED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with conflicts" />
-          <option name="myStatusName" value="Will be merged with conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_CONFLICTS" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with tree conflicts" />
-          <option name="myStatusName" value="Merged with tree conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged with property conflicts" />
-          <option name="myStatusName" value="Will be merged with property conflicts" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Merged" />
-          <option name="myStatusName" value="Will be merged" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="MERGED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Not in repository" />
-          <option name="myStatusName" value="Not in repository" />
-          <option name="mySupportsDeletion" value="true" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UNKNOWN" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally added" />
-          <option name="myStatusName" value="Locally added" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_ADDED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Locally removed" />
-          <option name="myStatusName" value="Locally removed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="LOCALLY_REMOVED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Switched" />
-          <option name="myStatusName" value="Switched" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="SWITCHED" />
-        </FILE-GROUP>
-      </UpdatedFiles>
-    </UpdateInfo>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -515,24 +311,28 @@
       <created>1370526810016</created>
       <updated>1370526810016</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update question and user table">
+      <created>1370862613667</created>
+      <updated>1370862613667</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39274278" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24172892" sideWeight="0.6714761" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -585,7 +385,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="update css" />
+    <option name="LAST_COMMIT_MESSAGE" value="update question and user table" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -603,6 +403,7 @@
     <MESSAGE value="changed quote bubble style" />
     <MESSAGE value="update with quotes" />
     <MESSAGE value="update css" />
+    <MESSAGE value="update question and user table" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -616,59 +417,38 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="26" selection-start="73" selection-end="79" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/searchform.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="95" selection-start="96" selection-end="96" vertical-scroll-proportion="0.030797102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Import/TradeTrackerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="41" selection-start="2618" selection-end="2618" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/default.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="14" selection-start="1762" selection-end="1762" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="21" selection-start="362" selection-end="372" vertical-scroll-proportion="-0.65384614">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/joecwallace/artisan/src/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/joecwallace/artisan/src/Joecwallace/Artisan/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="7" selection-start="147" selection-end="147" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_create_questions_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/advices/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="23" selection-start="195" selection-end="195" vertical-scroll-proportion="0.46279493" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="28" selection-start="187" selection-end="187" vertical-scroll-proportion="0.30852994" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/transactions/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="36" selection-start="431" selection-end="439" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="44" selection-start="471" selection-end="504" vertical-scroll-proportion="-13.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/QuestionsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="28" selection-start="853" selection-end="853" vertical-scroll-proportion="0.020023556">
           <folding />
         </state>
       </provider>
@@ -680,44 +460,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/QuestionsController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/cartalyst/sentry/src/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="28" selection-start="853" selection-end="853" vertical-scroll-proportion="-9.153846">
+        <state line="101" column="6" selection-start="2603" selection-end="2603" vertical-scroll-proportion="0.4204947">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/cartalyst/sentry/src/Cartalyst/Sentry/Users/Eloquent/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="16" selection-start="16" selection-end="47" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="49" selection-start="445" selection-end="445" vertical-scroll-proportion="-11.115385">
+        <state line="31" column="48" selection-start="623" selection-end="630" vertical-scroll-proportion="-19.615385">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/advices/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/vendor/cartalyst/sentry/src/Cartalyst/Sentry/Sentry.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="195" selection-end="195" vertical-scroll-proportion="0.46279493">
+        <state line="324" column="49" selection-start="8818" selection-end="8818" vertical-scroll-proportion="-25.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="187" selection-end="187" vertical-scroll-proportion="0.30852994">
+        <state line="29" column="38" selection-start="638" selection-end="638" vertical-scroll-proportion="0.5606596">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/transactions/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="36" selection-start="431" selection-end="439" vertical-scroll-proportion="-0.65384614">
+        <state line="24" column="1" selection-start="461" selection-end="461" vertical-scroll-proportion="0.48056537">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/config/packages/cartalyst/sentry/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="44" selection-start="471" selection-end="504" vertical-scroll-proportion="0.6170599">
+        <state line="122" column="20" selection-start="3181" selection-end="3181" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="487" selection-end="487" vertical-scroll-proportion="-14.384615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="5" selection-start="853" selection-end="853" vertical-scroll-proportion="0.5795053">
           <folding />
         </state>
       </provider>

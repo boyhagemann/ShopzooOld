@@ -22,6 +22,9 @@ class UserController extends BaseController {
 
 	public function dashboard()
 	{
+		$user = Sentry::getUser();
+		$parent = $user->parent;
+		var_dump($user->parent->children); exit;
 		return View::make('users.dashboard');
 	}
 
