@@ -13,13 +13,7 @@ Dashboard
     <div class="span4">
         
         <h2>Stream</h2>
-        @foreach($stream as $log)
-        <div class="media-object">
-            <time>{{ $log->created_at }}</time>
-            <h4>{{ $log->message }}</h4>
-        </div>
-        @endforeach
-        
+        @include('actions.stream')
     </div>     
     
     <div class="span4">

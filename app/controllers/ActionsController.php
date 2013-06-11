@@ -15,8 +15,8 @@ class ActionsController extends BaseController
             Action::ACTION_FRIEND_INVITE,
         );
         
-        $logs = Action::whereIn('action', $actions)->get();
-        return View::make('actions.friends', compact('logs'));
+        $stream = Action::whereIn('action', $actions)->get();
+        return View::make('actions.friends', compact('stream'));
     }
 
     /**
@@ -31,8 +31,8 @@ class ActionsController extends BaseController
             Action::ACTION_PRODUCT_CLICK,
         );
         
-        $logs = Action::whereIn('action', $actions)->get();
-        return View::make('actions.products', compact('logs'));
+        $stream = Action::whereIn('action', $actions)->get();
+        return View::make('actions.products', compact('stream'));
     }
 
 }
