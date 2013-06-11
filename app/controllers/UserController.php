@@ -92,7 +92,10 @@ class UserController extends BaseController {
 			{
 				$m->to($email)->subject('You are invited');
 			});
+
 		}
+
+		return Redirect::route('user.dashboard')->with('success', 'Users are invited');
 	}
 
 	/**
