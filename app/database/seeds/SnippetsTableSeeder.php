@@ -60,6 +60,13 @@ class SnippetsTableSeeder extends Seeder {
             'message'   => 'Yihaa, your friend clicked on the link you send. Could this lead to some sale?',
         ));
         
+        DB::table('snippets')->insert(array(
+            'action'    => Action::ACTION_PRODUCT_CLICK,
+            'emotion'   => Action::EMOTION_HAPPY,
+            'timeframe' => Action::TIMEFRAME_MODERATE,
+            'message'   => 'Your friend loves your product. Is he really going to buy it, you think?',
+        ));
+        
         /**
          * Product sale
          */
@@ -76,6 +83,20 @@ class SnippetsTableSeeder extends Seeder {
             'emotion'   => Action::EMOTION_HAPPY,
             'timeframe' => Action::TIMEFRAME_MODERATE,
             'message'   => 'Congrats dear user! We have a sale! Your friend bought the product and he loves it',
+        ));
+        
+        DB::table('snippets')->insert(array(
+            'action'    => Action::ACTION_PRODUCT_SALE,
+            'emotion'   => Action::EMOTION_HAPPY,
+            'timeframe' => Action::TIMEFRAME_MODERATE,
+            'message'   => 'Were making money! Your friend bought a brand new product and wants to thank you.',
+        ));
+        
+        DB::table('snippets')->insert(array(
+            'action'    => Action::ACTION_PRODUCT_SALE,
+            'emotion'   => Action::EMOTION_HAPPY,
+            'timeframe' => Action::TIMEFRAME_MODERATE,
+            'message'   => 'Diddly Doo! You are getting richer every second! A new sale has been registered from your friend.',
         ));
     }
 
