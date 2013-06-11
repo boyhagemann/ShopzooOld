@@ -18,7 +18,7 @@ class Link extends Eloquent {
 
 	public function user()
 	{
-		return $this->belongsTo('Cartalyst\Sentry\Users\Eloquent\User');
+		return $this->belongsTo('User');
 	}
 
 	/**
