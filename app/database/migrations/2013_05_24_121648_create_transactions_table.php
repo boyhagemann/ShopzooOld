@@ -15,11 +15,12 @@ class CreateTransactionsTable extends Migration {
         Schema::create('transactions', function(Blueprint $table) {
             $table->increments('id');
 			$table->integer('link_id');
+			$table->integer('user_id');
 			$table->integer('foreign_id');
 			$table->float('commission');
 			$table->timestamps();
 
-			$table->unique(array('link_id', 'foreign_id'));
+			$table->unique(array('link_id', 'user_id', 'foreign_id'));
 			$table->index('commission');
 		});
     }

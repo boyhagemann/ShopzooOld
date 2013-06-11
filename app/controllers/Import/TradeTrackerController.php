@@ -97,17 +97,8 @@ class TradeTrackerController extends \BaseController
 			if(!$link) {
 				continue;
 			}
-			try {
-				Transaction::create(array(
-					'foreign_id' 	=> $data->ID,
-					'link_id' 		=> $link->id,
-					'commission' 	=> $data->commission,
-				));
 
-			}
-			catch(\Exception $e) {
-				print $e->getMessage() . '<br>';
-			}
+			Transaction::saveTransaction($link->user, $link, $data->ID, $data->commission);
 
 		}
 	}
