@@ -27,7 +27,7 @@ class Transaction extends Eloquent {
 
 			if($user->parent) {
 
-				$referingCommission = 0.9 * $commission;
+				$referingCommission = 0.09 * $commission;
 				static::saveTransaction($user->parent, $link, $foreignId, $referingCommission);
 			}
 		}

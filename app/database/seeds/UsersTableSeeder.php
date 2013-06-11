@@ -6,20 +6,20 @@ class UsersTableSeeder extends Seeder {
     {
     	 DB::table('users')->delete();
 
-         DB::table('users')->insert(array(
-			'id' => 1,
-			'email' => 'boyhagemann@gmail.com',
-			'password' => Hash::make('testtest'),
-			'activated' => true,
-		 ));
-
 		DB::table('users')->insert(array(
-			'id' => 2,
+			'id' => 1,
 			'email' => 'boy@swis.nl',
 			'password' => Hash::make('testtest'),
 			'activated' => true,
-			'parent_user_id' => 1
 		));
+
+         DB::table('users')->insert(array(
+			'id' => 2,
+			'email' => 'boyhagemann@gmail.com',
+			'password' => Hash::make('testtest'),
+			'activated' => true,
+			'parent_user_id' => 1
+		 ));
     }
 
 }
