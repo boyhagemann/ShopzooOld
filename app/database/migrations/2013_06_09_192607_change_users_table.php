@@ -3,7 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class ChangeUsersTable extends Migration {
+class ChangeUsersTable extends Migration
+{
 
     /**
      * Run the migrations.
@@ -14,7 +15,7 @@ class ChangeUsersTable extends Migration {
     {
         Schema::table('users', function(Blueprint $table) {
             $table->string('name')->after('email');
-			$table->integer('parent_user_id')->after('name');
+            $table->integer('parent_user_id')->after('name');
         });
     }
 
@@ -25,10 +26,10 @@ class ChangeUsersTable extends Migration {
      */
     public function down()
     {
-		Schema::table('users', function(Blueprint $table) {
-			$table->dropColumn('name');
-			$table->dropColumn('parent_user_id');
-		});
+        Schema::table('users', function(Blueprint $table) {
+            $table->dropColumn('name');
+            $table->dropColumn('parent_user_id');
+        });
     }
 
 }
