@@ -22,6 +22,8 @@ class UserController extends BaseController
 
     public function dashboard()
     {
+        $action = Action::fromSnippet(Action::ACTION_FRIEND_INVITE, Action::EMOTION_HAPPY);
+        var_dump($action); exit;
         $stream = Action::orderBy('id', 'DESC')->get();        
         return View::make('users.dashboard', compact('stream'));
     }

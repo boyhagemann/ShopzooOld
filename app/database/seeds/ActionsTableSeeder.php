@@ -6,39 +6,28 @@ class ActionsTableSeeder extends Seeder {
     {
         DB::table('actions')->delete();
 
-        DB::table('actions')->insert(array(
-            'action' => Action::ACTION_FRIEND_INVITE,
-            'emotion' => Action::EMOTION_HAPPY,
-            'message' => 'You invited your friend',
-            'user_id' => 1,
-            'friend_id' => 2,
-        ));
+        $action = Action::fromSnippet(Action::ACTION_FRIEND_INVITE);
+        $action->user_id = 1;
+        $action->friend_id = 2;
+        $action->save();
         
-        DB::table('actions')->insert(array(
-            'action' => Action::ACTION_FRIEND_ACCEPT,
-            'emotion' => Action::EMOTION_HAPPY,
-            'message' => 'Your friend accepted the invitation!',
-            'user_id' => 1,
-            'friend_id' => 2,
-        ));
+        $action = Action::fromSnippet(Action::ACTION_FRIEND_INVITE);
+        $action->user_id = 1;
+        $action->friend_id = 2;
+        $action->save();
         
-        DB::table('actions')->insert(array(
-            'action' => Action::ACTION_PRODUCT_CLICK,
-            'emotion' => Action::EMOTION_HAPPY,
-            'message' => 'This is a log message',
-            'user_id' => 1,
-            'friend_id' => 2,
-            'product_id' => 1,
-        ));
+        $action = Action::fromSnippet(Action::ACTION_PRODUCT_CLICK);
+        $action->user_id = 1;
+        $action->friend_id = 2;
+        $action->product_id = 1;
+        $action->save();
         
-        DB::table('actions')->insert(array(
-            'action' => Action::ACTION_PRODUCT_SALE,
-            'emotion' => Action::EMOTION_HAPPY,
-            'message' => 'Yes! There was a sale for your link',
-            'user_id' => 1,
-            'friend_id' => 2,
-            'product_id' => 1,
-        ));
+        $action = Action::fromSnippet(Action::ACTION_FRIEND_INVITE);
+        $action->user_id = 1;
+        $action->friend_id = 2;
+        $action->product_id = 1;
+        $action->save();
+        
     }
 
 }

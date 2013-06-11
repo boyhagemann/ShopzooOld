@@ -10,10 +10,15 @@ class Action extends Eloquent
     const EMOTION_HAPPY         = 'happy';
     const EMOTION_SERIOUS       = 'serious';
     
+    const TIMEFRAME_INSTANT     = 'instant';
+    const TIMEFRAME_QUICK       = 'quick';
+    const TIMEFRAME_MODERATE    = 'moderate';
+    const TIMEFRAME_SLOW        = 'slow';
+    
     protected $guarded = array();
     
     public static $rules = array(
-        'type'          => 'required',
+        'action'        => 'required',
         'message'       => 'required',
         'user_id'       => 'required|integer',
         'product_id'    => 'integer',
@@ -33,5 +38,20 @@ class Action extends Eloquent
     public function friend()
     {
         return $this->belongsTo('User', 'friend_id');
+    }
+    
+    /**
+     * 
+     * @param string $action
+     * @param string $emotion
+     * @param string $timeframe
+     * @return Action
+     */
+    static public function fromSnippet($action, $emotion = Action::EMOTION_HAPPY, $timeframe = Action::TIMEFRAME_MODERATE)
+    {
+        $snippet = Snippet::random($action, $emotion, $timeframe);
+        $message = $snippet->message;
+        
+        return new static(compact('action', 'emotion', 'message'));
     }
 }
