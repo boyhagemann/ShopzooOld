@@ -6,32 +6,27 @@ Home
 @stop
 
 @section('hero')
-    <h1>Can't decide which product to buy?<br> 
-        Let our advisors help you out!
+    <h1>Can I help my friends and<br> 
+        make money at same time?
     </h1>
-    <h2>Ask anything about any product</h2>
+    <h2>Oh yes you can!</h2>
 @stop
 
 @section('content')
 
 <div class="span6">
-    <h2>Latest questions</h2>
-    @foreach($questions as $question)
-    <article class="media-object">
-        <h1><a href="{{ URL::route('questions.show', $question->id) }}">{{ $question->subject }}</a></h1>
-        <p>{{ $question->body }}</p>
-    </article>
-    @endforeach
+    <h1>The concept is simple</h1>
+    <p>
+        We provide you links to webhops. 
+        Normally when you buy a product with that link, we get a share of the transaction.
+        But here's the deal. We pass that share to you! 
+        Well... not the whole share, but 90% of our cut is yours!
+    </p>    
 </div>
 
 <div class="span6">
-    <h2>Have a question about a product?</h2>
-    <p>
-        Don't hasitate to ask directly and see what our advisors have to say.
-    </p>
-    
-    @include('questions.form')
-    
+    <h2>It is time to search for some products don't you think?</h2>
+    @include('products.searchform')    
 </div>
 
 @stop

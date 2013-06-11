@@ -12,10 +12,6 @@
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('/advisors', array('as' => 'user.advisors', function() {
-    return View::make('users/advisors');
-}));
-
 
 
 
@@ -27,7 +23,6 @@ Route::model('transaction', 'Transaction');
 Route::model('advices', 'Advice');
 Route::model('link', 'Link');
 Route::model('user', 'User');
-Route::model('questions', 'Question');
 
 
 
@@ -208,7 +203,6 @@ Route::group(array('before' => 'auth'), function()
  */
 $menu = Menu::handler('main', array('class' => 'nav'));
 $menu->add('', '<i class="icon-home"></i> Homepage');
-$menu->add('questions', '<i class="icon-globe"></i> Questions');
 
 if(Sentry::check()) {
 
@@ -235,4 +229,3 @@ Route::resource('campaigns', 'CampaignsController');
 Route::resource('jobs', 'JobsController');
 Route::resource('admin.products', 'Admin\ProductsController');
 Route::resource('feeds', 'FeedsController');
-Route::resource('questions', 'QuestionsController');
