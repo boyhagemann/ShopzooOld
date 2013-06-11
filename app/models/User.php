@@ -81,9 +81,9 @@ class User extends Cartalyst\Sentry\Users\Eloquent\User implements UserInterface
 
 		$user = new static($data);
 		$user->email = $email;
+		$user->password = $user->hash('testtest');
 		$user->save();
                 
 		return $user;
 	}
-
 }

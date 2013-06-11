@@ -83,6 +83,10 @@ Route::post('user/store', array(
 	'uses' 	=> 'UserController@store',
 	'as'	=> 'user.store'
 ));
+Route::get('user/activate/{id}/{code}', array(
+	'uses' 	=> 'UserController@activate',
+	'as'	=> 'user.activate'
+));
 
 
 /**
@@ -136,6 +140,14 @@ Route::group(array('before' => 'auth'), function()
 	Route::get('user/logout', array(
 		'uses' 	=> 'UserController@logout',
 		'as'	=> 'user.logout'
+	));
+	Route::get('invite', array(
+		'uses' 	=> 'UserController@invite',
+		'as'	=> 'user.invite'
+	));
+	Route::post('user/create-invitations', array(
+		'uses' 	=> 'UserController@createInvitations',
+		'as'	=> 'user.invite.create'
 	));
 
 	/**
@@ -209,6 +221,7 @@ if(Sentry::check()) {
         $menu->add('products', '<i class="icon-globe"></i> Products');
 	$menu->add('transactions', '<i class="icon-shopping-cart"></i> Transactions');
 	$menu->add('advices', '<i class="icon-envelope"></i> Advices');
+	$menu->add('invite', '<i class="icon-envelope"></i> Invite');
 
 	$menuUser = Menu::handler('user', array('class' => 'nav pull-right'));
 	$menuUser->add(URL::route('user.logout'), '<i class="icon-unlock"></i> Log out');

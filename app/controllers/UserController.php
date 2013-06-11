@@ -22,9 +22,6 @@ class UserController extends BaseController {
 
 	public function dashboard()
 	{
-		$user = Sentry::getUser();
-		$parent = $user->parent;
-		var_dump($user->parent->children); exit;
 		return View::make('users.dashboard');
 	}
 
@@ -61,6 +58,42 @@ class UserController extends BaseController {
 		}
 	}
 
+	public function invite()
+	{
+		return View::make('users.invite');
+	}
+
+	public function createInvitations()
+	{
+		$validator = Validator::make(Input::all(), array(
+			'addresses' => 'required'
+		));
+
+		if($validator->fails()) {
+			return Redirect::route('users.invite')->withErrors($validator->getErrors());
+		}
+
+		$emails = explode(PHP_EOL, Input::get('addresses'));
+
+		foreach($emails as $email) {
+			$user = User::findOrCreate($email);
+			if($user->parent) {
+				continue;
+			}
+
+			$parent = Sentry::getUser();
+			$user->parent()->associate($parent);
+
+			$code = urlencode($user->getActivationCode());
+			$acceptUrl = URL::route('user.activate', array($user->id, $code));
+
+			// Send invitation
+			Mail::send('emails.users.invite', compact('parent', 'user', 'acceptUrl'), function($m) use($email)
+			{
+				$m->to($email)->subject('You are invited');
+			});
+		}
+	}
 
 	/**
 	 * Register a new user. 
@@ -153,25 +186,25 @@ class UserController extends BaseController {
 		    	$userGroup = Sentry::getGroupProvider()->findById(1);
 		    	$user->addGroup($userGroup);
 
-		        Session::flash('success', 'Your account has been activated. <a href="/users/login">Click here</a> to log in.');
-				return Redirect::to('/');
+		        Session::flash('success', 'Your account has been activated. You can log in below.');
+				return Redirect::route('user.login');
 		    }
 		    else
 		    {
 		        // User activation failed
 		        Session::flash('error', 'There was a problem activating this account. Please contact the system administrator.');
-				return Redirect::to('/');
+				return Redirect::route('user.login');
 		    }
 		}
 		catch (Cartalyst\Sentry\Users\UserNotFoundException $e)
 		{
 		    Session::flash('error', 'User does not exist.');
-			return Redirect::to('/');
+			return Redirect::route('user.login');
 		}
 		catch (Cartalyst\SEntry\Users\UserAlreadyActivatedException $e)
 		{
 		    Session::flash('error', 'You have already activated this account.');
-			return Redirect::to('/');
+			return Redirect::route('user.login');
 		}
 
 
