@@ -10,11 +10,16 @@ Friends
 <h1>Friends</h1>
 <hr>
 
-@foreach($logs as $log)
-<article class="row">
-    <time>{{ $log->created_at }}</time>
-    <p>{{ $log->message }}</p>
-</article>
-@endforeach
+<div class="row-fluid">
+    <ul class="thumbnails">
+        @foreach($friends as $user)
+        <li class="span2">
+            <a href="{{ URL::route('user.show', $user->id) }}">
+                <img src="{{ URL::asset('holder.js/180x140') }}" />
+            </a>
+        </li>
+        @endforeach        
+    </ul>
+</div>
 
 @stop

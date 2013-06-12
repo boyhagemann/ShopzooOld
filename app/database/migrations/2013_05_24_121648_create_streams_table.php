@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateActionsTable extends Migration {
+class CreateStreamsTable extends Migration {
 
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateActionsTable extends Migration {
      */
     public function up()
     {
-        Schema::create('actions', function(Blueprint $table) {
+        Schema::create('streams', function(Blueprint $table) {
             $table->increments('id');
             $table->text('message');
             $table->string('action');
@@ -38,7 +38,7 @@ class CreateActionsTable extends Migration {
      */
     public function down()
     {
-        Schema::drop('actions');
+        Schema::drop('streams');
     }
 
 }

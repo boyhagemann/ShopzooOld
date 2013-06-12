@@ -13,7 +13,7 @@ Stream
     <div class="span4">
         
         <h1>Stream</h1>
-        @include('actions.stream')
+        @include('partials.stream')
     </div>     
     
     <div class="span4">

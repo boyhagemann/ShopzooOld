@@ -1,8 +1,7 @@
 <?php
 
-class ActionsController extends BaseController
+class StreamsController extends BaseController
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -16,7 +15,7 @@ class ActionsController extends BaseController
         );
         
         $stream = Action::whereIn('action', $actions)->get();
-        return View::make('actions.friends', compact('stream'));
+        return View::make('streams.friends', compact('stream'));
     }
 
     /**
@@ -32,7 +31,7 @@ class ActionsController extends BaseController
         );
         
         $stream = Action::whereIn('action', $actions)->get();
-        return View::make('actions.products', compact('stream'));
+        return View::make('streams.products', compact('stream'));
     }
 
 }

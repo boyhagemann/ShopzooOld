@@ -87,6 +87,11 @@ Route::get('user/activate/{id}/{code}', array(
     'uses' => 'UserController@activate',
     'as' => 'user.activate'
 ));
+Route::get('user/{user}', array(
+    'uses' => 'UserController@show',
+    'as' => 'user.show'
+));
+
 
 
 /**
@@ -126,6 +131,7 @@ Route::group(array('before' => 'auth'), function() {
        'as' => 'user.logout'
    ));
 
+   
    /**
     * Products
     */
@@ -141,12 +147,14 @@ Route::group(array('before' => 'auth'), function() {
        'uses' => 'ProductsController@show',
        'as' => 'products.show',
    ));
+   
+   
    /**
     * Friends
     */
    Route::get('friends', array(
-       'uses' => 'ActionsController@friends',
-       'as' => 'actions.friends',
+       'uses' => 'FriendsController@index',
+       'as' => 'friends',
    ));
    Route::get('friends/invite', array(
        'uses' => 'FriendsController@invite',
@@ -156,7 +164,7 @@ Route::group(array('before' => 'auth'), function() {
        'uses' => 'FriendsController@create',
        'as' => 'friends.create'
    ));
-
+   
 
    /**
     * Transactions
@@ -165,6 +173,7 @@ Route::group(array('before' => 'auth'), function() {
        'uses' => 'ActionsController@products',
        'as' => 'actions.products',
    ));
+   
 
    /**
     * Advices

@@ -22,36 +22,19 @@ class UserController extends BaseController
 
     public function stream()
     {
-        $stream = Action::orderBy('id', 'DESC')->get();        
+        $stream = Stream::orderBy('id', 'DESC')->get();        
         return View::make('users.stream', compact('stream'));
     }
 
     /**
      *  Display this user's details.
      */
-    public function show($id)
+    public function show(User $user)
     {
-        try {
-            //Get the current user's id.
-            Sentry::check();
-            $currentUser = Sentry::getUser();
-
-            //Do they have admin access?
-            if ($currentUser->hasAccess('admin') || $currentUser->getId() == $id) {
-                //Either they are an admin, or:
-                //They are not an admin, but they are viewing their own profile.
-                $data['user'] = Sentry::getUserProvider()->findById($id);
-                $data['myGroups'] = $data['user']->getGroups();
-                return View::make('users.show')->with($data);
-            }
-            else {
-                Session::flash('error', 'You don\'t have access to that user.');
-                return Redirect::to('/');
-            }
-        } catch (Cartalyst\Sentry\UserNotFoundException $e) {
-            Session::flash('error', 'There was a problem accessing your account.');
-            return Redirect::to('/');
-        }
+        $stream = Stream::whereUserId($user->id)->get();
+        $friends = $user->friends;        
+        
+        return View::make('users.show', compact('user', 'friends', 'stream'));
     }
 
     /**
@@ -223,7 +206,7 @@ class UserController extends BaseController
             }
 
             //Login was succesful.  
-            return Redirect::route('user.dashboard');
+            return Redirect::route('user.stream');
         }
     }
 

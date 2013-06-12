@@ -14,8 +14,11 @@ class ChangeUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function(Blueprint $table) {
-            $table->string('name')->after('email');
-            $table->integer('parent_user_id')->after('name');
+            $table->enum('gender', array('m' => 'v'))->after('last_name');
+            $table->integer('parent_user_id')->after('gender');
+            
+            $table->index('parent_user_id');
+            $table->index('gender');
         });
     }
 
@@ -27,7 +30,7 @@ class ChangeUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function(Blueprint $table) {
-            $table->dropColumn('name');
+            $table->dropColumn('gender');
             $table->dropColumn('parent_user_id');
         });
     }
