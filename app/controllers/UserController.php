@@ -20,10 +20,10 @@ class UserController extends BaseController
         $throttleProvider->enable();
     }
 
-    public function dashboard()
+    public function stream()
     {
         $stream = Action::orderBy('id', 'DESC')->get();        
-        return View::make('users.dashboard', compact('stream'));
+        return View::make('users.stream', compact('stream'));
     }
 
     /**

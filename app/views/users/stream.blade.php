@@ -2,7 +2,7 @@
 
 {{-- Web site Title --}}
 @section('title')
-Dashboard
+Stream
 @stop
 
 {{-- Content --}}
@@ -12,7 +12,7 @@ Dashboard
     
     <div class="span4">
         
-        <h2>Stream</h2>
+        <h1>Stream</h1>
         @include('actions.stream')
     </div>     
     

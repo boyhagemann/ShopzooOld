@@ -117,9 +117,9 @@ Route::group(array('before' => 'auth'), function() {
     /**
     * Users
     */
-   Route::get('dashboard', array(
-       'uses' => 'UserController@dashboard',
-       'as' => 'user.dashboard'
+   Route::get('stream', array(
+       'uses' => 'UserController@stream',
+       'as' => 'user.stream'
    ));
    Route::get('user/logout', array(
        'uses' => 'UserController@logout',
@@ -209,9 +209,8 @@ $menu->add('', '<i class="icon-home"></i> Home');
 
 if (Sentry::check()) {
 
-    $menu->add('dashboard', '<i class="icon-dashboard"></i> Dashboard');
+    $menu->add('stream', '<i class="icon-reorder"></i> Stream');
     $menu->add('products', '<i class="icon-globe"></i> Products');
-//    $menu->add('advices', '<i class="icon-envelope"></i> Advices');
     $menu->add('friends', '<i class="icon-group"></i> Friends');
     $menu->add('transactions', '<i class="icon-shopping-cart"></i> Transactions');
 
