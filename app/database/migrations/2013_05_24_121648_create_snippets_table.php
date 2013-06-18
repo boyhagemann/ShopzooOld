@@ -18,6 +18,7 @@ class CreateSnippetsTable extends Migration {
             $table->string('action');
             $table->string('emotion');
             $table->string('timeframe');
+            $table->string('language', 5);
             $table->smallInteger('friend_gender_aware');
             
                     
@@ -26,6 +27,7 @@ class CreateSnippetsTable extends Migration {
             $table->index('action');
             $table->index('emotion');
             $table->index('timeframe');
+            $table->index('language');
             $table->index('friend_gender_aware');
         });
     }
