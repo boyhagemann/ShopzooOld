@@ -172,7 +172,9 @@ Form::macro('modelRadio', function($name, $model, Array $options = array()) {
 
 Form::macro('multiCheckbox', function($name, $multiOptions) {
 
+        $name .= '[]';
 	$inputs = array();
+        
 	foreach($multiOptions as $key => $value) {
 		$inputName = sprintf('%s[%s]', $name, $key);
 		$inputs[] =
@@ -187,6 +189,7 @@ Form::macro('multiCheckbox', function($name, $multiOptions) {
 Form::macro('multiRadio', function($name, $multiOptions) {
 
 	$inputs = array();
+        
 	foreach($multiOptions as $key => $value) {
 		$inputName = sprintf('%s_%s', $name, $key);
 		$inputs[] =
@@ -200,35 +203,56 @@ Form::macro('multiRadio', function($name, $multiOptions) {
 
 Form::macro('multiOptionsFromModel', function($model, Array $options = array()) {
 
-	if(is_string($model)) {
-		$model = App::make($model);
-	}
+    if (is_string($model)) {
+        $q = App::make($model)->newQuery();
+    }
 
-	if(!isset($options['keyField'])) {
-		$options['keyField'] = 'id';
-	}
+    if (!isset($options['keyField'])) {
+        $options['keyField'] = 'id';
+    }
 
-	if(!isset($options['valueField'])) {
-		$options['valueField'] = 'title';
-	}
+    if (!isset($options['valueField'])) {
+        $options['valueField'] = 'title';
+    }
 
-	$q = $model->newQuery();
+    // Allow for altering the select query by passing a closure in the
+    // options array
+    if (isset($q) && isset($options['query']) && is_callable($options['query'])) {
+        call_user_func($options['query'], $q);
+    }
 
-	// Allow for altering the select query by passing a closure in the
-	// options array
-	if(isset($options['query']) && is_callable($options['query'])) {
-		call_user_func($options['query'], $q);
-	}
+    $multiOptions = array();
 
-	$multiOptions = array();
-                
-	if(isset($options['emptyValue'])) {
-		$multiOptions[''] = $options['emptyValue'];
-	}
+    if (isset($options['emptyValue'])) {
+        $multiOptions[''] = $options['emptyValue'];
+    }
+    
         
-	foreach($q->get() as $record) {
-		$multiOptions[$record->{$options['keyField']}] = $record->{$options['valueField']};
-	}
+    if ($model instanceof \Illuminate\Database\Eloquent\Collection) {
+        $collection = $model;
+    }
+    else {
+        $collection = $q->get();
+    }
 
-	return $multiOptions;
+    foreach ($collection as $record) {
+
+        if (is_callable($options['keyField'])) {
+            $key = call_user_func($options['keyField'], $record);
+        }
+        else {
+            $key = $record->{$options['keyField']};
+        }
+
+        if (is_callable($options['valueField'])) {
+            $value = call_user_func($options['valueField'], $record);
+        }
+        else {
+            $value = $record->{$options['valueField']};
+        }
+
+        $multiOptions[$key] = $value;
+    }
+
+    return $multiOptions;
 });

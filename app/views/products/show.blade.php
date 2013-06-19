@@ -25,19 +25,19 @@
 
 <hr>
 
-<h3><i class="icon-envelope"></i> So you want to give your friend some advice right?</h3>
-<p>
-    Well, that's what friends are for! 
-    Recommend this product and your amigo will be blown away with your kindness.
-    And sure, why don't you make a little money out of it?
-</p>
-
-<h3>Send to your friends</h3>
+<h3><i class="icon-envelope"></i> Send to your friends</h3>
 @if($basket->count())
 <ul class="nav">
-	@foreach($basket as $item)
-	<li><a href="">{{ $item->friend->name() }}</a></li>
-	@endforeach
+        {{ Form::open(array('route' => 'basket.addProduct')) }}
+        {{ Form::hidden('product_id', $product->id) }}
+        {{ Form::modelCheckbox('friends', $basket, array(
+            'keyField' => 'friend_id',
+            'valueField' => function($record) {
+                return $record->friend->name();
+            }
+        )) }}
+        {{ Form::submit('Add') }}
+        {{ Form::close() }}
 </ul>
 @else
 <p>

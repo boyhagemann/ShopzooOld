@@ -212,6 +212,18 @@ Route::group(array('before' => 'auth'), function() {
        'uses' => 'AdvicesController@send',
        'as' => 'advices.send',
    ));
+   
+   
+   
+   /**
+    * Basket
+    */
+    Route::post('basket/product/add', array(
+        'uses' => 'BasketsController@addProduct',
+        'as' => 'basket.addProduct',
+    ));
+   
+   
 });
 
 
