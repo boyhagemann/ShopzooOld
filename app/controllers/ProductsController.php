@@ -33,8 +33,9 @@ class ProductsController extends BaseController
 		$user		= Sentry::getUser();
 		$link 		= Link::findOrCreate($product, $user);
 		$basket		= Basket::whereUserId($user->id)->get();
+		$url		= URL::route('products.redirect', $link->code);
 
-		return View::make('products.show', compact('link', 'product', 'basket'));
+		return View::make('products.show', compact('link', 'product', 'url', 'basket'));
 	}
 
 	/**

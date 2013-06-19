@@ -2,24 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ImagesController.php" afterPath="$PROJECT_DIR$/app/controllers/ImagesController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/storage/tmp/qrcode.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/migrations/2013_06_19_075108_create_baskets_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/Basket.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/BasketsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/database/seeds/BasketsTableSeeder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/baskets/create.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/baskets/edit.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/baskets/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/baskets/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ProductsController.php" afterPath="$PROJECT_DIR$/app/controllers/ProductsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/show.blade.php" afterPath="$PROJECT_DIR$/app/views/products/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopzoo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371628166108" ignored="false" />
+    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371632600045" ignored="false" />
     <file path="/a.dummy" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370949644619" ignored="false" />
     <file path="/composer.json" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369395506091" ignored="false" />
     <file path="/routes.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370946846168" ignored="false" />
     <file path="/FeedsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369410378567" ignored="false" />
     <file path="/Job.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369401584387" ignored="false" />
     <file path="/CampaignsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369398331282" ignored="false" />
-    <file path="/ProductsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371631838607" ignored="false" />
+    <file path="/ProductsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371632636593" ignored="false" />
     <file path="/FeedsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369399271273" ignored="false" />
     <file path="/JobsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370249142597" ignored="false" />
     <file path="/JobsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369399966877" ignored="false" />
@@ -95,19 +100,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BasketsTableSeeder.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/database/seeds/BasketsTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="44" selection-start="164" selection-end="164" vertical-scroll-proportion="-4.576923">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImagesController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ImagesController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="51" selection-start="371" selection-end="371" vertical-scroll-proportion="-9.807693">
+            <state line="15" column="51" selection-start="371" selection-end="371" vertical-scroll-proportion="0.30035335">
               <folding />
             </state>
           </provider>
@@ -116,16 +112,7 @@
       <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="34" selection-start="858" selection-end="858" vertical-scroll-proportion="-23.538462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductsController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="-0.0">
+            <state line="36" column="34" selection-start="858" selection-end="858" vertical-scroll-proportion="-23.5">
               <folding />
             </state>
           </provider>
@@ -134,10 +121,8 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="34" selection-start="2384" selection-end="2384" vertical-scroll-proportion="-5.372549">
-              <folding>
-                <element signature="e#7#409#0" expanded="true" />
-              </folding>
+            <state line="104" column="34" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,7 +130,7 @@
       <file leaf-file-name="QRimage.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/aferrandini/phpqrcode/lib/PHPQRCode/QRimage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="16" selection-start="1337" selection-end="1337" vertical-scroll-proportion="-8.5">
+            <state line="36" column="16" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,16 +139,16 @@
       <file leaf-file-name="cache.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/cache.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="26" selection-start="942" selection-end="954" vertical-scroll-proportion="-19.615385">
+            <state line="30" column="26" selection-start="942" selection-end="954" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/products/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="4" selection-start="393" selection-end="393" vertical-scroll-proportion="0.3203769">
+            <state line="15" column="48" selection-start="383" selection-end="383" vertical-scroll-proportion="-7.8461537">
               <folding />
             </state>
           </provider>
@@ -172,7 +157,7 @@
       <file leaf-file-name="Basket.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Basket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="40" selection-start="322" selection-end="322" vertical-scroll-proportion="-12.423077">
+            <state line="19" column="40" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -209,9 +194,9 @@
         <option value="$PROJECT_DIR$/app/models/Basket.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vendor/aferrandini/phpqrcode/lib/PHPQRCode/QRimage.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/app/controllers/ImagesController.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/app/views/products/show.blade.php" />
       </list>
     </option>
@@ -278,16 +263,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="reference.settings.deploy.options" />
     <property name="JavaScriptLanguageLevel" value="JS_1_5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="JavaScriptPreferStrict" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" createEmptyFolders="true" autoUpload="true">
     <servers>
@@ -394,7 +379,11 @@
       <created>1370952030882</created>
       <updated>1370952030882</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added qr code">
+      <created>1371632423715</created>
+      <updated>1371632423715</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -406,7 +395,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2950907" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29829243" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -464,7 +453,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="update invite" />
+    <option name="LAST_COMMIT_MESSAGE" value="added qr code" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -490,6 +479,7 @@
     <MESSAGE value="fix user trransaction" />
     <MESSAGE value="start with user invitation" />
     <MESSAGE value="update invite" />
+    <MESSAGE value="added qr code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -503,32 +493,21 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="34" selection-start="858" selection-end="858" vertical-scroll-proportion="-23.538462">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Basket.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="40" selection-start="322" selection-end="322" vertical-scroll-proportion="-12.423077">
+        <state line="19" column="40" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/aferrandini/phpqrcode/lib/PHPQRCode.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.9846878">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.9846878" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/storage/tmp/qrcode.png">
@@ -538,83 +517,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/aferrandini/phpqrcode/lib/PHPQRCode/QRtools.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.1236749">
-          <folding>
-            <marker date="1371629803870" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1371629803870" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1371629803870" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.1236749" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/cache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="26" selection-start="942" selection-end="954" vertical-scroll-proportion="-19.615385">
+        <state line="30" column="26" selection-start="942" selection-end="954" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/aferrandini/phpqrcode/lib/PHPQRCode/QRcode.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="136" column="27" selection-start="3848" selection-end="3848" vertical-scroll-proportion="0.486715">
-          <folding />
-        </state>
+        <state line="136" column="27" selection-start="3848" selection-end="3848" vertical-scroll-proportion="0.486715" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="5" selection-start="853" selection-end="853" vertical-scroll-proportion="0.5795053">
-          <folding />
-        </state>
+        <state line="38" column="5" selection-start="853" selection-end="853" vertical-scroll-proportion="0.5795053" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/aferrandini/phpqrcode/lib/PHPQRCode/QRencode.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="23" selection-start="3959" selection-end="3959" vertical-scroll-proportion="0.69964665">
-          <folding />
-        </state>
+        <state line="126" column="23" selection-start="3959" selection-end="3959" vertical-scroll-proportion="0.69964665" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/aferrandini/phpqrcode/lib/PHPQRCode/QRimage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="16" selection-start="1337" selection-end="1337" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="371" selection-end="371" vertical-scroll-proportion="-9.807693">
+        <state line="36" column="16" selection-start="1337" selection-end="1337" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="34" selection-start="2384" selection-end="2384" vertical-scroll-proportion="-5.372549">
-          <folding>
-            <element signature="e#7#409#0" expanded="true" />
-          </folding>
+        <state line="104" column="34" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/BasketsTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="44" selection-start="164" selection-end="164" vertical-scroll-proportion="-4.576923">
+        <state line="35" column="12" selection-start="823" selection-end="827" vertical-scroll-proportion="0.59952885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="34" selection-start="858" selection-end="858" vertical-scroll-proportion="-23.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="393" selection-end="393" vertical-scroll-proportion="0.3203769">
+        <state line="15" column="48" selection-start="383" selection-end="383" vertical-scroll-proportion="-7.8461537">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/BasketsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="44" selection-start="164" selection-end="164" vertical-scroll-proportion="0.1401649">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="51" selection-start="371" selection-end="371" vertical-scroll-proportion="0.30035335">
           <folding />
         </state>
       </provider>

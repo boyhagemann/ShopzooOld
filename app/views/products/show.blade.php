@@ -13,7 +13,7 @@
         <img class="media-object" src="{{ URL::route('image.resize', array($product->image, 300, 300)) }}">
     </a>
 	<p>
-		<img src="{{ URL::route('image.qr', 'Test') }}">
+		<img src="{{ URL::route('image.qr', $url) }}">
 	</p>
     <div class="media-body">
         <p>{{ $product->description }}</p>     
