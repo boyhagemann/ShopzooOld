@@ -13,7 +13,8 @@
 		"cartalyst/sentry": "2.*",
 		"joecwallace/artisan": "dev-master",
 		"intervention/imagecache": "dev-master",
-		"intervention/image": "dev-master"
+		"intervention/image": "dev-master",
+		"aferrandini/phpqrcode": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

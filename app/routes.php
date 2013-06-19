@@ -102,6 +102,11 @@ Route::get('image/resize/{path}/{width}/{height}', array(
     'as' => 'image.resize'
 ))->where('path', '(.*)');
 
+Route::get('image/qr/{text}/{size?}', array(
+	'uses' => 'ImagesController@qr',
+	'as' => 'image.qr'
+))->where('text', '(.*)');
+
 
 /**
  * Filters
@@ -241,3 +246,5 @@ Route::resource('groups', 'GroupController');
 Route::resource('campaigns', 'CampaignsController');
 Route::resource('jobs', 'JobsController');
 Route::resource('feeds', 'FeedsController');
+
+Route::resource('baskets', 'BasketsController');

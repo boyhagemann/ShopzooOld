@@ -30,10 +30,11 @@ class ProductsController extends BaseController
 	 */
 	public function show(Product $product)
 	{
-		$link 		= Link::findOrCreate($product, Sentry::getUser());
-		$advices 	= Advice::all();
+		$user		= Sentry::getUser();
+		$link 		= Link::findOrCreate($product, $user);
+		$basket		= Basket::whereUserId($user->id)->get();
 
-		return View::make('products.show', compact('link', 'product', 'advices'));
+		return View::make('products.show', compact('link', 'product', 'basket'));
 	}
 
 	/**

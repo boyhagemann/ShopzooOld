@@ -12,6 +12,9 @@
     <a class="pull-left" href="#">
         <img class="media-object" src="{{ URL::route('image.resize', array($product->image, 300, 300)) }}">
     </a>
+	<p>
+		<img src="{{ URL::route('image.qr', 'Test') }}">
+	</p>
     <div class="media-body">
         <p>{{ $product->description }}</p>     
         <p>
@@ -29,13 +32,21 @@
     And sure, why don't you make a little money out of it?
 </p>
 
-{{ Form::open(array('route' => array('advices.link.add', $link->id))) }}
-{{ Form::modelSelect('advice', 'Advice', array('valueField' => 'subject', 'emptyValue' => 'Start a new advice')) }}
-{{ Form::submit('Add this insane product', array('class' => 'btn btn-primary')) }}
-{{ Form::close() }}
+<h3>Send to your friends</h3>
+@if($basket->count())
+<ul class="nav">
+	@foreach($basket as $item)
+	<li><a href="">{{ $item->friend->name() }}</a></li>
+	@endforeach
+</ul>
+@else
+<p>
+	Add a friend
+</p>
+@endif
 
 
-<h4>Not sending an advice?</h3>
+<h4>Not sending an advice?</h4>
 <p>
     You don't want to go thru the hassle of creating an advice?
     No problem!
