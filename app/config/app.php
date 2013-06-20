@@ -118,7 +118,9 @@ return array(
 		'Menu\MenuServiceProvider',
 		'Cartalyst\Sentry\SentryServiceProvider',
 //		'Joecwallace\Artisan\ArtisanWebServiceProvider',
-//		'Intervention\Image\ImageServiceProvider',
+		'Intervention\Image\ImageServiceProvider',
+
+		'Boyhagemann\Modelform\ModelformServiceProvider',
 
 	),
 
