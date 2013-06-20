@@ -120,8 +120,6 @@ return array(
 //		'Joecwallace\Artisan\ArtisanWebServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
 
-		'Boyhagemann\Modelform\ModelformServiceProvider',
-
 	),
 
 	/*

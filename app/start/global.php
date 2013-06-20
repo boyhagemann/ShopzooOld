@@ -83,26 +83,24 @@ App::down(function()
 require app_path().'/filters.php';
 
 
+Form::macro('twText', function ($label, $name, $default = null, $attributes = array()) {
 
-
-Form::macro('twText', function($label, $name, $default = null, $attributes = array()) {
-   
-    $mask = '<div class="control-group">
+	$mask = '<div class="control-group">
         <div class="controls">
                 %s
                 %s
             </div>
     </div>
     ';
-    
-    $label = Form::label($label, $name);
-    $input = Form::text($name, $default, $attributes);
-    $html = sprintf($mask, $label, $input);
-    
-    return $html;
+
+	$label = Form::label($label, $name);
+	$input = Form::text($name, $default, $attributes);
+	$html  = sprintf($mask, $label, $input);
+
+	return $html;
 });
 
-Form::macro('twTextArea', function($label, $name, $default = null, $attributes = array()) {
+Form::macro('twTextArea', function ($label, $name, $default = null, $attributes = array()) {
 
 	$mask = '<div class="control-group">
         <div class="controls">
@@ -114,42 +112,141 @@ Form::macro('twTextArea', function($label, $name, $default = null, $attributes =
 
 	$label = Form::label($label, $name);
 	$input = Form::textarea($name, $default, $attributes);
-	$html = sprintf($mask, $label, $input);
+	$html  = sprintf($mask, $label, $input);
 
 	return $html;
 });
 
 
-Form::macro('twPassword', function($label, $name, $attributes = array()) {
-   
-    $mask = '<div class="control-group">
+Form::macro('twPassword', function ($label, $name, $attributes = array()) {
+
+	$mask = '<div class="control-group">
         <div class="controls">
                 %s
                 %s
             </div>
     </div>
     ';
-    
-    $label = Form::label($label, $name);
-    $input = Form::password($name, $attributes);
-    $html = sprintf($mask, $label, $input);
-    
-    return $html;
+
+	$label = Form::label($label, $name);
+	$input = Form::password($name, $attributes);
+	$html  = sprintf($mask, $label, $input);
+
+	return $html;
 });
 
-Form::macro('twBtnGroup', function($elements) {
-   
-    $mask = '
+Form::macro('twBtnGroup', function ($elements) {
+
+	$mask = '
     <div class="btn-group">
         %s
     </div>
     ';
-    
-    $input = implode(PHP_EOL, (array) $elements);
-    
-    $html = sprintf($mask, $input);
-    
-    return $html;
+
+	$input = implode(PHP_EOL, (array)$elements);
+
+	$html = sprintf($mask, $input);
+
+	return $html;
 });
 
+
+Form::macro('modelSelect', function ($name, $model, Array $options = array()) {
+	return Form::select($name, Form::multiOptionsFromModel($model, $options));
+});
+
+Form::macro('modelCheckbox', function ($name, $model, Array $options = array()) {
+	return Form::multiCheckbox($name, Form::multiOptionsFromModel($model, $options));
+});
+
+Form::macro('modelRadio', function ($name, $model, Array $options = array()) {
+	return Form::multiRadio($name, Form::multiOptionsFromModel($model, $options));
+});
+
+Form::macro('multiCheckbox', function ($name, $multiOptions) {
+
+	$name .= '[]';
+	$inputs = array();
+
+	foreach ($multiOptions as $key => $value) {
+		$inputName = sprintf('%s[%s]', $name, $key);
+		$inputs[]  =
+			Form::checkbox($name, $key, null, array(
+				'id' => $inputName,
+			)) .
+			Form::label($inputName, $value);
+	}
+
+	return implode('<br>', $inputs);
+});
+
+Form::macro('multiRadio', function ($name, $multiOptions) {
+
+	$inputs = array();
+
+	foreach ($multiOptions as $key => $value) {
+		$inputName = sprintf('%s_%s', $name, $key);
+		$inputs[]  =
+			Form::radio($name, $key, null, array(
+				'id' => $inputName,
+			)) .
+			Form::label($inputName, $value);
+	}
+
+	return implode('<br>', $inputs);
+});
+
+Form::macro('multiOptionsFromModel', function ($model, Array $options = array()) {
+
+	if (is_string($model)) {
+		$q = App::make($model)
+			->newQuery();
+	}
+
+	if (!isset($options['keyField'])) {
+		$options['keyField'] = 'id';
+	}
+
+	if (!isset($options['valueField'])) {
+		$options['valueField'] = 'title';
+	}
+
+	// Allow for altering the select query by passing a closure in the
+	// options array
+	if (isset($q) && isset($options['query']) && is_callable($options['query'])) {
+		call_user_func($options['query'], $q);
+	}
+
+	$multiOptions = array();
+
+	if (isset($options['emptyValue'])) {
+		$multiOptions[''] = $options['emptyValue'];
+	}
+
+
+	if ($model instanceof \Illuminate\Database\Eloquent\Collection) {
+		$collection = $model;
+	} else {
+		$collection = $q->get();
+	}
+
+	foreach ($collection as $record) {
+
+		if (is_callable($options['keyField'])) {
+			$key = call_user_func($options['keyField'], $record);
+		} else {
+			$key = $record->{$options['keyField']};
+		}
+
+		if (is_callable($options['valueField'])) {
+			$value = call_user_func($options['valueField'], $record);
+		} else {
+			$value = $record->{$options['valueField']};
+		}
+
+		$multiOptions[$key] = $value;
+	}
+
+	return $multiOptions;
+});
 

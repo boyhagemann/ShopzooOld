@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" />
+    <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="added qr code">
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\workbench\boyhagemann\modelform\.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\workbench\boyhagemann\modelform\.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\workbench\boyhagemann\modelform\composer.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\workbench\boyhagemann\modelform\phpunit.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\workbench\boyhagemann\modelform\src\Boyhagemann\Modelform\ModelformServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\workbench\boyhagemann\modelform\tests\.gitkeep" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ProductsController.php" afterPath="$PROJECT_DIR$/app/controllers/ProductsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/start/global.php" afterPath="$PROJECT_DIR$/app/start/global.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/workbench.php" afterPath="$PROJECT_DIR$/app/config/workbench.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopzoo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371715432665" ignored="false" />
-    <file path="/a.dummy" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370949644619" ignored="false" />
+    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371738657645" ignored="false" />
+    <file path="/a.dummy" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371740022162" ignored="false" />
     <file path="/composer.json" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369395506091" ignored="false" />
-    <file path="/routes.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370946846168" ignored="false" />
+    <file path="/routes.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371730491998" ignored="false" />
     <file path="/FeedsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369410378567" ignored="false" />
     <file path="/Job.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369401584387" ignored="false" />
     <file path="/CampaignsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369398331282" ignored="false" />
-    <file path="/ProductsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371632636593" ignored="false" />
+    <file path="/ProductsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371730431774" ignored="false" />
     <file path="/FeedsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369399271273" ignored="false" />
     <file path="/JobsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370249142597" ignored="false" />
     <file path="/JobsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369399966877" ignored="false" />
@@ -40,7 +45,7 @@
     <file path="/2013_05_24_121648_create_links_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370255018439" ignored="false" />
     <file path="/Link.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370256624422" ignored="false" />
     <file path="/index.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370526258845" ignored="false" />
-    <file path="/show.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371715442680" ignored="false" />
+    <file path="/show.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371730270823" ignored="false" />
     <file path="/2013_05_24_121648_create_transactions_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370257863562" ignored="false" />
     <file path="/TransactionsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370258229597" ignored="false" />
     <file path="/Transaction.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370938004213" ignored="false" />
@@ -74,7 +79,9 @@
     <file path="/BasketsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371628740159" ignored="false" />
     <file path="/Basket.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371629082125" ignored="false" />
     <file path="/QRimage.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371631813995" ignored="false" />
-    <file path="/ModelformServiceProvider.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371714921160" ignored="false" />
+    <file path="/ModelformServiceProvider.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371740094474" ignored="false" />
+    <file path="/Form.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371740183300" ignored="false" />
+    <file path="/*.regexp" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371740571651" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,70 +104,64 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="34" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.0">
+            <state line="26" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <file leaf-file-name="ProductsController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="109" column="46" selection-start="4042" selection-end="4042" vertical-scroll-proportion="0.0">
+            <state line="15" column="25" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/products/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="26" selection-start="920" selection-end="920" vertical-scroll-proportion="0.6407538">
+            <state line="14" column="7" selection-start="340" selection-end="340" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersTableSeeder.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
+      <file leaf-file-name="Account.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="22" selection-start="818" selection-end="818" vertical-scroll-proportion="-20.26923">
+            <state line="22" column="31" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/User.php">
+      <file leaf-file-name="ImagesController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="9" column="24" selection-start="211" selection-end="216" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="30" selection-start="424" selection-end="433" vertical-scroll-proportion="-10.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/start/global.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="137" column="3" selection-start="3790" selection-end="3790" vertical-scroll-proportion="0.0">
+            <state line="79" column="1" selection-start="2548" selection-end="2548" vertical-scroll-proportion="-2.0425532">
               <folding>
-                <marker date="1371714814569" expanded="true" signature="2723:2822" placeholder="..." />
-                <marker date="1371714814569" expanded="true" signature="2754:2811" placeholder="..." />
-                <marker date="1371714814569" expanded="true" signature="3133:3232" placeholder="..." />
-                <marker date="1371714814569" expanded="true" signature="3164:3221" placeholder="..." />
-                <marker date="1371714814569" expanded="true" signature="3517:3616" placeholder="..." />
-                <marker date="1371714814569" expanded="true" signature="3548:3605" placeholder="..." />
-                <marker date="1371714814569" expanded="true" signature="3884:3906" placeholder="..." />
+                <element signature="e#7#415#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModelformServiceProvider.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workbench/boyhagemann/modelform/src/Boyhagemann/Modelform/ModelformServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -184,22 +185,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/Token.php" />
-        <option value="$PROJECT_DIR$/app/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2013_06_19_075108_create_baskets_table.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/BasketsTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/models/Basket.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/vendor/aferrandini/phpqrcode/lib/PHPQRCode/QRimage.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ImagesController.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/app/config/workbench.php" />
+        <option value="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ImagesController.php" />
+        <option value="$PROJECT_DIR$/app/models/Account.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ProductsController.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/views/products/show.blade.php" />
+        <option value="$PROJECT_DIR$/workbench/boyhagemann/modelform/src/Boyhagemann/Modelform/Form.php" />
+        <option value="$PROJECT_DIR$/workbench/boyhagemann/modelform/src/Boyhagemann/Modelform/Modelform.php" />
+        <option value="$PROJECT_DIR$/workbench/boyhagemann/modelform/src/Boyhagemann/Modelform/ModelformServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/start/global.php" />
-        <option value="$PROJECT_DIR$/workbench/boyhagemann/modelform/src/Boyhagemann/Modelform/ModelformServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/views/products/show.blade.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php" />
       </list>
     </option>
   </component>
@@ -241,7 +242,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,265 +250,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boyhagemann" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modelform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workbench" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boyhagemann" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modelform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boyhagemann" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modelform" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intervention" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intervention" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intervention" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Intervention" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seeds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="reference.settings.deploy.options" />
     <property name="JavaScriptLanguageLevel" value="JS_1_5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="JavaScriptPreferStrict" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" createEmptyFolders="true" autoUpload="true">
     <servers>
@@ -624,14 +381,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30843115" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31963715" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -640,7 +398,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32963374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -729,57 +486,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/services.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.36127508" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="34" selection-start="858" selection-end="858" vertical-scroll-proportion="0.71900827" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="34" selection-start="2384" selection-end="2384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/workbench.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="27" selection-start="899" selection-end="899" vertical-scroll-proportion="0.5606596" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/cache.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="26" selection-start="942" selection-end="954" vertical-scroll-proportion="0.020023556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="46" selection-start="4042" selection-end="4042" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/ImageServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="260" selection-end="429" vertical-scroll-proportion="0.30035335" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Basket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="40" selection-start="322" selection-end="322" vertical-scroll-proportion="0.3804476" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_09_192607_change_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -790,46 +496,86 @@
         <state line="7" column="39" selection-start="121" selection-end="121" vertical-scroll-proportion="0.1401649" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/start/global.php">
+    <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="3" selection-start="3790" selection-end="3790" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1371714814569" expanded="true" signature="2723:2822" placeholder="..." />
-            <marker date="1371714814569" expanded="true" signature="2754:2811" placeholder="..." />
-            <marker date="1371714814569" expanded="true" signature="3133:3232" placeholder="..." />
-            <marker date="1371714814569" expanded="true" signature="3164:3221" placeholder="..." />
-            <marker date="1371714814569" expanded="true" signature="3517:3616" placeholder="..." />
-            <marker date="1371714814569" expanded="true" signature="3548:3605" placeholder="..." />
-            <marker date="1371714814569" expanded="true" signature="3884:3906" placeholder="..." />
-          </folding>
-        </state>
+        <state line="31" column="22" selection-start="818" selection-end="818" vertical-scroll-proportion="0.2591284" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="31" column="53" selection-start="625" selection-end="639" vertical-scroll-proportion="0.6007067" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="19" selection-start="1330" selection-end="1330" vertical-scroll-proportion="-0.1401649" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="30" selection-start="424" selection-end="433" vertical-scroll-proportion="-10.423077">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workbench/boyhagemann/modelform/src/Boyhagemann/Modelform/ModelformServiceProvider.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+        <state line="9" column="24" selection-start="211" selection-end="216" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/UsersTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/app/models/Account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="22" selection-start="818" selection-end="818" vertical-scroll-proportion="-20.26923">
+        <state line="22" column="31" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="25" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/products/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="26" selection-start="920" selection-end="920" vertical-scroll-proportion="0.6407538">
+        <state line="14" column="7" selection-start="340" selection-end="340" vertical-scroll-proportion="-0.65384614">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="50" selection-start="4526" selection-end="4526" vertical-scroll-proportion="-0.6298544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="1" selection-start="2548" selection-end="2548" vertical-scroll-proportion="-2.0425532">
+          <folding>
+            <element signature="e#7#415#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

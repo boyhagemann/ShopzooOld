@@ -11,7 +11,11 @@ class ProductsController extends BaseController
     {
         $terms = ucfirst(str_replace('-', ' ', $slug));
         $products = Product::where('title', 'LIKE', "%{$terms}%")->paginate(16);
-        
+        $v = Validator::make(Input::all(), Product::$rules);
+
+		if($v->fails()) {
+			return Redirect::route('x')->withErrors($v->getErrors());
+		}
         return View::make('products.index', compact('terms', 'products'));
     }
 
