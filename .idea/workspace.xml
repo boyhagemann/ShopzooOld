@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="added qr code">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ProductsController.php" afterPath="$PROJECT_DIR$/app/controllers/ProductsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/ProductsTableSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/ProductsTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_product_reccomendation_table.php" afterPath="$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_product_reccomendation_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ReccomendationsController.php" afterPath="$PROJECT_DIR$/app/controllers/ReccomendationsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/start/global.php" afterPath="$PROJECT_DIR$/app/start/global.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/show.blade.php" afterPath="$PROJECT_DIR$/app/views/products/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopzoo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371820719965" ignored="false" />
+    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371825983890" ignored="false" />
     <file path="/a.dummy" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371824462864" ignored="false" />
     <file path="/composer.json" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369395506091" ignored="false" />
     <file path="/routes.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371823548841" ignored="false" />
@@ -31,7 +28,7 @@
     <file path="/2013_05_24_120827_create_campaigns_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369411463714" ignored="false" />
     <file path="/AccountController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369657489199" ignored="false" />
     <file path="/register.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369655039992" ignored="false" />
-    <file path="/global.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371823330053" ignored="false" />
+    <file path="/global.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371826906483" ignored="false" />
     <file path="/2013_05_24_121648_create_account_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369654787174" ignored="false" />
     <file path="/AccountsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369658043923" ignored="false" />
     <file path="/login.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369657854389" ignored="false" />
@@ -42,7 +39,7 @@
     <file path="/2013_05_24_121648_create_links_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370255018439" ignored="false" />
     <file path="/Link.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370256624422" ignored="false" />
     <file path="/index.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370526258845" ignored="false" />
-    <file path="/show.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371823471903" ignored="false" />
+    <file path="/show.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371826980232" ignored="false" />
     <file path="/2013_05_24_121648_create_transactions_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370257863562" ignored="false" />
     <file path="/TransactionsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370258229597" ignored="false" />
     <file path="/Transaction.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370938004213" ignored="false" />
@@ -81,12 +78,12 @@
     <file path="/*.regexp" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371740571651" ignored="false" />
     <file path="/Reccomendation.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371824420622" ignored="false" />
     <file path="/2013_06_21_072118_create_reccomendations_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371799415696" ignored="false" />
-    <file path="/ReccomendationsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371824933968" ignored="false" />
+    <file path="/ReccomendationsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371826129215" ignored="false" />
     <file path="/ProductsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371822144727" ignored="false" />
     <file path="/2013_06_21_072118_create_reccomendations_links_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371822390376" ignored="false" />
     <file path="/ReccomendationsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371824445919" ignored="false" />
     <file path="/2013_06_21_072118_create_link_reccomendation_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371822676939" ignored="false" />
-    <file path="/2013_06_21_072118_create_product_reccomendation_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371824487706" ignored="false" />
+    <file path="/2013_06_21_072118_create_product_reccomendation_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371826079946" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,16 +106,16 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="49" selection-start="3922" selection-end="3922" vertical-scroll-proportion="-6.5">
+            <state line="176" column="49" selection-start="3922" selection-end="3922" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReccomendationsController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ReccomendationsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/ReccomendationsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="41" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.5795053">
+            <state line="83" column="40" selection-start="1633" selection-end="1633" vertical-scroll-proportion="-18.26923">
               <folding />
             </state>
           </provider>
@@ -127,16 +124,16 @@
       <file leaf-file-name="ProductsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="60" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-18.26923">
+            <state line="39" column="60" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="show.blade.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/products/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="39" selection-start="814" selection-end="814" vertical-scroll-proportion="-9.769231">
+            <state line="32" column="69" selection-start="972" selection-end="972" vertical-scroll-proportion="0.3392226">
               <folding />
             </state>
           </provider>
@@ -163,15 +160,15 @@
       <file leaf-file-name="global.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/start/global.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="227" column="5" selection-start="5889" selection-end="5889" vertical-scroll-proportion="-14.346154">
+            <state line="166" column="0" selection-start="4619" selection-end="4619" vertical-scroll-proportion="-18.26923">
               <folding>
-                <marker date="1371823337869" expanded="true" signature="2716:2815" placeholder="..." />
-                <marker date="1371823337869" expanded="true" signature="2747:2804" placeholder="..." />
-                <marker date="1371823337869" expanded="true" signature="3108:3207" placeholder="..." />
-                <marker date="1371823337869" expanded="true" signature="3139:3196" placeholder="..." />
-                <marker date="1371823337869" expanded="true" signature="3488:3587" placeholder="..." />
-                <marker date="1371823337869" expanded="true" signature="3519:3576" placeholder="..." />
-                <marker date="1371823337869" expanded="true" signature="3831:3853" placeholder="..." />
+                <marker date="1371826967278" expanded="true" signature="2716:2815" placeholder="..." />
+                <marker date="1371826967278" expanded="true" signature="2747:2804" placeholder="..." />
+                <marker date="1371826967278" expanded="true" signature="3108:3207" placeholder="..." />
+                <marker date="1371826967278" expanded="true" signature="3139:3196" placeholder="..." />
+                <marker date="1371826967278" expanded="true" signature="3488:3587" placeholder="..." />
+                <marker date="1371826967278" expanded="true" signature="3519:3576" placeholder="..." />
+                <marker date="1371826967278" expanded="true" signature="3831:3853" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -204,14 +201,14 @@
         <option value="$PROJECT_DIR$/app/database/seeds/ProductsTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_reccomendations_links_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_link_reccomendation_table.php" />
-        <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/app/controllers/ProductsController.php" />
-        <option value="$PROJECT_DIR$/app/views/products/show.blade.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/models/Reccomendation.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/ReccomendationsTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_product_reccomendation_table.php" />
         <option value="$PROJECT_DIR$/app/controllers/ReccomendationsController.php" />
+        <option value="$PROJECT_DIR$/app/start/global.php" />
+        <option value="$PROJECT_DIR$/app/views/products/show.blade.php" />
       </list>
     </option>
   </component>
@@ -282,7 +279,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,11 +293,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopzoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopzoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Illuminate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopzoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopzoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="laravel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Illuminate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Html" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,51 +397,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seeds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
+              <option name="myItemId" value="start" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,16 +442,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="reference.settings.deploy.options" />
     <property name="JavaScriptLanguageLevel" value="JS_1_5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="JavaScriptPreferStrict" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig" createEmptyFolders="true" autoUpload="true">
     <servers>
@@ -553,7 +574,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32337245" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3271078" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -651,30 +672,14 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_05_24_121648_create_links_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BasketsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="196" selection-end="377" vertical-scroll-proportion="0.24028268">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/BasketsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="81" selection-end="411" vertical-scroll-proportion="0.123188406">
-          <folding />
-        </state>
+        <state line="6" column="5" selection-start="81" selection-end="411" vertical-scroll-proportion="0.123188406" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2687" column="15" selection-start="47610" selection-end="47614" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
+        <state line="2687" column="15" selection-start="47610" selection-end="47614" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Account.php">
@@ -684,87 +689,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/start/global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="227" column="5" selection-start="5889" selection-end="5889" vertical-scroll-proportion="-14.346154">
-          <folding>
-            <marker date="1371823337869" expanded="true" signature="2716:2815" placeholder="..." />
-            <marker date="1371823337869" expanded="true" signature="2747:2804" placeholder="..." />
-            <marker date="1371823337869" expanded="true" signature="3108:3207" placeholder="..." />
-            <marker date="1371823337869" expanded="true" signature="3139:3196" placeholder="..." />
-            <marker date="1371823337869" expanded="true" signature="3488:3587" placeholder="..." />
-            <marker date="1371823337869" expanded="true" signature="3519:3576" placeholder="..." />
-            <marker date="1371823337869" expanded="true" signature="3831:3853" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="39" selection-start="814" selection-end="814" vertical-scroll-proportion="-9.769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="49" selection-start="3922" selection-end="3922" vertical-scroll-proportion="-6.5">
+        <state line="176" column="49" selection-start="3922" selection-end="3922" vertical-scroll-proportion="-0.65384614">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Reccomendation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="188" selection-end="188" vertical-scroll-proportion="0.18021202">
-          <folding />
-        </state>
+        <state line="9" column="44" selection-start="188" selection-end="188" vertical-scroll-proportion="0.18021202" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/ReccomendationsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="256" selection-end="256" vertical-scroll-proportion="0.24028268">
-          <folding />
-        </state>
+        <state line="12" column="33" selection-start="256" selection-end="256" vertical-scroll-proportion="0.24028268" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="482" selection-end="482" vertical-scroll-proportion="0.4204947">
-          <folding />
-        </state>
+        <state line="21" column="42" selection-start="482" selection-end="482" vertical-scroll-proportion="0.4204947" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/ProductsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="694" selection-end="694" vertical-scroll-proportion="0.284689">
-          <folding />
-        </state>
+        <state line="14" column="28" selection-start="694" selection-end="694" vertical-scroll-proportion="0.284689" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_reccomendations_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="60" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="24" selection-start="211" selection-end="216" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_product_reccomendation_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="115" selection-end="115" vertical-scroll-proportion="0.082125604">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="60" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-18.26923">
+        <state line="31" column="47" selection-start="717" selection-end="717" vertical-scroll-proportion="-19.615385">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ReccomendationsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="41" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.5795053">
+        <state line="83" column="40" selection-start="1633" selection-end="1633" vertical-scroll-proportion="-18.26923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="365" column="22" selection-start="8825" selection-end="8831" vertical-scroll-proportion="0.33252427">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="0" selection-start="4619" selection-end="4619" vertical-scroll-proportion="-18.26923">
+          <folding>
+            <marker date="1371826967278" expanded="true" signature="2716:2815" placeholder="..." />
+            <marker date="1371826967278" expanded="true" signature="2747:2804" placeholder="..." />
+            <marker date="1371826967278" expanded="true" signature="3108:3207" placeholder="..." />
+            <marker date="1371826967278" expanded="true" signature="3139:3196" placeholder="..." />
+            <marker date="1371826967278" expanded="true" signature="3488:3587" placeholder="..." />
+            <marker date="1371826967278" expanded="true" signature="3519:3576" placeholder="..." />
+            <marker date="1371826967278" expanded="true" signature="3831:3853" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="69" selection-start="972" selection-end="972" vertical-scroll-proportion="0.3392226">
           <folding />
         </state>
       </provider>

@@ -151,27 +151,30 @@ Form::macro('twBtnGroup', function ($elements) {
 });
 
 
-Form::macro('modelSelect', function ($name, $model, Array $options = array()) {
+Form::macro('modelSelect', function ($name, $model, Array $defaults = null, Array $options = array()) {
 	return Form::select($name, Form::multiOptionsFromModel($model, $options));
 });
 
-Form::macro('modelCheckbox', function ($name, $model, Array $options = array()) {
+Form::macro('modelCheckbox', function ($name, $model, Array $defaults = null, Array $options = array()) {
 	return Form::multiCheckbox($name, Form::multiOptionsFromModel($model, $options));
 });
 
-Form::macro('modelRadio', function ($name, $model, Array $options = array()) {
+Form::macro('modelRadio', function ($name, $model, Array $defaults = null, Array $options = array()) {
 	return Form::multiRadio($name, Form::multiOptionsFromModel($model, $options));
 });
 
-Form::macro('multiCheckbox', function ($name, $multiOptions) {
+Form::macro('multiCheckbox', function ($name, $multiOptions, Array $defaults = null) {
 
 	$name .= '[]';
 	$inputs = array();
 
 	foreach ($multiOptions as $key => $value) {
+
+		$default = is_array($defaults) && in_array($key, $defaults) ? $key : null;
+
 		$inputName = sprintf('%s[%s]', $name, $key);
 		$inputs[]  =
-			Form::checkbox($name, $key, null, array(
+			Form::checkbox($name, $key, $default, array(
 				'id' => $inputName,
 			)) .
 			Form::label($inputName, $value);
@@ -180,7 +183,7 @@ Form::macro('multiCheckbox', function ($name, $multiOptions) {
 	return implode('<br>', $inputs);
 });
 
-Form::macro('multiRadio', function ($name, $multiOptions) {
+Form::macro('multiRadio', function ($name, $multiOptions, Array $defaults = null) {
 
 	$inputs = array();
 

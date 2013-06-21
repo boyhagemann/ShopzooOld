@@ -18,8 +18,7 @@ class CreateProductReccomendationTable extends Migration {
 			$table->integer('product_id');
             $table->timestamps();
 
-			$table->index('reccomendation_id');
-			$table->index('product_id');
+			$table->unique(array('reccomendation_id', 'product_id'));
         });
     }
 

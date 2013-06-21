@@ -30,7 +30,7 @@
 <ul class="nav">
         {{ Form::open(array('route' => 'reccomendations.addProduct')) }}
         {{ Form::hidden('product_id', $product->id) }}
-        {{ Form::modelCheckbox('friends', $reccomendations, array(
+        {{ Form::modelCheckbox('friends', $reccomendations, $defaults, array(
             'valueField' => function($reccomendation) {
                 return $reccomendation->friend->name();
             }
