@@ -26,14 +26,13 @@
 <hr>
 
 <h3><i class="icon-envelope"></i> Send to your friends</h3>
-@if($basket->count())
+@if($reccomendations)
 <ul class="nav">
-        {{ Form::open(array('route' => 'basket.addProduct')) }}
+        {{ Form::open(array('route' => 'reccomendations.addProduct')) }}
         {{ Form::hidden('product_id', $product->id) }}
-        {{ Form::modelCheckbox('friends', $basket, array(
-            'keyField' => 'friend_id',
-            'valueField' => function($record) {
-                return $record->friend->name();
+        {{ Form::modelCheckbox('friends', $reccomendations, array(
+            'valueField' => function($reccomendation) {
+                return $reccomendation->friend->name();
             }
         )) }}
         {{ Form::submit('Add') }}

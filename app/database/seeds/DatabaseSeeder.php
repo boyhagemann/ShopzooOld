@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call('SnippetsTableSeeder');
 		$this->call('StreamsTableSeeder');
 		$this->call('BasketsTableSeeder');
+		$this->call('ReccomendationsTableSeeder');
 	}
 
 }

@@ -20,7 +20,7 @@ Route::get('/', 'HomeController@index');
  */
 Route::model('product', 'Product');
 Route::model('transaction', 'Transaction');
-Route::model('advices', 'Advice');
+Route::model('reccomendations', 'Reccomendation');
 Route::model('link', 'Link');
 Route::model('user', 'User');
 
@@ -169,7 +169,14 @@ Route::group(array('before' => 'auth'), function() {
        'uses' => 'FriendsController@create',
        'as' => 'friends.create'
    ));
-   
+
+	/**
+	 * Reccomendations
+	 */
+	Route::post('reccomendations/add-product', array(
+		'uses' => 'ReccomendationsController@addProduct',
+		'as' => 'reccomendations.addProduct',
+	));
 
    /**
     * Transactions
@@ -238,6 +245,7 @@ if (Sentry::check()) {
     $menu->add('stream', '<i class="icon-reorder"></i> Stream');
     $menu->add('products', '<i class="icon-globe"></i> Products');
     $menu->add('friends', '<i class="icon-group"></i> Friends');
+    $menu->add('reccomendations', '<i class="icon-envelope-alt"></i> Recommendations');
     $menu->add('transactions', '<i class="icon-shopping-cart"></i> Transactions');
 
     $menuUser = Menu::handler('user', array('class' => 'nav pull-right'));
@@ -258,5 +266,4 @@ Route::resource('groups', 'GroupController');
 Route::resource('campaigns', 'CampaignsController');
 Route::resource('jobs', 'JobsController');
 Route::resource('feeds', 'FeedsController');
-
-Route::resource('baskets', 'BasketsController');
+Route::resource('reccomendations', 'ReccomendationsController');

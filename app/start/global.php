@@ -223,10 +223,10 @@ Form::macro('multiOptionsFromModel', function ($model, Array $options = array())
 		$multiOptions[''] = $options['emptyValue'];
 	}
 
-
 	if ($model instanceof \Illuminate\Database\Eloquent\Collection) {
 		$collection = $model;
-	} else {
+	}
+	else {
 		$collection = $q->get();
 	}
 
