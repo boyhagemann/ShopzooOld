@@ -12,6 +12,13 @@ class ReccomendationsTableSeeder extends Seeder {
 		));
 		$reccomendation->products()->attach(1);
 		$reccomendation->save();
+
+		$reccomendation = Reccomendation::create(array(
+			'user_id' => 2,
+			'friend_id' => 3,
+		));
+		$reccomendation->products()->attach(1);
+		$reccomendation->save();
     }
 
 }

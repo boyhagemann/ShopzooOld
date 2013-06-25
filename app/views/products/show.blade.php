@@ -30,11 +30,15 @@
 <ul class="nav">
         {{ Form::open(array('route' => 'reccomendations.addProduct')) }}
         {{ Form::hidden('product_id', $product->id) }}
-        {{ Form::modelCheckbox('friends', $reccomendations, $defaults, array(
-            'valueField' => function($reccomendation) {
-                return $reccomendation->friend->name();
-            }
-        )) }}
+		{{ Form::modelCheckbox('friends', $reccomendations, null, array(
+			'keyField' => 'friend_id',
+			'valueField' => function($reccomendation) {
+				return $reccomendation->friend->name();
+			},
+			'checked' => function($key, $reccomendation) use($product) {
+				return $reccomendation->hasProduct($product);
+			}
+		)) }}
         {{ Form::submit('Add') }}
         {{ Form::close() }}
 </ul>

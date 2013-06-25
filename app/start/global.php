@@ -151,16 +151,17 @@ Form::macro('twBtnGroup', function ($elements) {
 });
 
 
-Form::macro('modelSelect', function ($name, $model, Array $defaults = null, Array $options = array()) {
-	return Form::select($name, Form::multiOptionsFromModel($model, $options));
+Form::macro('modelSelect', function ($name, $model, $defaults = null, Array $options = array()) {
+	return Form::select($name, Form::multiOptionsFromModel($model, $options), $defaults);
 });
 
-Form::macro('modelCheckbox', function ($name, $model, Array $defaults = null, Array $options = array()) {
-	return Form::multiCheckbox($name, Form::multiOptionsFromModel($model, $options));
+Form::macro('modelCheckbox', function ($name, $model, $defaults = array(), Array $options = array()) {
+	$data = Form::multiOptionsFromModel($model, $options, $defaults);
+	return Form::multiCheckbox($name, $data['multiOptions'], $data['defaults']);
 });
 
 Form::macro('modelRadio', function ($name, $model, Array $defaults = null, Array $options = array()) {
-	return Form::multiRadio($name, Form::multiOptionsFromModel($model, $options));
+	return Form::multiRadio($name, Form::multiOptionsFromModel($model, $options), $defaults);
 });
 
 Form::macro('multiCheckbox', function ($name, $multiOptions, Array $defaults = null) {
@@ -221,6 +222,7 @@ Form::macro('multiOptionsFromModel', function ($model, Array $options = array())
 	}
 
 	$multiOptions = array();
+	$defaults = array();
 
 	if (isset($options['emptyValue'])) {
 		$multiOptions[''] = $options['emptyValue'];
@@ -248,8 +250,16 @@ Form::macro('multiOptionsFromModel', function ($model, Array $options = array())
 		}
 
 		$multiOptions[$key] = $value;
+
+		if(isset($options['checked']) && is_callable($options['checked'])) {
+			$checked = call_user_func($options['checked'], $key, $record);
+
+			if($checked) {
+				$defaults[] = $key;
+			}
+		}
 	}
 
-	return $multiOptions;
+	return compact('multiOptions', 'defaults');
 });
 
