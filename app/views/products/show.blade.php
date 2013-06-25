@@ -35,7 +35,7 @@
 			'valueField' => function($reccomendation) {
 				return $reccomendation->friend->name();
 			},
-			'checked' => function($key, $reccomendation) use($product) {
+			'checked' => function($reccomendation) use($product) {
 				return $reccomendation->hasProduct($product);
 			}
 		)) }}
