@@ -74,19 +74,26 @@ class ReccomendationsController extends BaseController {
 	{
 		$user 				= Sentry::getUser();
 		$product 			= Product::find(Input::get('product_id'));
-		$reccomandations 	= Reccomendation::whereUserId($user->id)->whereIn('friend_id', Input::get('friends'))->get();
+		$reccomandations 	= Reccomendation::whereUserId($user->id)->get();
 
 
 		foreach($reccomandations as $reccomandation) {
 
 			try {
-				$reccomandation->products()->attach($product);
+
+				if(in_array($reccomandation->friend_id, Input::get('friends'))) {
+					$reccomandation->products()->attach($product);
+				}
+				else {
+					$reccomandation->products()->detach($product);
+				}
+
 				$reccomandation->save();
 			}
 			catch(Exception $e) { /* Duplicate entry */ }
 		}
 
-		return Redirect::route('products.show', $product->id);
+		return Redirect::route('products.show', $product->id)->with('success', 'Updated friend list with this product');
 	}
 
     /**
