@@ -12,6 +12,14 @@ class ReccomendationsController extends BaseController {
         //
     }
 
+	public function drafts()
+	{
+		$user 				= Sentry::getUser();
+		$reccomendations = Reccomendation::whereUserId($user->id)->whereStatus('draft')->get();
+
+		return View::make('reccomendations.drafts', compact('reccomendations'));
+	}
+
     /**
      * Show the form for creating a new resource.
      *
@@ -74,7 +82,7 @@ class ReccomendationsController extends BaseController {
 	{
 		$user 				= Sentry::getUser();
 		$product 			= Product::find(Input::get('product_id'));
-		$reccomandations 	= Reccomendation::whereUserId($user->id)->get();
+		$reccomandations 	= Reccomendation::whereUserId($user->id)->whereStatus('draft')->get();
 
 
 		foreach($reccomandations as $reccomandation) {

@@ -9,6 +9,7 @@ class ReccomendationsTableSeeder extends Seeder {
 		$reccomendation = Reccomendation::create(array(
 			'user_id' => 2,
 			'friend_id' => 1,
+			'status' => 'draft',
 		));
 		$reccomendation->products()->attach(1);
 		$reccomendation->save();
@@ -16,6 +17,7 @@ class ReccomendationsTableSeeder extends Seeder {
 		$reccomendation = Reccomendation::create(array(
 			'user_id' => 2,
 			'friend_id' => 3,
+			'status' => 'sent',
 		));
 		$reccomendation->products()->attach(1);
 		$reccomendation->save();
