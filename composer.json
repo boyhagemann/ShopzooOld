@@ -14,7 +14,8 @@
 		"joecwallace/artisan": "dev-master",
 		"intervention/imagecache": "dev-master",
 		"intervention/image": "dev-master",
-		"aferrandini/phpqrcode": "dev-master"
+		"aferrandini/phpqrcode": "dev-master",
+		"desmart/laravel-layout": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

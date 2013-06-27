@@ -15,7 +15,7 @@ class ReccomendationsController extends BaseController {
 	public function drafts()
 	{
 		$user 				= Sentry::getUser();
-		$reccomendations = Reccomendation::whereUserId($user->id)->whereStatus('draft')->get();
+		$reccomendations 	= Reccomendation::whereUserId($user->id)->whereStatus('draft')->get();
 
 		return View::make('reccomendations.drafts', compact('reccomendations'));
 	}

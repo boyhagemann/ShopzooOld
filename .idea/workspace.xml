@@ -2,19 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/reccomendations/drafts.blade.php" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\controllers\BasketsController.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\database\migrations\2013_06_19_075108_create_baskets_table.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\database\seeds\BasketsTableSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\models\Advice.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\models\AdviceLink.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\models\AdviceUser.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\models\Basket.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\views\baskets\create.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\views\baskets\edit.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\views\baskets\index.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\shopzoo\app\views\baskets\show.blade.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ProductsController.php" afterPath="$PROJECT_DIR$/app/controllers/ProductsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ReccomendationsController.php" afterPath="$PROJECT_DIR$/app/controllers/ReccomendationsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/default.blade.php" afterPath="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/reccomendations/drafts.blade.php" afterPath="$PROJECT_DIR$/app/views/reccomendations/drafts.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/friends/index.blade.php" afterPath="$PROJECT_DIR$/app/views/friends/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/index.blade.php" afterPath="$PROJECT_DIR$/app/views/products/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/transactions/index.blade.php" afterPath="$PROJECT_DIR$/app/views/transactions/index.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/products/show.blade.php" afterPath="$PROJECT_DIR$/app/views/products/show.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopzoo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372256306857" ignored="false" />
-    <file path="/a.dummy" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371824462864" ignored="false" />
+    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372318602951" ignored="false" />
+    <file path="/a.dummy" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372317446500" ignored="false" />
     <file path="/composer.json" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369395506091" ignored="false" />
     <file path="/routes.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371823548841" ignored="false" />
     <file path="/FeedsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369410378567" ignored="false" />
     <file path="/Job.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369401584387" ignored="false" />
     <file path="/CampaignsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369398331282" ignored="false" />
-    <file path="/ProductsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372255585059" ignored="false" />
+    <file path="/ProductsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372319577328" ignored="false" />
     <file path="/FeedsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369399271273" ignored="false" />
     <file path="/JobsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370249142597" ignored="false" />
     <file path="/JobsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369399966877" ignored="false" />
@@ -33,11 +53,11 @@
     <file path="/dashboard.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369658341878" ignored="false" />
     <file path="/Account.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369656922510" ignored="false" />
     <file path="/UserController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370951277523" ignored="false" />
-    <file path="/default.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370524725917" ignored="false" />
+    <file path="/default.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372319364786" ignored="false" />
     <file path="/2013_05_24_121648_create_links_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370255018439" ignored="false" />
     <file path="/Link.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370256624422" ignored="false" />
     <file path="/index.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370526258845" ignored="false" />
-    <file path="/show.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372169267265" ignored="false" />
+    <file path="/show.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372319646757" ignored="false" />
     <file path="/2013_05_24_121648_create_transactions_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370257863562" ignored="false" />
     <file path="/TransactionsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370258229597" ignored="false" />
     <file path="/Transaction.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1370938004213" ignored="false" />
@@ -76,13 +96,13 @@
     <file path="/*.regexp" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371740571651" ignored="false" />
     <file path="/Reccomendation.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372148444301" ignored="false" />
     <file path="/2013_06_21_072118_create_reccomendations_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371799415696" ignored="false" />
-    <file path="/ReccomendationsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372255419846" ignored="false" />
+    <file path="/ReccomendationsController.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372319322730" ignored="false" />
     <file path="/ProductsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371822144727" ignored="false" />
     <file path="/2013_06_21_072118_create_reccomendations_links_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371822390376" ignored="false" />
     <file path="/ReccomendationsTableSeeder.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372083372852" ignored="false" />
     <file path="/2013_06_21_072118_create_link_reccomendation_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371822676939" ignored="false" />
     <file path="/2013_06_21_072118_create_product_reccomendation_table.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1371826079946" ignored="false" />
-    <file path="/drafts.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372255535565" ignored="false" />
+    <file path="/drafts.blade.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372319489083" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,16 +125,7 @@
       <file leaf-file-name="ReccomendationsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/ReccomendationsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="358" selection-end="358" vertical-scroll-proportion="-11.769231">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drafts.blade.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/reccomendations/drafts.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="11" selection-start="154" selection-end="154" vertical-scroll-proportion="0.12014134">
+            <state line="7" column="23" selection-start="145" selection-end="145" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
@@ -123,7 +134,7 @@
       <file leaf-file-name="ReccomendationsTableSeeder.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/database/seeds/ReccomendationsTableSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="1" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
+            <state line="25" column="1" selection-start="519" selection-end="519" vertical-scroll-proportion="-16.346153">
               <folding />
             </state>
           </provider>
@@ -132,7 +143,25 @@
       <file leaf-file-name="ProductsController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="47" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+            <state line="40" column="0" selection-start="1059" selection-end="1059" vertical-scroll-proportion="-26.153847">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="190" column="61" selection-start="7770" selection-end="7770" vertical-scroll-proportion="0.819788">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="25" selection-start="583" selection-end="583" vertical-scroll-proportion="-15.038462">
               <folding />
             </state>
           </provider>
@@ -157,22 +186,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/workbench/boyhagemann/modelform/src/Boyhagemann/Modelform/ModelformServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/config/app.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_reccomendations_table.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/app/database/seeds/ProductsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_reccomendations_links_table.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_link_reccomendation_table.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_product_reccomendation_table.php" />
         <option value="$PROJECT_DIR$/app/models/Reccomendation.php" />
-        <option value="$PROJECT_DIR$/app/views/products/show.blade.php" />
         <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/ReccomendationsTableSeeder.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/app/views/reccomendations/drafts.blade.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ProductsController.php" />
         <option value="$PROJECT_DIR$/app/controllers/ReccomendationsController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ProductsController.php" />
+        <option value="$PROJECT_DIR$/app/views/products/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/layouts/default.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/products/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/transactions/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/views/friends/index.blade.php" />
       </list>
     </option>
   </component>
@@ -243,24 +272,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopzoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -406,7 +417,11 @@
       <created>1372255723531</created>
       <updated>1372255723531</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add  block drafts">
+      <created>1372257177351</created>
+      <updated>1372257177351</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -418,7 +433,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36232656" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37086445" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -476,7 +491,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="start block drafts" />
+    <option name="LAST_COMMIT_MESSAGE" value="add  block drafts" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -507,6 +522,7 @@
     <MESSAGE value="update elements" />
     <MESSAGE value="fix saving product with friends" />
     <MESSAGE value="start block drafts" />
+    <MESSAGE value="add  block drafts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -520,104 +536,100 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="42" selection-start="482" selection-end="482" vertical-scroll-proportion="0.4204947" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/seeds/ProductsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="694" selection-end="694" vertical-scroll-proportion="0.284689" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ImagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="211" selection-end="216" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_product_reccomendation_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="47" selection-start="717" selection-end="717" vertical-scroll-proportion="-19.615385" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="424" selection-end="433" vertical-scroll-proportion="0.0">
+        <state line="23" column="25" selection-start="583" selection-end="583" vertical-scroll-proportion="-15.038462">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Html/FormBuilder.php">
+    <entry file="file://$PROJECT_DIR$/app/views/reccomendations/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="26" selection-start="3932" selection-end="3938" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Reccomendation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="19" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/products/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="64" selection-start="957" selection-end="961" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/start/global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="17" selection-start="3738" selection-end="3738" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/database/migrations/2013_06_21_072118_create_reccomendations_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="37" selection-start="550" selection-end="550" vertical-scroll-proportion="0.40047115">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/database/seeds/ReccomendationsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="28" selection-start="219" selection-end="244" vertical-scroll-proportion="0.26030624">
+        <state line="25" column="1" selection-start="519" selection-end="519" vertical-scroll-proportion="-16.346153">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ProductsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="47" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+        <state line="40" column="0" selection-start="1059" selection-end="1059" vertical-scroll-proportion="-26.153847">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+    <entry file="file://$PROJECT_DIR$/app/views/products/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="25" selection-start="4127" selection-end="4127" vertical-scroll-proportion="0.7809187">
+        <state line="63" column="5" selection-start="1834" selection-end="1920" vertical-scroll-proportion="0.8768116">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ReccomendationsController.php">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/default.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="358" selection-end="358" vertical-scroll-proportion="-11.769231">
+        <state line="63" column="35" selection-start="2029" selection-end="2029" vertical-scroll-proportion="0.67962307">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/reccomendations/drafts.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="154" selection-end="154" vertical-scroll-proportion="0.12014134">
+        <state line="2" column="17" selection-start="39" selection-end="46" vertical-scroll-proportion="0.040047113">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/products/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="5" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.9599529">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/transactions/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="5" selection-start="992" selection-end="992" vertical-scroll-proportion="0.9599529">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/friends/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="546" selection-end="546" vertical-scroll-proportion="0.5606596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ReccomendationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="145" selection-end="145" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Reccomendation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="61" selection-start="7770" selection-end="7770" vertical-scroll-proportion="0.819788">
           <folding />
         </state>
       </provider>

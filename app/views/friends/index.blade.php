@@ -23,3 +23,7 @@ Friends
 </div>
 
 @stop
+
+@section('sidebar')
+{{ Layout::dispatch('ReccomendationsController@drafts') }}
+@stop

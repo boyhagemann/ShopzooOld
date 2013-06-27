@@ -39,8 +39,6 @@ class ProductsController extends BaseController
 		$reccomendations	= Reccomendation::whereUserId($user->id)->whereStatus('draft')->get();
 		$url				= URL::route('products.redirect', $link->code);
 
-
-
 		return View::make('products.show', compact('link', 'product', 'url', 'reccomendations'));
 	}
 

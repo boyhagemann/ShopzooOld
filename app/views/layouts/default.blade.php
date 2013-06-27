@@ -53,13 +53,18 @@
 
 		<!-- Container -->
 		<div class="container">
+
 			<!-- Notifications -->
 			@include('notifications')
 			<!-- ./ notifications -->
 
 			<!-- Content -->
-			@yield('content')
-			<!-- ./ content -->
+			<div class="row">
+				<div class="span8">@yield('content')</div>
+				<div class="span4">@yield('sidebar')</div>
+			</div>
+
+
 		</div>
 		<!-- ./ container -->
 

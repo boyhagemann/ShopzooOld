@@ -119,7 +119,7 @@ return array(
 		'Cartalyst\Sentry\SentryServiceProvider',
 //		'Joecwallace\Artisan\ArtisanWebServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
-
+		'DeSmart\Layout\LayoutServiceProvider',
 	),
 
 	/*
@@ -187,7 +187,8 @@ return array(
 
 		'Menu'            => 'Menu\Menu',
 		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-		'Image' 		  => 'Intervention\Image\Facades\Image'
+		'Image' 		  => 'Intervention\Image\Facades\Image',
+		'Layout'		  => 'DeSmart\Layout\Facades\Layout',
 	),
 
 );

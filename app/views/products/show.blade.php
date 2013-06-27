@@ -62,3 +62,7 @@
 <pre>{{ URL::route('products.redirect', $link->code) }}</pre>
 
 @stop
+
+@section('sidebar')
+{{ Layout::dispatch('ReccomendationsController@drafts') }}
+@stop
