@@ -33,3 +33,7 @@ Stream of {{ $user->name() }}
 </div>
 
 @stop
+
+@section('sidebar')
+{{ Layout::dispatch('ReccomendationsController@drafts') }}
+@stop
