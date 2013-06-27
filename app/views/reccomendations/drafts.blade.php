@@ -10,7 +10,7 @@
 		<div class="well">
 
 			<div class="clearfix">
-				<a href="" class="btn btn-small"><i class="icon-envelope-alt"></i> Send to <strong>{{ $reccomendation->friend->name() }}</strong></a>
+				<a href="{{ URL::route('reccomendations.edit', $reccomendation->id) }}" class="btn btn-small"><i class="icon-envelope-alt"></i> Send to <strong>{{ $reccomendation->friend->name() }}</strong></a>
 			</div>
 
 			<div class="clearfix">

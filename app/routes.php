@@ -177,6 +177,10 @@ Route::group(array('before' => 'auth'), function() {
 		'uses' => 'ReccomendationsController@addProduct',
 		'as' => 'reccomendations.addProduct',
 	));
+	Route::post('reccomendations/{reccomendations}/send', array(
+		'uses' => 'ReccomendationsController@send',
+		'as' => 'reccomendations.send',
+	));
 
    /**
     * Transactions

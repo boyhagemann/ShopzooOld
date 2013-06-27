@@ -59,7 +59,7 @@ class ReccomendationsController extends BaseController {
      */
     public function edit(Reccomendation $reccomendation)
     {
-        //
+        return View::make('reccomendations.edit')->with(compact('reccomendation'));
     }
 
     /**
@@ -72,6 +72,36 @@ class ReccomendationsController extends BaseController {
     {
         //
     }
+
+	/**
+	 * Update the specified resource in storage.
+	 *
+	 * @param  Reccomendation $reccomendation
+	 * @return Response
+	 */
+	public function send(Reccomendation $reccomendation)
+	{
+
+		foreach($reccomendation->products as $product) {
+			$product->generateLink(Sentry::getUser());
+		}
+
+		$reccomendation->subject = Input::get('subject');
+		$reccomendation->body = Input::get('body');
+		$reccomendation->status = 'finished';
+		$reccomendation->save();
+
+		Mail::send('emails.reccomendation', compact('reccomendation'), function($mail) use ($reccomendation) {
+
+			$mail->subject('New reccomendation from ' . Sentry::getUser()->name());
+			$mail->to($reccomendation->friend->email);
+
+			$reccomendation->status = 'sent';
+			$reccomendation->save();
+		});
+
+		return Redirect::route('products')->with('success', 'Reccomendation sent!');
+	}
 
 	/**
 	 * Update the specified resource in storage.
