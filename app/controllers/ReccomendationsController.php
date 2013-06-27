@@ -16,8 +16,9 @@ class ReccomendationsController extends BaseController {
 	{
 		$user 				= Sentry::getUser();
 		$reccomendations 	= Reccomendation::whereUserId($user->id)->whereStatus('draft')->get();
+		$friends 			= $user->friends;
 
-		return View::make('reccomendations.drafts', compact('reccomendations'));
+		return View::make('reccomendations.drafts', compact('reccomendations', 'friends'));
 	}
 
     /**
@@ -103,12 +104,28 @@ class ReccomendationsController extends BaseController {
 		return Redirect::route('products')->with('success', 'Reccomendation sent!');
 	}
 
+	public function addFriend(User $friend)
+	{
+		$reccomendation = Reccomendation::whereFriendId($friend->id)->whereStatus('draft')->first();
+
+		if(!$reccomendation) {
+			$reccomendation = Reccomendation::create(array(
+				'user_id' => Sentry::getUser()->id,
+				'friend_id' => $friend->id,
+				'status' => 'draft',
+			));
+			$reccomendation->save();
+		}
+
+		return Redirect::route('products')->with('success', 'Added friend. Find some products to reccomend!');
+	}
+
 	/**
 	 * Update the specified resource in storage.
 	 *
 	 * @return Response
 	 */
-	public function addProduct( )
+	public function addProduct()
 	{
 		$user 				= Sentry::getUser();
 		$product 			= Product::find(Input::get('product_id'));
