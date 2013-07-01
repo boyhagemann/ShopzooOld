@@ -49,20 +49,21 @@
 @endif
 
 
-<h4>Not sending an advice?</h4>
-<p>
-    You don't want to go thru the hassle of creating an advice?
-    No problem!
-    Just copy and paste this link and send it some other way you wish.
-    Soon as your friend buys the product on the webshop thru this link, the money will be floating your way in two shakes of a lams tail.
-    Your friend will not even notice you made all that money, the poor sucker. 
-    That was a joke of course.
-</p>
-
-<pre>{{ URL::route('products.redirect', $link->code) }}</pre>
-
 @stop
 
 @section('sidebar')
 {{ Layout::dispatch('ReccomendationsController@drafts') }}
+
+<h4>Not sending an advice?</h4>
+<p>
+	You don't want to go thru the hassle of creating an advice?
+	No problem!
+	Just copy and paste this link and send it some other way you wish.
+	Soon as your friend buys the product on the webshop thru this link, the money will be floating your way in two shakes of a lams tail.
+	Your friend will not even notice you made all that money, the poor sucker.
+	That was a joke of course.
+</p>
+
+<pre>{{ URL::route('products.redirect', $link->code) }}</pre>
+
 @stop

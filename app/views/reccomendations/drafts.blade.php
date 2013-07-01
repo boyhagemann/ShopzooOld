@@ -1,6 +1,4 @@
-@extends('layouts.default')
-
-@section('sidebar')
+@extends('sidebar')
 
 @if($reccomendations->count())
 <h3>Your reccomendations</h3>

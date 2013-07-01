@@ -13,14 +13,38 @@
 
 App::before(function($request)
 {
-	//
-});
 
+});
 
 App::after(function($request, $response)
 {
-	//
+
 });
+
+
+View::composer('layouts.default', function($layout)
+{
+	$env = $layout->getEnvironment();
+
+	$sections = $env->getSections() + array(
+		'content' => '',
+		'sidebar' => ''
+	);
+
+	$env->flushSections();
+
+	$sections['content'] .= Layout::dispatch('ReccomendationsController@create');
+	$sections['content'] .= Layout::dispatch('ReccomendationsController@create');
+
+	$sections['sidebar'] .= Layout::dispatch('ReccomendationsController@create');
+	$sections['sidebar'] .= Layout::dispatch('ReccomendationsController@create');
+
+	foreach($sections as $section => $content) {
+		$env->inject($section, $content);
+	}
+
+});
+
 
 /*
 |--------------------------------------------------------------------------
