@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/app.php" afterPath="$PROJECT_DIR$/app/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/filters.php" afterPath="$PROJECT_DIR$/app/filters.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/start/global.php" afterPath="$PROJECT_DIR$/app/start/global.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="shopzoo.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372853672960" ignored="false" />
+    <file path="/Dummy.txt" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372854547049" ignored="false" />
     <file path="/a.dummy" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372854458771" ignored="false" />
     <file path="/composer.json" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1369395506091" ignored="false" />
     <file path="/routes.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372854093819" ignored="false" />
@@ -88,7 +87,7 @@
     <file path="/Product.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372328542517" ignored="false" />
     <file path="/filters.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372854115171" ignored="false" />
     <file path="/Layout.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372685050490" ignored="false" />
-    <file path="/SectionBlock.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372854386464" ignored="false" />
+    <file path="/SectionBlock.php" changelist="1aa2c296-58f2-4ca1-8b41-a6dfb4120dd7" time="1372854857119" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +110,7 @@
       <file leaf-file-name="filters.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/filters.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="1" selection-start="1299" selection-end="1299" vertical-scroll-proportion="-28.115385">
+            <state line="58" column="1" selection-start="1299" selection-end="1299" vertical-scroll-proportion="-0.53846157">
               <folding />
             </state>
           </provider>
@@ -120,16 +119,25 @@
       <file leaf-file-name="SectionBlock.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lib/Facades/SectionBlock.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="198" selection-end="198" vertical-scroll-proportion="-8.5">
+            <state line="7" column="1" selection-start="102" selection-end="195" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Facade.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="0" selection-start="1611" selection-end="1801" vertical-scroll-proportion="-1.117647">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="16" selection-start="7774" selection-end="7781" vertical-scroll-proportion="0.79976445">
+            <state line="191" column="16" selection-start="7774" selection-end="7781" vertical-scroll-proportion="-26.115385">
               <folding />
             </state>
           </provider>
@@ -156,8 +164,25 @@
       <file leaf-file-name="routes.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="11" selection-start="2799" selection-end="2806" vertical-scroll-proportion="-18.307692">
+            <state line="119" column="0" selection-start="2679" selection-end="2679" vertical-scroll-proportion="-19.615385">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/start/global.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="0" selection-start="2589" selection-end="2589" vertical-scroll-proportion="0.55569005">
+              <folding>
+                <marker date="1372854903009" expanded="true" signature="2797:2896" placeholder="..." />
+                <marker date="1372854903009" expanded="true" signature="2828:2885" placeholder="..." />
+                <marker date="1372854903009" expanded="true" signature="3189:3288" placeholder="..." />
+                <marker date="1372854903009" expanded="true" signature="3220:3277" placeholder="..." />
+                <marker date="1372854903009" expanded="true" signature="3569:3668" placeholder="..." />
+                <marker date="1372854903009" expanded="true" signature="3600:3657" placeholder="..." />
+                <marker date="1372854903009" expanded="true" signature="3912:3934" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/start/global.php" />
         <option value="$PROJECT_DIR$/app/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/controllers/ReccomendationsController.php" />
         <option value="$PROJECT_DIR$/app/models/Layout.php" />
@@ -192,11 +216,12 @@
         <option value="$PROJECT_DIR$/public/css/screen.css" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/lib/SectionBlock.php" />
-        <option value="$PROJECT_DIR$/app/lib/Facades/SectionBlock.php" />
-        <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/filters.php" />
         <option value="$PROJECT_DIR$/app/lib/SectionBlockFacade.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
+        <option value="$PROJECT_DIR$/app/lib/Facades/SectionBlock.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/start/global.php" />
       </list>
     </option>
   </component>
@@ -267,6 +292,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopzoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shopzoo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="start" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,13 +503,18 @@
       <created>1372853414084</created>
       <updated>1372853414084</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="made facade in application for sections">
+      <created>1372854549150</created>
+      <updated>1372854549150</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -482,7 +530,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32963374" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -530,7 +577,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="start blocks in layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="made facade in application for sections" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -567,6 +614,7 @@
     <MESSAGE value="update flow reccomendations" />
     <MESSAGE value="test with blocks in sections" />
     <MESSAGE value="start blocks in layout" />
+    <MESSAGE value="made facade in application for sections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -639,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="30" selection-start="2164" selection-end="2164" vertical-scroll-proportion="-0.6277974">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Facades/Image.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="24" selection-start="110" selection-end="110" vertical-scroll-proportion="0.12014134">
@@ -660,31 +701,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="11" selection-start="2799" selection-end="2806" vertical-scroll-proportion="-18.307692">
+        <state line="191" column="16" selection-start="7774" selection-end="7781" vertical-scroll-proportion="-26.115385">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/Facades/SectionBlock.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="198" selection-end="198" vertical-scroll-proportion="-8.5">
+        <state line="78" column="0" selection-start="1611" selection-end="1801" vertical-scroll-proportion="-1.117647">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/filters.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="1" selection-start="1299" selection-end="1299" vertical-scroll-proportion="-28.115385">
+        <state line="58" column="1" selection-start="1299" selection-end="1299" vertical-scroll-proportion="-0.53846157">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/app.php">
+    <entry file="file://$PROJECT_DIR$/app/lib/Facades/SectionBlock.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="16" selection-start="7774" selection-end="7781" vertical-scroll-proportion="0.79976445">
+        <state line="7" column="1" selection-start="102" selection-end="195" vertical-scroll-proportion="-4.576923">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="2679" selection-end="2679" vertical-scroll-proportion="-19.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/start/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="2589" selection-end="2589" vertical-scroll-proportion="0.55569005">
+          <folding>
+            <marker date="1372854903009" expanded="true" signature="2797:2896" placeholder="..." />
+            <marker date="1372854903009" expanded="true" signature="2828:2885" placeholder="..." />
+            <marker date="1372854903009" expanded="true" signature="3189:3288" placeholder="..." />
+            <marker date="1372854903009" expanded="true" signature="3220:3277" placeholder="..." />
+            <marker date="1372854903009" expanded="true" signature="3569:3668" placeholder="..." />
+            <marker date="1372854903009" expanded="true" signature="3600:3657" placeholder="..." />
+            <marker date="1372854903009" expanded="true" signature="3912:3934" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

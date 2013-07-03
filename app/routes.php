@@ -118,9 +118,6 @@ Route::filter('auth', function() {
     }
 });
 
-
-App::singleton('sectionblock', function($app) { return new SectionBlock(); });
-
 Route::filter('blocks', function() {
 	Section::add('sidebar', 'ReccomendationsController@drafts');
 });
