@@ -52,7 +52,6 @@
 @stop
 
 @section('sidebar')
-{{ Layout::dispatch('ReccomendationsController@drafts') }}
 
 <h4>Not sending an advice?</h4>
 <p>

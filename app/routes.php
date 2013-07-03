@@ -119,10 +119,14 @@ Route::filter('auth', function() {
 });
 
 
+App::singleton('sectionblock', function($app) { return new SectionBlock(); });
+
+Route::filter('blocks', function() {
+	App::make('sectionblock')->add('sidebar', 'ReccomendationsController@drafts');
+});
 
 
-
-Route::group(array('before' => 'auth'), function() {
+Route::group(array('before' => 'auth|blocks'), function() {
            
     /**
     * Users

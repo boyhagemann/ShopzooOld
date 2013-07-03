@@ -24,13 +24,13 @@ Products
 
 <ul class="thumbnails">
 	@foreach($products as $i => $product)
-	<li class="span3">
+	<li class="span2">
 		<div class="thumbnail">
 			<a href="{{ URL::route('products.show', $product->id) }}">
-				<img class="media-object" src="{{ URL::route('image.resize', array($product->image, 260, 200)) }}">
+				<img class="media-object" src="{{ URL::route('image.resize', array($product->image, 160, 120)) }}">
 			</a>
 			<div class="caption">
-				<h3><a href="{{ URL::route('products.show', $product->id) }}">{{ $product->title }}</a></h3>
+				<a href="{{ URL::route('products.show', $product->id) }}">{{ $product->title }}</a>
 				<span class="badge">{{ $product->price }}</span>
 			</div>
 		</div>
@@ -50,9 +50,4 @@ Products
 
 @endif
 
-
-@stop
-
-@section('sidebar')
-{{ Layout::dispatch('ReccomendationsController@drafts') }}
 @stop

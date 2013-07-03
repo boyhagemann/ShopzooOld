@@ -33,13 +33,12 @@ View::composer('layouts.default', function($layout)
 
 	$env->flushSections();
 
-	$sections['content'] .= Layout::dispatch('ReccomendationsController@create');
-	$sections['content'] .= Layout::dispatch('ReccomendationsController@create');
-
-	$sections['sidebar'] .= Layout::dispatch('ReccomendationsController@create');
-	$sections['sidebar'] .= Layout::dispatch('ReccomendationsController@create');
-
 	foreach($sections as $section => $content) {
+
+		$block = App::make('sectionblock');
+		if($block->has($section)) {
+			$content .= $block->get($section);
+		}
 		$env->inject($section, $content);
 	}
 

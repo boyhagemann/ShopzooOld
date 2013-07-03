@@ -1,4 +1,3 @@
-@extends('sidebar')
 
 @if($reccomendations->count())
 <h3>Your reccomendations</h3>
@@ -45,5 +44,3 @@
 </ul>
 
 @endif
-
-@stop
