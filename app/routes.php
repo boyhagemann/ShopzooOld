@@ -122,7 +122,7 @@ Route::filter('auth', function() {
 App::singleton('sectionblock', function($app) { return new SectionBlock(); });
 
 Route::filter('blocks', function() {
-	App::make('sectionblock')->add('sidebar', 'ReccomendationsController@drafts');
+	Section::add('sidebar', 'ReccomendationsController@drafts');
 });
 
 

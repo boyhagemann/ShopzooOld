@@ -35,9 +35,8 @@ View::composer('layouts.default', function($layout)
 
 	foreach($sections as $section => $content) {
 
-		$block = App::make('sectionblock');
-		if($block->has($section)) {
-			$content .= $block->get($section);
+		if(Section::has($section)) {
+			$content .= Section::get($section);
 		}
 		$env->inject($section, $content);
 	}
