@@ -22,28 +22,6 @@ App::after(function($request, $response)
 });
 
 
-View::composer('layouts.default', function($layout)
-{
-	$env = $layout->getEnvironment();
-
-	$sections = $env->getSections() + array(
-		'content' => '',
-		'sidebar' => ''
-	);
-
-	$env->flushSections();
-
-	foreach($sections as $section => $content) {
-
-		if(Section::has($section)) {
-			$content .= Section::get($section);
-		}
-		$env->inject($section, $content);
-	}
-
-});
-
-
 /*
 |--------------------------------------------------------------------------
 | Authentication Filters

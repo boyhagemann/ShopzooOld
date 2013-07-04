@@ -60,8 +60,8 @@
 
 			<!-- Content -->
 			<div class="row">
-				<div class="span8">@yield('content')</div>
-				<div class="span4">@yield('sidebar')</div>
+				<div class="span8">{{ $content }}</div>
+				<div class="span4">{{ $sidebar }}</div>
 			</div>
 
 

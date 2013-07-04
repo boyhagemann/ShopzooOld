@@ -189,7 +189,6 @@ return array(
 		'Sentry'          => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
 		'Image' 		  => 'Intervention\Image\Facades\Image',
 		'Layout'		  => 'DeSmart\Layout\Facades\Layout',
-		'Section'		  => 'Facades\SectionBlock',
 	),
 
 );

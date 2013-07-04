@@ -83,8 +83,6 @@ App::down(function()
 require app_path().'/filters.php';
 
 
-App::singleton('sectionblock', function($app) { return new SectionBlock(); });
-
 
 Form::macro('twText', function ($label, $name, $default = null, $attributes = array()) {
 

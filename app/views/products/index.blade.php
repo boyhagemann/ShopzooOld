@@ -1,11 +1,3 @@
-@extends('layouts.default')
-
-{{-- Web site Title --}}
-@section('title')
-Products
-@stop
-
-@section('content')
 
 @if($products->count())
 
@@ -49,5 +41,3 @@ Products
 <h2>No search results for "{{ $terms }}"</h2>
 
 @endif
-
-@stop

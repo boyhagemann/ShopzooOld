@@ -118,12 +118,8 @@ Route::filter('auth', function() {
     }
 });
 
-Route::filter('blocks', function() {
-	Section::add('sidebar', 'ReccomendationsController@drafts');
-});
 
-
-Route::group(array('before' => 'auth|blocks'), function() {
+Route::group(array('before' => 'auth'), function() {
            
     /**
     * Users
@@ -142,7 +138,7 @@ Route::group(array('before' => 'auth|blocks'), function() {
     * Products
     */
    Route::get('products/{slug?}', array(
-       'uses' => 'ProductsController@index',
+       'uses' => 'RoutesController@products',
        'as' => 'products',
    ));
    Route::post('products', array(
