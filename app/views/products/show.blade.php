@@ -1,12 +1,3 @@
-@extends('layouts.default')
-
-{{-- Web site Title --}}
-@section('title')
-{{ $product->title }} - Products
-@stop
-
-@section('content')
-
 <h1>{{ $product->title }}</h1>
 <div class="media">
     <a class="pull-left" href="#">
@@ -47,22 +38,3 @@
 	Add a friend
 </p>
 @endif
-
-
-@stop
-
-@section('sidebar')
-
-<h4>Not sending an advice?</h4>
-<p>
-	You don't want to go thru the hassle of creating an advice?
-	No problem!
-	Just copy and paste this link and send it some other way you wish.
-	Soon as your friend buys the product on the webshop thru this link, the money will be floating your way in two shakes of a lams tail.
-	Your friend will not even notice you made all that money, the poor sucker.
-	That was a joke of course.
-</p>
-
-<pre>{{ URL::route('products.redirect', $link->code) }}</pre>
-
-@stop

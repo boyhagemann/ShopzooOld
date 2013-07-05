@@ -19,7 +19,7 @@ class User extends Cartalyst\Sentry\Users\Eloquent\User implements UserInterface
 	 */
 	protected $hidden = array('password');
 
-	protected $fillable = array('email', 'name');
+//	protected $fillable = array('email', 'name');
 
 
 	public function parent()

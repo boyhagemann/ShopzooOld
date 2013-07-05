@@ -70,7 +70,7 @@ class UserController extends BaseController
 
         if ($v->fails()) {
             // Validation has failed
-            return Redirect::to('users/register')->withErrors($v)->withInput();
+            return Redirect::route('user.register')->withErrors($v)->withInput();
         }
         else {
 
@@ -85,18 +85,18 @@ class UserController extends BaseController
 
                 //send email with link to activate.
                 Mail::send('emails.auth.welcome', $data, function($m) use($data) {
-                            $m->to($data['email'])->subject('Welcome to Laravel4 With Sentry');
-                        });
+					$m->to($data['email'])->subject('Welcome to Laravel4 With Sentry');
+				});
 
                 //success!
                 Session::flash('success', 'Your account has been created. Check your email for the confirmation link.');
                 return Redirect::to('/');
             } catch (Cartalyst\Sentry\Users\LoginRequiredException $e) {
                 Session::flash('error', 'Login field required.');
-                return Redirect::to('users/register')->withErrors($v)->withInput();
+                return Redirect::route('user.register')->withErrors($v)->withInput();
             } catch (Cartalyst\Sentry\Users\UserExistsException $e) {
                 Session::flash('error', 'User already exists.');
-                return Redirect::to('users/register')->withErrors($v)->withInput();
+                return Redirect::route('user.register')->withErrors($v)->withInput();
             }
         }
     }
@@ -216,7 +216,7 @@ class UserController extends BaseController
     public function logout()
     {
         Sentry::logout();
-        return Redirect::to('/');
+        return Redirect::home();
     }
 
     /**

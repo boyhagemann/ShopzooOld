@@ -58,6 +58,12 @@ class UsersTableSeeder extends Seeder
             'activated' => true,
             'parent_user_id' => 2
         ));
+
+		$userGroup = Sentry::getGroupProvider()->findById(1);
+		foreach(User::all() as $user) {
+			$user->addGroup($userGroup);
+			$user->save();
+		}
     }
 
 }

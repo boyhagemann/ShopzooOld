@@ -1,12 +1,4 @@
-@extends('layouts.default')
 
-{{-- Web site Title --}}
-@section('title')
-Log In
-@stop
-
-{{-- Content --}}
-@section('content')
 <h1>Login</h1>
 
 	<form class="form-horizontal" action="{{ URL::route('user.auth') }}" method="post">
@@ -42,4 +34,3 @@ Log In
         </div>
   </form>
 
-@stop

@@ -1,12 +1,3 @@
-@extends('layouts.default')
-
-{{-- Web site Title --}}
-@section('title')
-Stream
-@stop
-
-{{-- Content --}}
-@section('content')
 
 <div class="row">
     
@@ -21,9 +12,3 @@ Stream
     </div>
     
 </div>
-
-@stop
-
-@section('sidebar')
-{{ Layout::dispatch('ReccomendationsController@drafts') }}
-@stop

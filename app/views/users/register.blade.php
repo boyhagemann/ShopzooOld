@@ -1,16 +1,7 @@
-@extends('layouts.default')
 
-{{-- Web site Title --}}
-@section('title')
-@parent
-Register
-@stop
-
-{{-- Content --}}
-@section('content')
 <h1>Register New Account</h1>
 
-<form class="form-horizontal" action="{{ Request::fullUrl() }}" method="post">
+<form class="form-horizontal" action="{{ URL::route('user.store') }}" method="post">
     <input type="hidden" name="_token" id="_token" value="{{ Session::getToken() }}" />
 
     <div class="control-group {{ ($errors->has('email')) ? 'error' : '' }}" for="email">
@@ -19,7 +10,7 @@ Register
             <input name="email" id="email" value="{{ Request::old('email') }}" type="text" class="input-xlarge" placeholder="E-mail">
             {{ ($errors->has('email') ? $errors->first('email') : '') }}
         </div>
-    </div>	
+    </div>
 
     <div class="control-group {{ $errors->has('password') ? 'error' : '' }}" for="password">
         <label class="control-label" for="password">New Password</label>
@@ -38,10 +29,8 @@ Register
     </div>
 
     <div class="form-actions">
-        <input class="btn-primary btn" type="submit" value="Register"> 
+        <input class="btn-primary btn" type="submit" value="Register">
         <input class="btn " type="reset" value="Reset">
-    </div>	
+    </div>
 </form>
 
-
-@stop

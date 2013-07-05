@@ -1,11 +1,3 @@
-@extends('layouts.default')
-
-{{-- Web site Title --}}
-@section('title')
-Reccomendation to {{ $reccomendation->friend->name() }}
-@stop
-
-@section('content')
 
 <h1>Reccomendation to {{ $reccomendation->friend->name() }}</h1>
 
@@ -18,5 +10,3 @@ Reccomendation to {{ $reccomendation->friend->name() }}
 	Form::submit('Send', array('class' => 'btn btn-large btn-primare'))
 )) }}
 {{ Form::close() }}
-
-@stop

@@ -68,7 +68,7 @@ Route::get('products/redirect/{code}', array(
  * Users
  */
 Route::get('user/login', array(
-    'uses' => 'UserController@login',
+    'uses' => 'Blocks\UserController@login',
     'as' => 'user.login'
 ));
 Route::post('user/auth', array(
@@ -76,7 +76,7 @@ Route::post('user/auth', array(
     'as' => 'user.auth'
 ));
 Route::get('user/register', array(
-    'uses' => 'UserController@register',
+    'uses' => 'Blocks\UserController@register',
     'as' => 'user.register'
 ));
 Route::post('user/store', array(
@@ -88,7 +88,7 @@ Route::get('user/activate/{id}/{code}', array(
     'as' => 'user.activate'
 ));
 Route::get('user/{user}', array(
-    'uses' => 'UserController@show',
+    'uses' => 'Blocks\UserController@show',
     'as' => 'user.show'
 ));
 
@@ -125,7 +125,7 @@ Route::group(array('before' => 'auth'), function() {
     * Users
     */
    Route::get('stream', array(
-       'uses' => 'UserController@stream',
+       'uses' => 'Blocks\UserController@stream',
        'as' => 'user.stream'
    ));
    Route::get('user/logout', array(
@@ -138,7 +138,7 @@ Route::group(array('before' => 'auth'), function() {
     * Products
     */
    Route::get('products/{slug?}', array(
-       'uses' => 'RoutesController@products',
+       'uses' => 'Blocks\ProductsController@index',
        'as' => 'products',
    ));
    Route::post('products', array(
@@ -146,7 +146,7 @@ Route::group(array('before' => 'auth'), function() {
        'as' => 'products.search',
    ));
    Route::get('products/show/{product}', array(
-       'uses' => 'ProductsController@show',
+       'uses' => 'Blocks\ProductsController@show',
        'as' => 'products.show',
    ));
    
@@ -155,11 +155,11 @@ Route::group(array('before' => 'auth'), function() {
     * Friends
     */
    Route::get('friends', array(
-       'uses' => 'FriendsController@index',
+       'uses' => 'Blocks\FriendsController@index',
        'as' => 'friends',
    ));
    Route::get('friends/invite', array(
-       'uses' => 'FriendsController@invite',
+       'uses' => 'Blocks\FriendsController@invite',
        'as' => 'friends.invite'
    ));
    Route::post('friends/create', array(
@@ -182,6 +182,10 @@ Route::group(array('before' => 'auth'), function() {
 		'uses' => 'ReccomendationsController@send',
 		'as' => 'reccomendations.send',
 	));
+	Route::get('reccomendations/{reccomendations}/edit', array(
+		'uses' => 'Blocks\ReccomendationsController@edit',
+		'as' => 'reccomendations.edit',
+	));
 
    /**
     * Transactions
@@ -192,49 +196,6 @@ Route::group(array('before' => 'auth'), function() {
    ));
    
 
-   /**
-    * Advices
-    */
-   Route::get('advices/create/{link?}', array(
-       'uses' => 'AdvicesController@create',
-       'as' => 'advices.create',
-   ));
-   Route::resource('advices', 'AdvicesController', array('except' => array('create')));
-   Route::post('advices/add-link/{link}', array(
-       'uses' => 'AdvicesController@addLink',
-       'as' => 'advices.link.add',
-   ));
-   Route::get('advices/remove-link/{link}', array(
-       'uses' => 'AdvicesController@removeLink',
-       'as' => 'advices.link.remove',
-   ));
-   Route::get('advices/add-recipient/{advices}', array(
-       'uses' => 'AdvicesController@addRecipient',
-       'as' => 'advices.recipient.add',
-   ));
-   Route::post('advices/add-recipient/{advices}', array(
-       'uses' => 'AdvicesController@storeRecipient',
-       'as' => 'advices.recipient.store',
-   ));
-   Route::get('advices/remove-recipient/{user}', array(
-       'uses' => 'AdvicesController@removeRecipient',
-       'as' => 'advices.recipient.remove',
-   ));
-   Route::get('advices/{advices}/send', array(
-       'uses' => 'AdvicesController@send',
-       'as' => 'advices.send',
-   ));
-   
-   
-   
-   /**
-    * Basket
-    */
-    Route::post('basket/product/add', array(
-        'uses' => 'BasketsController@addProduct',
-        'as' => 'basket.addProduct',
-    ));
-   
    
 });
 
@@ -271,4 +232,4 @@ Route::resource('groups', 'GroupController');
 Route::resource('campaigns', 'CampaignsController');
 Route::resource('jobs', 'JobsController');
 Route::resource('feeds', 'FeedsController');
-Route::resource('reccomendations', 'ReccomendationsController');
+Route::resource('reccomendations', 'ReccomendationsController', array('except' => array('edit')));

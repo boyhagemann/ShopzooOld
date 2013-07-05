@@ -60,8 +60,12 @@
 
 			<!-- Content -->
 			<div class="row">
+				@if( isset($content) AND isset($sidebar) )
 				<div class="span8">{{ $content }}</div>
 				<div class="span4">{{ $sidebar }}</div>
+				@elseif( isset($content) )
+				<div class="span12">{{ $content }}</div>
+				@endif
 			</div>
 
 
