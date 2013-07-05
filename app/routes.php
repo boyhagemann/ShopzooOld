@@ -11,7 +11,10 @@
   |
  */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', array(
+	'uses' => 'HomeController@index',
+	'as' => 'home',
+));
 
 
 
@@ -64,35 +67,6 @@ Route::get('products/redirect/{code}', array(
 ));
 
 
-/**
- * Users
- */
-Route::get('user/login', array(
-    'uses' => 'Blocks\UserController@login',
-    'as' => 'user.login'
-));
-Route::post('user/auth', array(
-    'uses' => 'UserController@auth',
-    'as' => 'user.auth'
-));
-Route::get('user/register', array(
-    'uses' => 'Blocks\UserController@register',
-    'as' => 'user.register'
-));
-Route::post('user/store', array(
-    'uses' => 'UserController@store',
-    'as' => 'user.store'
-));
-Route::get('user/activate/{id}/{code}', array(
-    'uses' => 'UserController@activate',
-    'as' => 'user.activate'
-));
-Route::get('user/{user}', array(
-    'uses' => 'Blocks\UserController@show',
-    'as' => 'user.show'
-));
-
-
 
 /**
  * Images
@@ -118,7 +92,42 @@ Route::filter('auth', function() {
     }
 });
 
+/**
+ * These routes are only available for users that are
+ * not logged in.
+ */
+Route::group(array('before' => 'guest'), function() {
 
+	/**
+	 * Users
+	 */
+	Route::get('user/login', array(
+		'uses' => 'Blocks\UserController@login',
+		'as' => 'user.login'
+	));
+	Route::post('user/auth', array(
+		'uses' => 'UserController@auth',
+		'as' => 'user.auth'
+	));
+	Route::get('user/register', array(
+		'uses' => 'Blocks\UserController@register',
+		'as' => 'user.register'
+	));
+	Route::post('user/store', array(
+		'uses' => 'UserController@store',
+		'as' => 'user.store'
+	));
+	Route::get('user/activate/{id}/{code}', array(
+		'uses' => 'UserController@activate',
+		'as' => 'user.activate'
+	));
+
+});
+
+/**
+ * These routes are only available for users that are
+ * logged in.
+ */
 Route::group(array('before' => 'auth'), function() {
            
     /**
@@ -194,10 +203,19 @@ Route::group(array('before' => 'auth'), function() {
        'uses' => 'ActionsController@products',
        'as' => 'actions.products',
    ));
-   
 
    
 });
+
+
+
+
+Route::get('user/{user}', array(
+	'uses' => 'Blocks\UserController@show',
+	'as' => 'user.show'
+));
+
+
 
 
 /**
