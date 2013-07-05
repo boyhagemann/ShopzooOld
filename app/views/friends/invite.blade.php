@@ -1,13 +1,4 @@
-@extends('layouts.default')
 
-{{-- Web site Title --}}
-@section('title')
-@parent
-Invite
-@stop
-
-{{-- Content --}}
-@section('content')
 <h1>Invite some friends</h1>
 
 {{ Form::open(array('route' => 'friends.create')) }}
@@ -17,4 +8,3 @@ Invite
 )) }}
 {{ Form::close() }}
 
-@stop
