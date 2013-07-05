@@ -9,7 +9,7 @@ class ReccomendationsController extends BaseController {
      */
     public function index()
     {
-        //
+		return View::make('reccomendations.index');
     }
 
 	public function drafts()

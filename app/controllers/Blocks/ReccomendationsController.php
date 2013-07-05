@@ -8,6 +8,21 @@ class ReccomendationsController extends Controller
 {
 	protected $layout = 'layouts.default';
 
+	/**
+	 *
+	 * @return Response
+	 */
+	public function index()
+	{
+		$this->structure['content'] = array(
+			'ReccomendationsController@index',
+		);
+		$this->structure['sidebar'] = array(
+		);
+
+		return $this->execute();
+	}
+
     /**
      *
      * @return Response

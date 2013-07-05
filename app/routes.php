@@ -208,8 +208,6 @@ Route::group(array('before' => 'auth'), function() {
 });
 
 
-
-
 Route::get('user/{user}', array(
 	'uses' => 'Blocks\UserController@show',
 	'as' => 'user.show'
@@ -250,4 +248,4 @@ Route::resource('groups', 'GroupController');
 Route::resource('campaigns', 'CampaignsController');
 Route::resource('jobs', 'JobsController');
 Route::resource('feeds', 'FeedsController');
-Route::resource('reccomendations', 'ReccomendationsController', array('except' => array('edit')));
+Route::resource('reccomendations', 'Blocks\ReccomendationsController', array('except' => array('edit')));
